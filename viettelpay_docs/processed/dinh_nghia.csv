@@ -1,0 +1,28 @@
+﻿TT,Định nghĩa,Giải thích
+1,Người lập giao dịch,"Là người thực hiện việc khởi tạo, thiết lập và gửi yêu cầu giao dịch thanh toán cước viễn thông, thẻ cào trên ứng dụng ViettelPay Pro"
+2,Khách hàng thụ hưởng,Là khách hàng nhận tiền vào tài khoản viễn thông hoặc nhận giá trị thẻ cào từ người lập giao dịch thực hiện.
+3,Nhà cung cấp dịch vụ (NCCDV),"Là đơn vị cung cấp dịch vụ thanh toán cước viễn thông, thẻ cào, thẻ game, trong đó ứng dụng ViettelPay Pro là công cụ trung gian thanh toán."
+4,Nhân viên phát triển Điểm/quản lý Điểm,"Là người tiếp xúc phát triển Điểm ViettelPay Pro và chịu trách nhiệm hỗ trợ Điểm ViettelPay Pro (hay còn gọi là Người dùng ViettelPay Pro) trong quá trình tạo tài  khoản, sử dụng ViettelPay Pro."
+5,Phí bán hàng,Là khoản phí chi trả cho người lập giao dịch thanh toán cước viễn thông trên ứng dụng ViettelPay Pro. Về hình thức và chính sách phí bán hàng phụ thuộc vào tình hình chính sách kinh doanh tại từng thời điểm.
+3,Chiết khấu,Là việc giảm giá trực tiếp trên giá bán của sản phẩm hoặc dịch vụ.
+6,Nguồn tiền liên kết,"Là nguồn tiền ngân hàng liên kết với ứng dụng ViettelPay Pro để sử dụng thanh toán trực tiếp từ nguồn tiền liên kết. Hiện nay, ứng dụng ViettelPay Pro cho phép liên kết với các ngân  hàng như: MB/LPB/ViettelPay/BIDV,...Danh sách ngân hàng liên kết có thể thay đổi tùy theo tình hình thực tế."
+7,Nạp điện thoại (Topup),"Là chức năng trên ứng dụng ViettelPay Pro giúp người lập giao dịch thực hiện giao dịch thanh toán cước hoặc nạp tiền trực tiếp vào tài khoản viễn thông. Có 02 hình thức thanh toán qua chức năng nạp điện thoại:
+- Nạp trả trước: Nạp tiền trực tiếp vào tài khoản điện thoại di động trả trước
+- Nạp trả sau: Thanh toán cước phí/nợ cước cho điện thoại di động trả sau."
+8,Mua thẻ cào (pincode),"Là chức năng trên ứng dụng ViettelPay Pro giúp người lập giao dịch thực hiện giao dịch mua mã thẻ cào, mã thẻ cào được gửi đến số điện thoại nhận tin nhắn và người thụ hưởng sử dụng để nạp tiền điện thoại, nạp game"
+9,Thuê bao (TB),Là số điện thoại đăng ký dịch vụ di động
+10,Thuê bao trả trước (TBTT),"Là loại thuê bao di động mà người dùng cần nạp tiền vào tài khoản trước khi sử dụng các dịch vụ như thực hiện cuộc gọi, nhắn tin hoặc sử dụng dữ liệu Internet"
+11,Thuê bao trả sau (TBTS),Là loại thuê bao mà người dùng sử dụng dịch vụ trước và thanh toán vào cuối tháng theo hóa đơn
+12,Account,"Là tài khoản đăng ký dịch vụ cố định (internet, truyền hình)"
+13,Dịch vụ cố định Viettel,"Là các dịch vụ truyền hình, internet do nhà mạng Viettel cung cấp"
+14,Thanh toán cước Viettel,"Là giao dịch thanh toán cho các loại hình dịch vụ viễn thông của Viettel như: Dịch vụ di động, Dcom, ADSL, FTTH, truyền hình."
+15,Thuê bao ngoại mạng,"Là thuê bao sử dụng các loại hình dịch vụ viễn thông của các nhà mạng khác Viettel như: Vinaphone, Mobifone, Vietnammobile,..."
+16,Tài khoản gốc,"Là tài khoản chính trong thuê bao di động trả trước, chứa số tiền người dùng đã nạp và được dùng để thanh toán cho các dịch vụ cơ bản như: Gọi điện, nhắn tin, đăng ký gói cước,..."
+17,Tài khoản khuyến mại,"Là tài khoản phụ trong thuê bao di động trả trước, chứa số tiền, giá trị sử dụng được nhà mạng tặng thêm khi nạp thẻ hoặc tham gia chương trình khuyến mãi"
+18,Gạch nợ cước,"Là hành vi người lập giao dịch thanh toán số tiền nợ cước cho thuê bao di động trả sau, dịch vụ internet, truyền hình, giúp người thụ hưởng hoàn tất việc thanh toán nợ với nhà mạng."
+19,Đóng trước cước,"Là hành vi người lập giao dịch thanh toán trước một khoản tiền cho nhà mạng để nhà mạng trừ dần vào các hóa đơn cước trong tương lai của thuê bao internet, truyền hình Viettel."
+20,Số điện thoại nhận tin,Là số điện thoại nhận tin nhắn thông báo kết quả khi Người lập giao dịch thiết lập giao dịch thanh toán trên ứng dụng ViettelPay Pro
+21,Giao dịch nhầm,Là giao dịch do người lập giao  dịch nhập sai số tiền hoặc sai account/thuê bao thụ hưởng.
+22,Hủy giao dịch có OTP,Là hình thức người lập giao dịch thực hiện lập yêu cầu hủy có OTP. Hệ thống sẽ gửi mã OTP (mã bí mật) đến khách hàng thụ hưởng để xác nhận giao dịch hủy.
+23,Hủy giao dịch không có OTP,Là hình thức lập hủy không cần khách hàng thụ hưởng cung cấp mã OTP (mã bí mật) để xác nhận hủy giao dịch mà thông qua việc phê duyệt giao dịch hủy từ Nhân viên quản lý Điểm bán.
+24,Phê duyệt giao dịch hủy,Phân quyền phê duyệt giao dịch hủy không OTP là Nhân viên quản lý Điểm bán. Hình thức phê duyệt trên web http://bankplus.viettel.vn

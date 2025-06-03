@@ -1,0 +1,152 @@
+﻿TT,Mã lỗi,Câu báo lỗi/yêu cầu hỗ trợ,Nghiệp vụ,Nguyên nhân,Trạng thái giao dịch,Hướng khắc phục
+1,606,He thong dang nang cap bao duong( 606),Nạp cước điện thoại trả trước (topup) đa mạng,Hệ thống nâng cấp,Thất bại- Không bị trừ tiền,"- Với câu báo lỗi này do hệ thống đang trong thời gian bảo trì. Anh/chị truy cập ứng dụng mục “Thông báo” để nắm thời gian bảo trì và thực hiện lại giao dịch sau thời gian bảo trì.
+- Trường hợp không có thông tin về thời gian bảo trì, Anh/chị vui lòng gửi yêu cầu hỗ trợ ngay trên ứng dụng ViettelPay Pro. "
+2,606,He thong dang nang cap bao duong( 606),Mua thẻ cào đa mạng,Hệ thống nâng cấp,Thất bại- Không bị trừ tiền,"- Với câu báo lỗi này do hệ thống đang trong thời gian bảo trì. Anh/chị truy cập ứng dụng mục “Thông báo” để nắm thời gian bảo trì và thực hiện lại giao dịch sau thời gian bảo trì.
+- Trường hợp không có thông tin về thời gian bảo trì, Anh/chị vui lòng gửi yêu cầu hỗ trợ ngay trên ứng dụng ViettelPay Pro."
+3,606,He thong dang nang cap bao duong( 606),Thanh toán cước điện thoại trả sau đa mạng,Hệ thống nâng cấp,Thất bại- Không bị trừ tiền,"- Với câu báo lỗi này do hệ thống đang trong thời gian bảo trì. Anh/chị truy cập ứng dụng mục “Thông báo” để nắm thời gian bảo trì và thực hiện lại giao dịch sau thời gian bảo trì.
+- Trường hợp không có thông tin về thời gian bảo trì, Anh/chị vui lòng gửi yêu cầu hỗ trợ ngay trên ứng dụng ViettelPay Pro."
+4,606,He thong dang nang cap bao duong( 606),"Thanh toán cước internet, truyền hình Viettel",Hệ thống nâng cấp,Thất bại- Không bị trừ tiền,"- Với câu báo lỗi này do hệ thống đang trong thời gian bảo trì. Anh/chị truy cập ứng dụng mục “Thông báo” để nắm thời gian bảo trì và thực hiện lại giao dịch sau thời gian bảo trì.
+- Trường hợp không có thông tin về thời gian bảo trì, Anh/chị vui lòng gửi yêu cầu hỗ trợ ngay trên ứng dụng ViettelPay Pro."
+5,606,He thong dang nang cap bao duong( 606),"Thanh toán cước đóng trước internet, truyền hình Viettel",Hệ thống nâng cấp,Thất bại- Không bị trừ tiền,"- Với câu báo lỗi này do hệ thống đang trong thời gian bảo trì. Anh/chị truy cập ứng dụng mục “Thông báo” để nắm thời gian bảo trì và thực hiện lại giao dịch sau thời gian bảo trì.
+- Trường hợp không có thông tin về thời gian bảo trì, Anh/chị vui lòng gửi yêu cầu hỗ trợ ngay trên ứng dụng ViettelPay Pro."
+6,"W02
+W04
+32
+605
+650
+null","-Giao dịch đang được xử lý
+-Kết quả giao dịch chưa xác định
+-Giao dich timeout, khong nhan duoc phan hoi cuoi tu BCCS( 605)
+-Giao dich timeout tai ngan hang( 32","Thanh toán cước, pincode, mua thẻ cào Viettel",Do lỗi hệ thống,Chưa xác định kết quả cuối-Đã bị trừ tiền,"- Trường hợp này do: Giao dịch đang bị time out (bị treo) chưa xác định kết quả thành công hay thất bại.
+-Hướng xử lý: 
++KHÔNG thực hiện thêm giao dịch khác
++KHÔNG hoàn trả lại tiền cho Khách hàng (KH) yêu cầu
++THUYẾT PHỤC KH chờ kết quả đối soát kết quả giao dịch, thời gian có kết quả đối soát là ngày T+1 (T là ngày thực hiện giao dịch).
+-Lưu ý: 
++ Nên báo khách hàng thụ hưởng kiểm tra tài khoản, tin nhắn trả về mã thẻ cào vì có thể hệ thống cập nhật kết quả cho giao dịch trên app chậm nhưng thực tế người nhận đã nhận được tiền.
++ Chủ động tra soát kết quả cuối giao dịch ngay tại mục “lịch sử” trên app ViettelPay Pro.
++ Gửi yêu cầu hỗ trợ ngay trên ứng dụng ViettelPay Pro khi khách hàng gay gắt/không đồng ý chờ kết quả đối soát."
+7,"W02
+W04
+32
+605
+650
+null","-Giao dịch đang được xử lý
+-Kết quả giao dịch chưa xác định","Thanh toán cước, pincode, mua thẻ cào ngoài mạng Viettel (Vinafone, Mobiphone, Vietnammobile)",Do lỗi hệ thống,Chưa xác định kết quả cuối-Đã bị trừ tiền,"- Trường hợp này do: Giao dịch đang bị time out (bị treo) chưa xác định kết quả thành công hay thất bại.
+-Hướng xử lý: 
++KHÔNG thực hiện thêm giao dịch khác
++KHÔNG hoàn trả lại tiền cho Khách hàng (KH) yêu cầu
++THUYẾT PHỤC KH chờ kết quả đối soát kết quả giao dịch, thời gian có kết quả đối soát là ngày T+1 (T là ngày thực hiện giao dịch).
+-Lưu ý: 
++ Nên báo khách hàng thụ hưởng kiểm tra tài khoản, tin nhắn trả về mã thẻ cào vì một số trường hợp mặc dù giao dịch báo ""đang xử lý có kết quả thành công ngay sau đó.
++ Gửi yêu cầu hỗ trợ ngay trên ứng dụng ViettelPay Pro khi khách hàng gay gắt/không đồng ý chờ kết quả đối soát."
+8,"W02
+W04
+32
+605
+650
+null","-Giao dịch đang được xử lý
+-Kết quả giao dịch chưa xác định",Mua thẻ Game,Do lỗi hệ thống,Chưa xác định kết quả cuối-Đã bị trừ tiền,"- Trường hợp này do: Giao dịch đang bị time out (bị treo) chưa xác định kết quả thành công hay thất bại.
+-Hướng xử lý: 
++KHÔNG thực hiện thêm giao dịch khác
++KHÔNG hoàn trả lại tiền cho Khách hàng (KH) yêu cầu
++THUYẾT PHỤC KH chờ kết quả đối soát kết quả giao dịch, thời gian có kết quả đối soát là ngày T+1 (T là ngày thực hiện giao dịch).
+-Lưu ý: 
++ Nên báo khách hàng thụ hưởng kiểm tra tin nhắn trả về mã thẻ cào vì một số trường hợp mặc dù giao dịch báo ""đang xử lý có kết quả thành công ngay sau đó.
++ Gửi yêu cầu hỗ trợ ngay trên ứng dụng ViettelPay Pro khi khách hàng gay gắt/không đồng ý chờ kết quả đối soát."
+9,974,Giao dich khong thanh cong. Quy khach thuc hien lai sau.( 974),Mua thẻ Game,Do lỗi hệ thống,Thất bại- Không bị trừ tiền,"-Trường hợp này có thể THANH TOÁN LẠI vì giao dịch thất bại không bị trừ tiền (nếu hệ thống trừ tiền thì sẽ hoàn lại ngay sau đó).
+-Nếu thanh toán lại vẫn không thành công. Vui lòng truy cập mục“Thông báo” để kiểm tra dịch vụ có đang trong thời gian bảo trì/nâng cấp hay không?
+- Trường hợp không có thông tin về thời gian bảo trì, Anh/chị vui lòng gửi yêu cầu hỗ trợ ngay trên ứng dụng ViettelPay Pro."
+10,974,Giao dich khong thanh cong. Quy khach thuc hien lai sau.( 974),Thanh toán cước trong và ngoài mạng Viettel,"-Thuê bao chuyển mạng giữ số, tuy nhiên các nhà mạng chưa đồng bộ dữ liệu.
+-Do lỗi hệ thống",Thất bại- Không bị trừ tiền,"- Trường hợp này do: Đa số do thuê bao chuyển mạng giữ số nhưng nhà mạng chưa đồng bộ.
+-Hướng xử lý:
+1. Xác nhận với chủ thuê bao xem có chuyển mạng giữ số không:
+-Nếu chuyển vào Viettel → Gửi yêu cầu hỗ trợ qua ViettelPay Pro.
+- Nếu chuyển ra khỏi Viettel → Hướng dẫn khách hàng liên hệ tổng đài nhà mạng mới.
+2. Nếu không do chuyển mạng giữ số, truy cập ViettelPay Pro → mục “Thông báo” để kiểm tra thời gian nâng cấp hệ thống và thực hiện lại sau.
+3. Nếu không có thông báo nâng cấp, Anh/chị gửi yêu cầu hỗ trợ trên ứng dụng ViettelPay Pro."
+11,473,Giao dich khong thanh cong. So dien thoai nhan chua dang ky Ezpay( 473),Thanh cước cước trả sau nhà mạng Vinafone,-Thuê bao nhận Chưa đăng ký dịch vụ EZPay,Thất bại- Không bị trừ tiền,"Trường hợp này do: Thuê bao Vinaphone chưa đăng ký dịch vụ Ezpay, Anh/chị hướng dẫn Khách hàng liên hệ tổng đài Vinaphone để được hỗ trợ đăng ký dịch vụ hoặc Anh/chị hướng dẫn KH đăng ký Ezpay qua tin nhắn.
+Cú pháp đăng ký: soạn EZPAY gửi 9888 (miễn phí cước tin nhắn)."
+12,472,Giao dich khong thanh cong. So dien thoai nhan khong hop le.( 472),Thanh toán cước trong và ngoài mạng Viettel,"Thuê bao chuyển mạng giữ số, tuy nhiên các nhà mạng chưa đồng bộ dữ liệu.",Thất bại-Có thể bị trừ hoặc không trừ tiền,"- Trường hợp này do: Đa số do thuê bao chuyển mạng giữ số nhưng nhà mạng chưa đồng bộ.
+-Hướng xử lý:
+1. Xác nhận với chủ thuê bao xem có chuyển mạng giữ số không:
+-Nếu chuyển vào Viettel → Gửi yêu cầu hỗ trợ qua ViettelPay Pro.
+- Nếu chuyển ra khỏi Viettel → Hướng dẫn khách hàng liên hệ tổng đài nhà mạng mới.
+2. Nếu không do chuyển mạng giữ số, truy cập ViettelPay Pro → mục “Thông báo” để kiểm tra thời gian nâng cấp hệ thống và thực hiện lại sau.
+3. Nếu không có thông báo nâng cấp, Anh/chị gửi yêu cầu hỗ trợ trên ứng dụng ViettelPay Pro.
+*Lưu ý: Nếu giao dịch bị trừ tiền, hệ thống sẽ hoàn tiền ngay trong ngày."
+14,99,Giao dich khong thanh cong tu phia ngan hang.( 99),Mua thẻ Game,Do lỗi hệ thống,Chưa xác định kết quả cuối-Đã bị trừ tiền,"Đây là lỗi chưa xác định kết quả cuối giao dịch thành công hay thất bại. Vì vậy hướng xử lý như sau:
+-Không thực hiện thêm giao dịch khác và không hoàn trả lại tiền cho khách hàng
+-Thuyết phục khách hàng chờ kết quả đối soát vào ngày T+1 ngày làm việc (T là ngày thực hiện giao dịch).
+-Sau thời gian đối soát, truy cập mục lịch sử → Chọn giao dịch cần truy vấn để kiểm tra:
++ Nếu thành công: Thuê bao nhận tin nhắn sẽ nhận tin mã thẻ.
++ Nếu thất bại: Hệ thống sẽ hoàn tiền về tài khoản bán hàng của người lập giao dịch."
+15,KH5,Co loi xay ra khi thuc hien nap tien cho thue bao tra truoc. Vui long thuc hien lai (KH5),Thanh toán cước Viettel,"Do lỗi trạng thái thuê bao nhận: Chặn 1 chiều hoặc 2 chiều do khách hàng yêu cầu, do nhà mạng chặn, do mất đồng bộ trạng thái hoạt động tại nhà mạng.",Thất bại- Không bị trừ tiền,"- Trường hợp này do: Do lỗi trạng thái thuê bao thụ hưởng (thuê bao nhận)
+-Hướng xử lý:
+1.Hướng dẫn thuê bao nhận liên hệ Tổng đài để kiểm tra trạng thái hoạt động của thuê bao và thực hiện mở khóa trước khi thực hiện thanh toán cước.
+2. Nếu trạng thái thuê bao đang hoạt động hoặc đã mở khóa nhưng thanh toán cước báo lỗi. Anh/chị gửi yêu cầu hỗ trợ ngay trên ứng dụng ViettelPay Pro nhé!."
+16,K85,SDT xxxxx cua khach hang chua duoc kich hoat. (K85),Thanh toán cước Viettel,Do thuê bao nhận tiền chưa kích hoạt dịch vụ Viễn thông,Thất bại- Không bị trừ tiền,"- Trường hợp này do: Thuê bao nhận chưa kích hoạt thành công dịch vụ viễn thông
+-Hướng dẫn khách hàng: Dùng chính số điện thoại nhận, gọi 900 để kích hoạt.
+-Sau khi kích hoạt xong, thực hiện lại giao dịch thanh toán cước trên ứng dụng ViettelPay Pro."
+17,BL2,BL2: Đã vượt quá số lần truy vấn mà không thanh toán. Vui lòng thử lại sau thời điểm xx giờ ngày/tháng/năm,Thanh toán cước Viettel,Kênh truy vấn nợ cước thuê bao trả sau (TBTS) Viettel nhưng không thanh toán dẫn đến hệ thống chặn truy vấn,Thất bại-Không bị trừ tiền,"- Trường hợp này do: Hệ thống chặn truy vấn nợ cước do kênh đã truy vấn nhưng không thực hiện thanh toán.
+-Giải pháp: Thực hiện lại sau 2 giờ kể từ thời điểm báo lỗi.
+-Lưu ý: Hệ thống chỉ chặn truy vấn, không chặn thanh toán → vẫn có thể nhập tay số tiền và tiến hành thanh toán như bình thường."
+18,26,Dich vu BankPlus chua duoc kich hoat,Thanh toán cước Viettel,Do nguồn tiền thanh toán chưa kích hoạt,Thất bại- Không bị trừ tiền,"- Trường hợp này do: Do nguồn tiền thanh toán chưa kích hoạt
+-Hướng xử lý:
+- Bước 1: Kích hoạt tài khoản ngân hàng liên kết
+- Bước 2: Thực hiện lại giao dịch thanh toán cước Viettel sau khi kích hoạt tài khoản ngân hàng liên kết hoặc thay đổi nguồn tiền liên kết khác để thanh toán.
+* Tham khảo video hướng dẫn thanh toán cước Viettel tại tại đây:  https://youtu.be/cLajESloVyM"
+19,901,Dich vu da bi tam khoa do Khach hang no phi qua thoi gian quy dinh,Thanh toán cước Viettel,Nguồn tiền thanh toán ngân hàng Bưu điện Liên Việt (LPB) đang bị khóa,Thất bại- Không bị trừ tiền,"-Trường hợp này do: Nguồn tiền liên kết để thanh toán (ngân hàng LPB) đang bị khóa. 
+-Hướng khắc phục: 
++ Thay đổi sang nguồn tiền khác để tiếp tục giao dịch, hoặc
++ Liên hệ ngân hàng LPB để được hỗ trợ mở khóa.
+*Lưu ý: Để biết rõ nguyên nhân và thủ tục mở khóa, cần liên hệ Tổng đài hoặc Quầy giao dịch ngân hàng TMCP Lộc Phát (LPB)."
+20,45,Giao dich khong thanh cong. Dich vu BankPlus da bi huy. Lien he ngan hang de dang ky lai,Thanh toán cước Viettel,Nguồn tiền thanh toán  ngân hàng Quân đội (MB) ở trạng thái không hoạt động,Thất bại- Không bị trừ tiền,"- Trường hợp này do: Nguồn tiền liên kết để thanh toán (ngân hàn MB) đang ở trạng thái không hoạt động.
+-Hướng khắc phục:
++ Thay đổi sang nguồn tiền khác để tiếp tục giao dịch, hoặc
++ Liên hệ ngân hàng MB để được kiểm tra lí do không hoạt động (nếu có nhu cầu).
+Tham khảo video hướng dẫn thanh toán cước Viettel tại đây: https://youtu.be/cLajESloVyM"
+21,702,Giao dịch thất bại. Dịch vụ VTBANK của KH thực hiện hoặc KH thụ hưởng đang bị khóa,Thanh toán cước Viettel,"Nguồn tiền thanh toán ViettelPay ở trạng thái khóa (khóa do sai hồ sơ, tạm khóa, sai PIN,..)",Thất bại- Không bị trừ tiền,"-Trường hợp này do: Nguồn tiền thanh toán ViettelPay ở trạng thái khóa (khóa do sai hồ sơ, tạm khóa, sai PIN,..)
+-Hướng khắc phục: Thay đổi sang nguồn tiền khác để tiếp tục giao dịch.
+
+Tham khảo video hướng dẫn thanh toán cước Viettel tại đây: https://youtu.be/cLajESloVyM
+*Lưu ý: Để biết rõ nguyên nhân, thủ tục mở khóa tài khoản ViettelPay, Anh/chị liên hệ Tổng đài 18009000 (miễn phí) để được hỗ trợ hoặc Cửa hàng Viettel để được hỗ trợ."
+22,711,Dich vu VTBANK da bi khoa do nhap sai PIN qua 3 lan lien tiep.( 711),Thanh toán cước Viettel,Nguồn tiền thanh toán ViettelPay đang bị khóa do nhập sai mã PIN quá số lần quy định,Thất bại- Không bị trừ tiền,"-Trường hợp này do: Nguồn tiền thanh toán ViettelPay đang bị khóa do nhập sai mã PIN quá số lần quy định, Anh/chị thực hiện thay đổi nguồn tiền liên kết khác để hoàn tất thanh toán.
+- Để mở khóa tài khoản Viettelpay, Anh/chị mang GTTT ra Cửa hàng của Viettel để được hỗ trợ.
+
+Tham khảo video hướng dẫn thanh toán cước Viettel tại đây: https://youtu.be/cLajESloVyM"
+23,624,Số tiền thanh toán vượt quá hạn mức quy định,Thanh toán cước Viettel,Vượt quá hạn mức/giao dịch theo quy định của nguồn tiền ngân hàng liên kết,Thất bại- Không bị trừ tiền,"Câu báo này do giá trị giao dịch thanh toán vượt hạn mức/giao dịch của ngân hàng liên kết. Vì vậy:
+-Anh/chị nhập số tiền thanh toán nhỏ hơn hoặc bằng hạn mức quy định
+- Hoặc thay đổi nguồn khác để thanh toán. Tham khảo video hướng dẫn thanh toán cước Viettel tại đây: https://youtu.be/cLajESloVyM"
+24,JK1,Số tiền thanh toán nhỏ hơn hạn mức quy định,Thanh toán cước Viettel,Giá trị giao dịch thanh toán nhỏ hơn hạn mức tối thiểu/giao dịch (< 5.000 VNĐ/GD),Thất bại- Không bị trừ tiền,Câu báo này do hạn mức quy định/giao dịch thanh toán cước viễn thông: Tối thiểu 5.000 VNĐ/giao dịch. Anh/chị cần thực hiện giao dịch bằng hoặc lớn hơn hạn mức tối thiểu.
+25,0,Giao dịch thanh toán cước viễn thông thành công trên ứng dụng ViettelPay Pro nhưng thuê bao/account nhận chưa được gạch nợ/cộng tiền.,Thanh toán cước trong và ngoài mạng Viettel,"-Do thuê bao nhận trước đó bị âm tài khoản, phát sinh cước nhưng KH không biết
+-Do lỗi hệ thống (cộng chậm, gạch nợ chậm)",Thành công- Đã bị trừ tiền,"Để xác định chính xác nguyên nhân thuê bao/account thụ hưởng chưa được cộng tiền/gạch nợ. Anh/chị thực hiện:
+-Hướng dẫn khách hàng liên hệ Tổng đài nhà mạng viễn thông để kiểm tra chi tiết biến động tài khoản viễn thông của thuê bao nhận.
+-Gửi yêu cầu hỗ trợ ngay trên ứng dụng ViettelPay Pro nếu kiểm tra chắc chắn giao dịch thanh toán thành công nhưng thuê bao/account nhận chưa được gạch nợ/cộng tiền."
+26,0,Giao dịch mua thẻ cào điện thoại thành công trên ứng dụng ViettelPay Pro nhưng thuê bao nhận không nhận được tin nhắn mã thẻ,Mua thẻ cào điện thoại trong và ngoài mạng Viettel,"-Do lỗi thiết bị đầu cuối của thuê bao nhận (đầy bộ nhớ tin nhắn, chặn tin,...)
+-Do nhập sai số thuê bao nhận tin nhắn khi thực hiện giao dịch
+-Do lỗi hệ thống",Thành công- Đã trừ tiền,Trường hợp này Anh/chị truy cập ứng dụng ViettelPay Pro/chọn mục “lịch sử”/tìm giao dịch đã thực hiện/chọn “Gửi lại mã thẻ” để gửi lại mã thẻ cào cho KH. Chi tiết xem hướng dẫn cấp lại mã thẻ cào tại đường link sau: https://youtu.be/gDCvqYJoRxs
+27,0,Giao dịch mua thẻ Game thành công trên ứng dụng ViettelPay Pro nhưng thuê bao nhận không nhận được tin nhắn mã thẻ Game,Mua thẻ Game,"-Do lỗi thiết bị đầu cuối của thuê bao nhận (đầy bộ nhớ tin nhắn, chặn tin,...)
+-Do nhập sai số thuê bao nhận tin nhắn khi thực hiện giao dịch
+-Do lỗi hệ thống.",Thành công- Đã trừ tiền,Trường hợp này Anh/chị truy cập ứng dụng ViettelPay Pro/chọn mục “lịch sử”/tìm giao dịch đã thực hiện/chọn “Gửi lại mã thẻ” để gửi lại mã thẻ cào cho KH. Chi tiết xem hướng dẫn cấp lại mã thẻ cào tại đường link sau: https://youtu.be/gDCvqYJoRxs
+28,0,Mã thẻ không hợp lệ hoặc đã sử dụng,"Mua thẻ cào, thẻ Game","-Do thao tác nạp thẻ sai cú pháp
+-Do thẻ đã được sử dụng
+-Do lỗi hệ thống",Thành công- Đã trừ tiền,"-Trường hợp này do: Mã thẻ không hợp lệ hoặc đã qua sử dụng.
+- Giải pháp:
+1. Thao tác nạp mã thẻ Game, thẻ cào viễn thông đã đúng cú pháp theo quy định của từng dịch vụ/nhà mạng.
+2. Kiểm tra mã thẻ chắc chắn chưa được nạp?
+3. Nếu đã chắc chắn không phải lỗi do khách hàng thao tác thanh toán. Anh/chị gửi yêu cầu hỗ trợ ngay trên ứng dụng ViettelPay Pro nhé!"
+29,0,Kênh muốn hủy giao dịch thanh toán cước Viettel trên ứng dụng ViettelPay Pro do thanh toán nhầm,Thanh toán cước Viettel,"Hủy giao dịch do thanh toán nhầm (sai số tiền, sai thuê bao nhận)",Thành công- Đã trừ tiền,"Tham khảo hướng dẫn hủy giao dịch thanh toán cước Viettel trên ứng dụng ViettelPay Pro tại đường link sau: https://youtu.be/fKIHakqxCtM
+*Lưu ý: Chỉ được phép hủy giao dịch thanh toán cước Viettel trong điều kiện cho phép."
+30,0,"Phe duyet huy THAT BAI boi ma kenh [MYNL_DB_VTP_HNM], ma giao dich huy [240926622762459]. Nguyen nhan: [Huy giao dich nap tien tra truoc that bai do khong thoa man dieu kien huy: khong du so du tai khoan vien thong, khong du ngay, qua so ngay giao dich, qua so giao dich duoc huy...",Thanh toán cước Viettel,Do không thỏa điều kiện hủy giao dịch thanh toán cước Viettel,Thành công- Đã trừ tiền,"- Trường hợp này do: Giao dịch hủy thất bại do không thỏa điều kiện hủy được quy định tại quy trình QT.VDS.ĐH.03 như:
+1. Không đủ số dư, không đủ ngày sử dụng (đối với thuê bao trả trước)
+2. Vượt quá hạn mức hủy, số lượng giao dịch được phép hủy, số ngày giao dịch được phép hủy, v.v
+-Hướng xử lý: Anh/chị kiểm tra lại điều kiện hủy giao dịch. Tham khảo hướng dẫn hủy và quy định hủy giao dịch thanh toán cước Viettel tại đây: https://youtu.be/fKIHakqxCtM"
+31,0,Đã hủy giao dịch thanh toán cước Viettel thành công nhưng Kênh chưa được hoàn tiền?,Thanh toán cước Viettel,Do người dùng hoặc do lỗi hệ thống,Thành công- Đã bị trừ tiền,"Anh/chị thực hiện một số thao tác  sau để xác định nguyên nhân đã hủy giao dịch thành công nhưng chưa hoàn tiền nhé:
+1. Vào mục “Lịch sử” để kiểm tra trạng thái hủy giao dịch.
+2. Nếu đã hủy thành công, kiểm tra nguồn tiền thanh toán:
+- Nếu giao dịch lập từ nguồn tiền bankplus BCCS: Anh/chị truy cập vào mục “Tài khoản” → “Biến động số dư”, chọn thời gian tra cứu để kiểm tra hoàn tiền.
+-Nếu giao dịch lập trừ nguồn tiền ngân hàng liên kết: Anh/chị Kiểm tra SMS biến động số dư hoặc vào app ngân hàng để xem lịch sử giao dịch.
+3. Nếu chưa thấy hoàn tiền sau khi kiểm tra, Anh/chị gửi yêu cầu hỗ trợ trên ứng dụng ViettelPay Pro nhé."
+32,0,"Hủy thanh toán cước đóng trước dịch vụ internet, truyền hình nhưng vào chi tiết không có mục để tích hủy?","Thanh toán cước đóng trước internet, truyền hình Viettel","Do giao dịch thanh toán cước đóng trước ở trạng thái ""chưa thành công"" nên hệ thống không hiển thị icon ""i"" cho phép hủy",Thành công- Đã bị trừ tiền,Hệ thống chỉ hiển thị icon “i” khi giao dịch có trạng thái Thành công. Trong trường hợp giao dịch có kết quả thành công nhưng không có có icon “i” để lập yêu cầu hủy. Anh/chị gửi yêu cầu hỗ trợ ngay trên ứng dụng ViettelPay Pro nhé!
+33,0,"""Từ hh:mm:ss đến hh:mm:ss ngày xx/xx/xxxx hệ thống sẽ tạm dừng dịch vụ để thực hiện chốt dữ liệu tháng. Anh/chị lưu ý thời gian để thực hiện giao dịch. Xin lỗi vì sự bất tiện này!""","Thanh toán cước đóng trước internet, truyền hình Viettel",Hệ thống tạm dừng để chốt dữ liệu cước hàng tháng,Thất bại- Không bị trừ,Câu báo lỗi này do hệ thống tạm dừng để chốt dữ liệu cước hàng tháng. Vì vậy Anh/chị vui lòng thực hiện lại giao dịch sau thời gian tạm dừng.

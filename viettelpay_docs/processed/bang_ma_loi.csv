@@ -1,0 +1,11 @@
+﻿TT,Mã lỗi,Mô tả
+1,0,Giao dịch thành công
+2,604,Giao dịch thất bại sau đối soát
+3,"W02, W04, 32, 605, 650, 99,null","Giao dịch treo, đang xử lý (timeout) chưa xác định kết quả giao dịch thành công hay thất bại"
+4,606,Giao dịch thất bại do hệ thống nâng cấp
+5,974,Giao dịch thất bại 
+6,JK1,Giao dịch có giá trị thanh toán nhỏ hơn hạn mức quy định
+7,624,Giao dịch có giá trị thanh toán lớn hơn hạn mức quy định
+8,472,Giao dịch thanh toán thất bại do thuê bao chuyển mạng giữ số chưa được đồng bộ giữa các nhà mạng
+9,473,Giao dịch thanh toán thất bại  do nhà thuê bao nhà mạng Vina chưa đăng ký dịch vụ EZPAY
+10,BL2,Giao dịch truy vấn nợ cước thuê bao trả sau để thanh toán thất bại do vượt quá số lần truy vấn quy định

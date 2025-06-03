@@ -1,0 +1,60 @@
+﻿TT,Nội dung,Quy định
+1,Phạm vi áp dụng,"Giao dịch thanh toán cước viễn thông Viettel, bao gồm:
+- Nạp tiền điện thoại cho thuê bao trả trước
+- Gạch nợ cho thuê bao trả sau
+- Đóng cước trước dịch vụ cố định Viettel"
+2,Điều kiện hủy giao dịch,"1. Điều kiện chung: 
+ - Khách hàng thụ hưởng đồng ý giảm trừ số tiền trong tài khoản di động, cố định (internet/truyền hình) của thuê bao/account thụ hưởng
+ - Thuê bao/account của khách hàng thụ hưởng ở trạng thái “hoạt động”.
+2. Điều kiện hủy giao dịch cho từng loại hình dịch vụ:
+2.1. Giao dịch nạp tiền điện thoại cho thuê bao trả trước: 
+ -  Tại thời điểm lập hủy giao dịch, thuê bao thụ hưởng cần đảm bảo:
+ + Số tiền trong Tài khản gốc >= số tiền đã nạp nhầm
+ + Số tiền trong Tài khoản khuyến mại >= số tiền được khuyến mại từ giao dịch nạp nhầm
++ Thời gian sử dụng >= số ngày được cộng do thực hiện giao dịch (gói cước có thời gian sử dụng)
+  - Thời gian lập hủy giao dịch: Tối đa trong 10 ngày kể từ ngày phát sinh giao dịch nạp tiền và là 05 giao dịch nạp tiền cuối cùng tính đến thời điểm hủy.
+2.2. Giao dịch gạch nợ cước cho thuê bao trả sau: Chỉ được hủy giao dịch trong tháng gạch nợ (hủy sau thời điểm chốt cước)
+2.3. Giao dịch cước đóng trước dịch vụ cố định Viettel:
+ - Chỉ được phép Hủy giao dịch đã lập cùng một tháng lập. Không được phép hủy giao dịch khác tháng lập giao dịch. (bao gồm cả  lập hủy trên ứng dụng ViettelPay Pro và yêu cầu hủy thủ công từ các bộ phận/đơn vị)
+ - Không được phép Hủy giao dịch trong thời gian chốt cước."
+3,Hạn mức hủy,"– Đối với người lập giao dịch (áp dụng với mỗi tài khoản ViettelPay Pro)
++ Số lượng giao dịch hủy trong 01 ngày: Tối đa 05 giao dịch.
++ Số lượng giao dịch hủy trong tháng: Tối đa 80 giao dịch
++ Số lượng thuê bao/ tài khoản đã nạp tiền, thanh toán cần HỦY:Tối đa 80 thuê bao/tài khoản/01 tháng
++ Tổng giá trị hủy trong 01 tháng: Tối đa 50 triệu đồng.
+– Đối với thuê bao/account viễn thông cần phải hủy giao dịch nạp tiền, thanh toán:
++ Số lượng giao dịch hủy (lần hủy) trong 01 tháng: Tối đa 05 giao dịch.
++ Tổng giá trị hủy trong 01 tháng: Tối đa 10 triệu đồng.
+– Lưu ý: Người lập giao dịch chỉ được phép tự hủy khi đủ điều kiện và nằm trong hạn mức quy định. Nếu hạn mức nào đến trước thì xem như vượt hạn mức và không được phép tự hủy trên ứng dụng ViettelPay Pro."
+4,"Nguyên tắc hủy giao dịch
+gạch nợ (TBTS)","- Nguyên tắc: Hủy giao dịch gạch nợ từ gần đến xa. Giao dịch cần hủy phải là giao dịch cuối cùng.
+-Một số ví dụ minh họa:
++ Ví  dụ 1: Người lập giao dịch có 02 giao dịch gạch nợ cho cùng 1 hợp đồng, trong đó: Giao dịch 1: Gạch nợ ngày 10/01/2025, giao dịch 2: Gạch nợ ngày 12/01/2025.
+→Vậy muốn hủy được giao dịch gạch nợ 01 ngày 10/01/2025 thì phải hủy lần lượt giao dịch gạch nợ 02 trước, sau đó mới hủy được giao dịch gạch nợ 01.
++Ví dụ 2: Người lập giao dịch có gạch nợ 01 giao dịch, sau đó hệ thống có 01 giao dịch điều chỉnh, trong đó: Giao dịch 1: Gạch nợ ngày 10/01/2025, giao dịch 2: Điều chỉnh ngày 12/01/2025.
+→Trường hợp này không hủy được giao dịch gạch nợ 01 do giao dịch cuối cùng không phải là giao dịch gạch nợ."
+5,Hướng dẫn thao tác hủy giao dịch trên ứng dụng ViettelPay Pro,"Người dùng có thể chọn 01 trong 02 hình thức hủy như sau:
+1. Hủy giao dịch có OTP:
+- Bước 1: Vào mục “Lịch sử”, tìm kiếm giao dịch cần hủy → Chọn hình thức hủy “Hủy Giao dịch (Có OTP)” 
+- Bước 2: Hệ thống gửi mã OTP đến số điện thoại của Khách hàng, người lập giao dịch liên hệ Khách hàng để lấy mã.
+- Bước 3: Nhập OTP để hoàn tất hủy. Sau khi hủy thành công hệ thống sẽ điều chỉnh nợ cước trả sau hoặc giảm trừ tiền từ tài khoản trả trước và hoàn tiền cho người lập giao dịch.
+2. Hủy giao dịch không có OTP:
+- Bước 1: Vào mục “Lịch sử”, tìm kiếm giao dịch cần hủy → Chọn hình thức hủy “Hủy Giao dịch (Không OTP)”. Lúc này giao dịch chuyển sang trạng thái “Chờ phê duyệt”.
+-Bước 2: Người dùng liên hệ Nhân viên quản lý để được phê duyệt giao dịch hủy không OTP.
+*Lưu ý đầu mối phê duyệt giao dịch hủy không OTP:
+- Kênh yêu cầu hủy GD là Hộ kinh doanh: Đầu mối phê duyệt là Nhân viên quản lý (NVQL) hoặc cùng đơn vị huyện với kênh yêu cầu hủy giao  dịch.
+-  Kênh yêu cầu hủy GD khác Hộ kinh doanh: Đầu mối phê duyệt phải cùng đơn vị huyện với kênh yêu cầu hủy giao dịch
+-Bước 3: Nhân viên quản lý tiếp nhận yêu cầu phê duyệt, thực hiện kiểm tra  điều kiện hủy, xác  nhận với khách hàng thụ hưởng đồng ý hủy và phê duyệt giao dịch.
+Tham khảo video hướng dẫn lập hủy giao dịch:
+1.Hướng dẫn hủy giao dịch thanh toán cước Viettel: Xem chi tiết hướng dẫn tại đường link sau: https://youtu.be/fKIHakqxCtM
+2.Hướng dẫn hủy giao dịch đóng trước cước dịch vụ cố định Viettel (internet, truyền hình): Xem chi tiết hướng dẫn tại đường link sau: https://youtu.be/gJJaRadOUOo"
+6,Hướng dẫn yêu cầu hủy giao dịch do vượt hạn mức được phép hủy trên ứng dụng ViettelPay Pro,"1.Phạm vi áp dụng: Giao dịch thanh toán cước viễn thông Viettel (không bao gồm giao dịch mua thẻ cào, thanh toán cước đóng trước dịch vụ cố định Viettel, thanh toán cước ngọai mạng)
+2.Hướng dẫn:
+Để yêu cầu hủy do đã vượt ngoài hạn mức quy định, Người lập giao dịch cần liên hệ Nhân viên quản lý hoặc Cửa hàng trực tiếp Viettel để được hỗ trợ. Cụ thể quy định:
+- Thời gian liên hệ yêu cầu hỗ trợ: Cần liên hệ và yêu cầu sớm trong tháng phát sinh giao dịch thanh toán cước viễn thông thành công.
+- Một số biểu mẫu yêu cầu khi yêu cầu hủy giao dịch, cụ thể bao gồm:
++ BM01 - Phieu de nghi ho tro
++ BM02 - Bien ban lam viec
++ BM03 - Cong van trinh ky BGD chi nhanh
+Form biểu mẫu xem tại đây:
+https://drive.google.com/drive/folders/1BrB7OmhOx6wdX7DQP_lcO53Pd7_Vvllm?usp=sharing"
