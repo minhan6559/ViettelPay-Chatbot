@@ -2,6 +2,7 @@
 pandas
 python-docx
 langchain-chroma
+langchain_cohere
 langchain
 langgraph
 langchain_community
@@ -28,3 +29,4 @@ aioredis
 langgraph-checkpoint-redis
 langmem
 dotenv
+python-docx

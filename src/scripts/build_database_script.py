@@ -1,14 +1,14 @@
 """
 ViettelPay Knowledge Base Management Script
 
-This script uses LangChain's built-in components:
-- Same content for both ChromaDB and BM25
-- EnsembleRetriever for fusion
-- Pickle persistence for BM25
-- Simple output format
+This script uses the new ContextualWordProcessor with:
+- Automated processing of Word documents (.doc/.docx) from a folder
+- Contextual enhancement using OpenAI API (optional)
+- LangChain EnsembleRetriever for hybrid search
+- ChromaDB for semantic search and BM25 for keyword search
 
 Usage:
-    python build_database_script.py ingest --data-dir ./viettelpay_docs/processed
+    python build_database_script.py ingest --documents-folder ./viettelpay_docs
     python build_database_script.py test --query "lỗi 606"
     python build_database_script.py test --interactive
 """
@@ -25,40 +25,33 @@ sys.path.insert(0, str(project_root))
 
 from src.knowledge_base.viettel_knowledge_base import ViettelKnowledgeBase
 
+from dotenv import load_dotenv
 
-def setup_file_paths(data_dir: str = "./viettelpay_docs/processed") -> dict:
-    """Setup file paths for knowledge base construction"""
-
-    file_paths = {
-        "definitions": os.path.join(data_dir, "dinh_nghia.csv"),
-        "error_handling": os.path.join(data_dir, "huong_dan_xu_ly_loi.csv"),
-        "payment_guide": os.path.join(data_dir, "huong_dan_thanh_toan.csv"),
-        "error_codes": os.path.join(data_dir, "bang_ma_loi.csv"),
-        "cancellation_rules": os.path.join(data_dir, "quy_dinh_huy_giao_dich.csv"),
-        "denominations": os.path.join(data_dir, "menh_gia.csv"),
-        "word_document": os.path.join(
-            data_dir, "nghiep_vu_thanh_toan_cuoc_vien_thong.docx"
-        ),
-    }
-
-    return file_paths
+# Load environment variables from .env file
+load_dotenv()
 
 
-def validate_data_files(file_paths: dict) -> bool:
-    """Validate that required data files exist"""
+def validate_documents_folder(documents_folder: str) -> bool:
+    """Validate that documents folder exists and contains Word documents"""
 
-    missing_files = []
-    for file_type, file_path in file_paths.items():
-        if not os.path.exists(file_path):
-            missing_files.append(f"{file_type}: {file_path}")
-
-    if missing_files:
-        print("[ERROR] Missing required data files:")
-        for missing in missing_files:
-            print(f"   - {missing}")
+    if not os.path.exists(documents_folder):
+        print(f"[ERROR] Documents folder not found: {documents_folder}")
         return False
 
-    print("[SUCCESS] All required data files found")
+    # Check for Word documents
+    folder = Path(documents_folder)
+    word_files = []
+    for pattern in ["*.doc", "*.docx"]:
+        word_files.extend(folder.glob(pattern))
+
+    if not word_files:
+        print(f"[ERROR] No Word documents (.doc/.docx) found in: {documents_folder}")
+        return False
+
+    print(f"[SUCCESS] Found {len(word_files)} Word documents in {documents_folder}")
+    for word_file in word_files:
+        print(f"   - {word_file.name}")
+
     return True
 
 
@@ -69,23 +62,28 @@ def ingest_documents(args):
     print("[INFO] INGESTING DOCUMENTS AND BUILDING KNOWLEDGE BASE")
     print("=" * 60)
 
-    # Setup file paths
-    file_paths = setup_file_paths(args.data_dir)
-
-    # Validate files exist
-    if not validate_data_files(file_paths):
+    # Validate documents folder exists and contains Word documents
+    if not validate_documents_folder(args.documents_folder):
         sys.exit(1)
 
-    # Build knowledge base
-    kb = ViettelKnowledgeBase(embedding_model=args.embedding_model)
+    # Build knowledge base with OpenAI API key support
+    openai_api_key = os.getenv("OPENAI_API_KEY")
+    if openai_api_key:
+        print("[INFO] Using OpenAI API key for contextual enhancement")
+    else:
+        print("[WARNING] No OpenAI API key found. Contextual enhancement disabled.")
+
+    kb = ViettelKnowledgeBase(
+        embedding_model=args.embedding_model, openai_api_key=openai_api_key
+    )
 
     try:
         # Create persist directory from chroma_dir
         persist_dir = os.path.dirname(args.chroma_dir) or "./knowledge_base"
 
-        # Build knowledge base
-        ensemble_retriever = kb.build_knowledge_base(
-            file_paths=file_paths,
+        # Build knowledge base using the new API
+        kb.build_knowledge_base(
+            documents_folder=args.documents_folder,
             persist_dir=persist_dir,
             reset=args.reset,
         )
@@ -122,9 +120,9 @@ def test_retrieval(args):
     persist_dir = os.path.dirname(args.chroma_dir) or "./knowledge_base"
 
     # Load knowledge base
-    ensemble_retriever = kb.load_knowledge_base(persist_dir=persist_dir)
+    success = kb.load_knowledge_base(persist_dir=persist_dir)
 
-    if not ensemble_retriever:
+    if not success:
         print("[ERROR] Failed to load knowledge base. Run 'ingest' first.")
         sys.exit(1)
 
@@ -153,20 +151,9 @@ def test_single_query(kb, query: str):
 
     try:
         # Test main search
-        print("\n[INFO] Main Search Results:")
-        results = kb.search(query, k=5)
+        print("\n[INFO] Search Results:")
+        results = kb.search(query, top_k=10)
         display_simple_results(results)
-
-        # Test specialized searches if applicable
-        if any(err in query.lower() for err in ["lỗi", "error", "mã"]):
-            print("\n[INFO] Error Code Search:")
-            error_results = kb.search_by_error_code(query.split()[-1], k=3)
-            display_simple_results(error_results)
-
-        if any(proc in query.lower() for proc in ["hướng dẫn", "guide", "bước"]):
-            print("\n[INFO] Procedure Search:")
-            proc_results = kb.search_procedures(query, k=3)
-            display_simple_results(proc_results)
 
     except Exception as e:
         print(f"[ERROR] Error during search: {e}")
@@ -177,11 +164,14 @@ def display_simple_results(results):
 
     if results:
         for i, doc in enumerate(results, 1):
-            content_preview = doc.page_content[:150].replace("\n", " ")
+            content_preview = doc.page_content[:1000].replace("\n", " ")
             doc_type = doc.metadata.get("doc_type", "unknown")
             source = doc.metadata.get("source_file", "unknown")
+            relevance_score = doc.metadata.get("relevance_score", "N/A")
 
-            print(f"  {i}. [{doc_type}] {content_preview}...")
+            print(
+                f"  {i}. [{doc_type}] Score: {relevance_score} - {content_preview}..."
+            )
             print(f"     Source: {source}")
     else:
         print("  No results found")
@@ -193,8 +183,6 @@ def run_interactive_tests(kb):
     print("\n[INFO] Interactive Testing Mode")
     print("Available commands:")
     print("  - Enter a query to search")
-    print("  - 'error <code>' for error code search")
-    print("  - 'procedure <query>' for procedure search")
     print("  - 'stats' to view knowledge base statistics")
     print("  - 'quit' to exit")
     print("-" * 50)
@@ -217,25 +205,9 @@ def run_interactive_tests(kb):
                     print(f"  {key}: {value}")
                 continue
 
-            # Handle 'error <code>' command
-            if user_input.lower().startswith("error "):
-                error_code = user_input.split()[1]
-                print(f"\n[INFO] Error Code Search: '{error_code}'")
-                results = kb.search_by_error_code(error_code, k=5)
-                display_simple_results(results)
-                continue
-
-            # Handle 'procedure <query>' command
-            if user_input.lower().startswith("procedure "):
-                proc_query = user_input[10:].strip()
-                print(f"\n[INFO] Procedure Search: '{proc_query}'")
-                results = kb.search_procedures(proc_query, k=5)
-                display_simple_results(results)
-                continue
-
             # Regular query
             print(f"\n[INFO] Search: '{user_input}'")
-            results = kb.search(user_input, k=5)
+            results = kb.search(user_input, top_k=10)
             display_simple_results(results)
 
         except KeyboardInterrupt:
@@ -286,27 +258,10 @@ def run_test_suite(kb):
         print("-" * 30)
 
         try:
-            results = kb.search(test_case["query"], k=3)
+            results = kb.search(test_case["query"], top_k=3)
             display_simple_results(results)
         except Exception as e:
             print(f"[ERROR] Error: {e}")
-
-    # Test specialized methods
-    print("\n[INFO] Testing Specialized Methods:")
-    print("-" * 30)
-
-    try:
-        error_results = kb.search_by_error_code("606", k=2)
-        print(f"[SUCCESS] Error code search: {len(error_results)} results")
-
-        procedure_results = kb.search_procedures("nạp tiền", k=2)
-        print(f"[SUCCESS] Procedure search: {len(procedure_results)} results")
-
-        definition_results = kb.search_definitions("người lập giao dịch", k=2)
-        print(f"[SUCCESS] Definition search: {len(definition_results)} results")
-
-    except Exception as e:
-        print(f"[ERROR] Error testing specialized methods: {e}")
 
 
 def main():
@@ -317,9 +272,12 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python build_database_script.py ingest --data-dir ./viettelpay_docs/processed
+  python build_database_script.py ingest --documents-folder ./viettelpay_docs
   python build_database_script.py test --query "lỗi 606"
   python build_database_script.py test --interactive
+  
+Environment Variables:
+  OPENAI_API_KEY: Optional API key for contextual enhancement
         """,
     )
 
@@ -331,9 +289,9 @@ Examples:
         "ingest", help="Ingest documents and build knowledge base"
     )
     ingest_parser.add_argument(
-        "--data-dir",
-        default="./viettelpay_docs/processed",
-        help="Directory containing data files",
+        "--documents-folder",
+        default="./viettelpay_docs/raw",
+        help="Directory containing Word documents (.doc/.docx files)",
     )
     ingest_parser.add_argument(
         "--chroma-dir",

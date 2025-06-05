@@ -1,24 +1,25 @@
 """
-ViettelPay Knowledge Base using LangChain components
+ViettelPay Knowledge Base with Contextual Retrieval
 
-This version uses:
-- LangChain Documents throughout the pipeline
-- Same content for both ChromaDB and BM25 (no enhanced versions)
-- LangChain's Chroma and BM25Retriever
-- EnsembleRetriever for fusion
-- Pickle for BM25 persistence
-- Vietnamese text preprocessing for BM25
+This updated version:
+- Uses ContextualWordProcessor for all document processing
+- Integrates OpenAI for contextual enhancement
+- Processes all doc/docx files from a parent folder
+- Removes CSV processor dependency
 """
 
 import os
 import pickle
 import torch
-from typing import Dict, List, Optional
+from typing import List, Optional
 from pathlib import Path
+from openai import OpenAI
 
 from langchain.schema import Document
 from langchain.retrievers import EnsembleRetriever
 from langchain_community.retrievers import BM25Retriever
+from langchain_core.runnables import ConfigurableField
+from langchain_cohere.rerank import CohereRerank
 
 # Use newest import paths for langchain
 try:
@@ -32,18 +33,45 @@ try:
 except ImportError:
     from langchain_community.embeddings import HuggingFaceEmbeddings
 
-from src.processor.csv_processor import CSVProcessor
-from src.processor.word_processor import WordDocumentProcessor
+from src.processor.contextual_word_processor import ContextualWordProcessor
 from src.processor.text_utils import VietnameseTextProcessor
+
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 class ViettelKnowledgeBase:
-    """ViettelPay knowledge base using LangChain components"""
+    """ViettelPay knowledge base with contextual retrieval enhancement"""
 
     def __init__(
-        self, embedding_model: str = "dangvantuan/vietnamese-document-embedding"
+        self,
+        embedding_model: str = "dangvantuan/vietnamese-document-embedding",
+        openai_api_key: Optional[str] = None,
     ):
+        """
+        Initialize the knowledge base with contextual enhancement capabilities
+
+        Args:
+            embedding_model: Vietnamese embedding model to use
+            openai_api_key: OpenAI API key for contextual enhancement
+        """
         self.embedding_model = embedding_model
+
+        # Initialize OpenAI client for contextual enhancement
+        if openai_api_key:
+            self.openai_client = OpenAI(api_key=openai_api_key)
+            print(f"[INFO] OpenAI client initialized for contextual enhancement")
+        elif os.getenv("OPENAI_API_KEY"):
+            api_key = os.getenv("OPENAI_API_KEY")
+            self.openai_client = OpenAI(api_key=api_key)
+            print(f"[INFO] OpenAI client initialized from environment variable")
+        else:
+            self.openai_client = None
+            print(
+                f"[WARNING] No OpenAI API key provided. Contextual enhancement disabled."
+            )
 
         # Initialize Vietnamese text processor
         self.text_processor = VietnameseTextProcessor()
@@ -59,26 +87,51 @@ class ViettelKnowledgeBase:
             model_name=embedding_model, model_kwargs=model_kwargs
         )
 
-        self.csv_processor = CSVProcessor()
-        self.word_processor = WordDocumentProcessor()
+        # Initialize the contextual word processor
+        self.word_processor = ContextualWordProcessor(llm_client=self.openai_client)
 
         # Initialize retrievers as None
         self.chroma_retriever = None
         self.bm25_retriever = None
         self.ensemble_retriever = None
 
+        self.reranker = CohereRerank(
+            model="rerank-v3.5",
+            cohere_api_key=os.getenv("COHERE_API_KEY"),
+        )
+
     def build_knowledge_base(
         self,
-        file_paths: Dict[str, str],
+        documents_folder: str,
         persist_dir: str = "./knowledge_base",
         reset: bool = True,
-    ) -> EnsembleRetriever:
-        """Build knowledge base with both retrievers and ensemble"""
+    ) -> None:
+        """
+        Build knowledge base from all Word documents in a folder
 
-        print("[INFO] Building ViettelPay knowledge base...")
+        Args:
+            documents_folder: Path to folder containing doc/docx files
+            persist_dir: Directory to persist the knowledge base
+            reset: Whether to reset existing knowledge base
+
+        Returns:
+            None. Use the search() method to perform searches.
+        """
+
+        print(
+            "[INFO] Building ViettelPay knowledge base with contextual enhancement..."
+        )
+
+        # Find all Word documents in the folder
+        word_files = self._find_word_documents(documents_folder)
+
+        if not word_files:
+            raise ValueError(f"No Word documents found in {documents_folder}")
+
+        print(f"[INFO] Found {len(word_files)} Word documents to process")
 
         # Process all documents
-        all_documents = self._process_all_files(file_paths)
+        all_documents = self._process_all_word_files(word_files)
         print(f"[INFO] Total documents processed: {len(all_documents)}")
 
         # Create directories
@@ -86,32 +139,37 @@ class ViettelKnowledgeBase:
         chroma_dir = os.path.join(persist_dir, "chroma")
         bm25_path = os.path.join(persist_dir, "bm25_retriever.pkl")
 
-        # Build ChromaDB retriever (uses original text)
-        print("[INFO] Building ChromaDB retriever...")
+        # Build ChromaDB retriever (uses contextualized content)
+        print("[INFO] Building ChromaDB retriever with contextualized content...")
         self.chroma_retriever = self._build_chroma_retriever(
             all_documents, chroma_dir, reset
         )
 
-        # Build BM25 retriever (uses Vietnamese tokenizer)
+        # Build BM25 retriever (uses contextualized content with Vietnamese tokenization)
         print("[INFO] Building BM25 retriever with Vietnamese tokenization...")
         self.bm25_retriever = self._build_bm25_retriever(
             all_documents, bm25_path, reset
         )
 
-        # Create ensemble retriever
+        # Create ensemble retriever with configurable top-k
         print("[INFO] Creating ensemble retriever...")
-        self.ensemble_retriever = EnsembleRetriever(
-            retrievers=[self.bm25_retriever, self.chroma_retriever],
-            weights=[0.4, 0.6],  # Slightly favor semantic search
+        self.ensemble_retriever = self._build_retriever(
+            self.bm25_retriever, self.chroma_retriever
         )
 
-        print("[SUCCESS] Knowledge base built successfully!")
-        return self.ensemble_retriever
+        print("[SUCCESS] Contextual knowledge base built successfully!")
+        print("[INFO] Use kb.search(query, top_k) to perform searches.")
 
-    def load_knowledge_base(
-        self, persist_dir: str = "./knowledge_base"
-    ) -> Optional[EnsembleRetriever]:
-        """Load existing knowledge base from disk"""
+    def load_knowledge_base(self, persist_dir: str = "./knowledge_base") -> bool:
+        """
+        Load existing knowledge base from disk
+
+        Args:
+            persist_dir: Directory where the knowledge base is stored
+
+        Returns:
+            bool: True if loaded successfully, False otherwise
+        """
 
         print("[INFO] Loading knowledge base from disk...")
 
@@ -128,7 +186,7 @@ class ViettelKnowledgeBase:
                 print("[SUCCESS] ChromaDB loaded")
             else:
                 print("[ERROR] ChromaDB not found")
-                return None
+                return False
 
             # Load BM25
             if os.path.exists(bm25_path):
@@ -137,72 +195,70 @@ class ViettelKnowledgeBase:
                 print("[SUCCESS] BM25 retriever loaded")
             else:
                 print("[ERROR] BM25 retriever not found")
-                return None
+                return False
 
-            # Create ensemble retriever
-            self.ensemble_retriever = EnsembleRetriever(
-                retrievers=[self.bm25_retriever, self.chroma_retriever],
-                weights=[0.4, 0.6],
+            # Create ensemble retriever with configurable top-k
+            self.ensemble_retriever = self._build_retriever(
+                self.bm25_retriever, self.chroma_retriever
             )
 
             print("[SUCCESS] Knowledge base loaded successfully!")
-            return self.ensemble_retriever
+            print("[INFO] Use kb.search(query, top_k) to perform searches.")
+            return True
 
         except Exception as e:
             print(f"[ERROR] Error loading knowledge base: {e}")
-            return None
+            return False
 
-    def search(self, query: str, k: int = 5) -> List[Document]:
-        """Main search method using ensemble retriever"""
+    def search(self, query: str, top_k: int = 10) -> List[Document]:
+        """
+        Main search method using ensemble retriever with configurable top-k
+
+        Args:
+            query: Search query
+            top_k: Number of documents to return from each retriever (default: 5)
+
+        Returns:
+            List of retrieved documents
+        """
         if not self.ensemble_retriever:
             raise ValueError(
                 "Knowledge base not loaded. Call build_knowledge_base() or load_knowledge_base() first."
             )
 
-        # Use newer .invoke() method instead of get_relevant_documents()
-        results = self.ensemble_retriever.invoke(query)
-        return results[:k]
+        # Build config based on top_k parameter
+        config = {
+            "configurable": {
+                "bm25_k": top_k * 10,
+                "chroma_search_kwargs": {"k": top_k * 10},
+            }
+        }
 
-    def search_bm25_only(self, query: str, k: int = 5) -> List[Document]:
-        """Search using BM25 only (good for exact matches like error codes)"""
-        if not self.bm25_retriever:
-            raise ValueError("BM25 retriever not loaded.")
+        results = self.ensemble_retriever.invoke(query, config=config)
+        reranked_results = self.reranker.rerank(results, query, top_n=top_k)
 
-        # Use .invoke() instead of get_relevant_documents()
-        results = self.bm25_retriever.invoke(query)
-        return results[:k]
+        final_results = []
+        for rerank_item in reranked_results:
+            # Get the original document using the index
+            original_doc = results[rerank_item["index"]]
 
-    def search_semantic_only(self, query: str, k: int = 5) -> List[Document]:
-        """Search using ChromaDB only (good for semantic queries)"""
-        if not self.chroma_retriever:
-            raise ValueError("ChromaDB retriever not loaded.")
+            # Create a new document with the relevance score added to metadata
+            reranked_doc = Document(
+                page_content=original_doc.page_content,
+                metadata={
+                    **original_doc.metadata,
+                    "relevance_score": rerank_item["relevance_score"],
+                },
+            )
+            final_results.append(reranked_doc)
 
-        # Use .invoke() instead of get_relevant_documents()
-        results = self.chroma_retriever.invoke(query)
-        return results[:k]
-
-    # Specialized search methods
-    def search_by_error_code(self, error_code: str, k: int = 3) -> List[Document]:
-        """Specialized search for error codes"""
-        query = f"lỗi {error_code} error {error_code} mã lỗi {error_code}"
-        return self.search_bm25_only(query, k)
-
-    def search_procedures(self, query: str, k: int = 3) -> List[Document]:
-        """Specialized search for step-by-step procedures"""
-        enhanced_query = f"hướng dẫn {query} guide {query} bước {query}"
-        return self.search(enhanced_query, k)
-
-    def search_definitions(self, term: str, k: int = 2) -> List[Document]:
-        """Specialized search for term definitions"""
-        enhanced_query = f"định nghĩa {term} definition {term} nghĩa là {term}"
-        return self.search(enhanced_query, k)
+        return final_results
 
     def get_stats(self) -> dict:
         """Get statistics about the knowledge base"""
         stats = {}
 
         if self.chroma_retriever:
-            # Try to get count from Chroma vectorstore
             try:
                 vectorstore = self.chroma_retriever.vectorstore
                 collection = vectorstore._collection
@@ -218,53 +274,83 @@ class ViettelKnowledgeBase:
 
         stats["ensemble_available"] = self.ensemble_retriever is not None
         stats["device"] = self.device
+        stats["contextual_enhancement"] = self.openai_client is not None
         stats["vietnamese_tokenizer"] = "Vietnamese BM25 tokenizer (underthesea)"
 
         return stats
 
-    def _process_all_files(self, file_paths: Dict[str, str]) -> List[Document]:
-        """Process all CSV and Word files into unified chunks"""
+    def _find_word_documents(self, folder_path: str) -> List[str]:
+        """
+        Find all Word documents (.doc, .docx) in the given folder
+
+        Args:
+            folder_path: Path to the folder to search
+
+        Returns:
+            List of full paths to Word documents
+        """
+        word_files = []
+        folder = Path(folder_path)
+
+        if not folder.exists():
+            raise FileNotFoundError(f"Folder not found: {folder_path}")
+
+        # Search for Word documents
+        for pattern in ["*.doc", "*.docx"]:
+            word_files.extend(folder.glob(pattern))
+
+        # Convert to string paths and sort for consistent processing order
+        word_files = [str(f) for f in word_files]
+        word_files.sort()
+
+        print(f"[INFO] Found Word documents: {[Path(f).name for f in word_files]}")
+        return word_files
+
+    def _process_all_word_files(self, word_files: List[str]) -> List[Document]:
+        """Process all Word files into unified chunks with contextual enhancement"""
         all_documents = []
 
-        # Define CSV processors mapping
-        csv_processors = {
-            "definitions": self.csv_processor.process_definitions,
-            "error_handling": self.csv_processor.process_error_handling,
-            "payment_guide": self.csv_processor.process_payment_guide,
-            "error_codes": self.csv_processor.process_error_codes,
-            "cancellation_rules": self.csv_processor.process_cancellation_rules,
-            "denominations": self.csv_processor.process_denominations,
-        }
-
-        # Process CSV files
-        for file_type, processor_func in csv_processors.items():
-            if file_type in file_paths and os.path.exists(file_paths[file_type]):
-                try:
-                    chunks = processor_func(file_paths[file_type])
-                    all_documents.extend(chunks)
-                    print(f"[SUCCESS] Processed {file_type}: {len(chunks)} chunks")
-                except Exception as e:
-                    print(f"[ERROR] Error processing {file_type}: {e}")
-
-        # Process Word document
-        if "word_document" in file_paths and os.path.exists(
-            file_paths["word_document"]
-        ):
+        for file_path in word_files:
             try:
-                word_chunks = self.word_processor.process_word_document(
-                    file_paths["word_document"]
+                print(f"[INFO] Processing: {Path(file_path).name}")
+                chunks = self.word_processor.process_word_document(file_path)
+                all_documents.extend(chunks)
+
+                # Print processing stats for this file
+                stats = self.word_processor.get_document_stats(chunks)
+                print(
+                    f"[SUCCESS] Processed {Path(file_path).name}: {len(chunks)} chunks"
                 )
-                all_documents.extend(word_chunks)
-                print(f"[SUCCESS] Processed Word document: {len(word_chunks)} chunks")
+                print(f"  - Contextualized: {stats.get('contextualized_docs', 0)}")
+                print(
+                    f"  - Non-contextualized: {stats.get('non_contextualized_docs', 0)}"
+                )
+
             except Exception as e:
-                print(f"[ERROR] Error processing Word document: {e}")
+                print(f"[ERROR] Error processing {Path(file_path).name}: {e}")
 
         return all_documents
+
+    def _build_retriever(self, bm25_retriever, chroma_retriever):
+        """
+        Build ensemble retriever with configurable top-k parameters
+
+        Args:
+            bm25_retriever: BM25 retriever with configurable fields
+            chroma_retriever: Chroma retriever with configurable fields
+
+        Returns:
+            EnsembleRetriever with configurable retrievers
+        """
+        return EnsembleRetriever(
+            retrievers=[bm25_retriever, chroma_retriever],
+            weights=[0.2, 0.8],  # Slightly favor semantic search
+        )
 
     def _build_chroma_retriever(
         self, documents: List[Document], chroma_dir: str, reset: bool
     ):
-        """Build ChromaDB retriever"""
+        """Build ChromaDB retriever with configurable search parameters"""
 
         if reset and os.path.exists(chroma_dir):
             import shutil
@@ -272,68 +358,85 @@ class ViettelKnowledgeBase:
             shutil.rmtree(chroma_dir)
             print("[INFO] Removed existing ChromaDB for rebuild")
 
-        # Create Chroma vectorstore (uses original text)
+        # Create Chroma vectorstore (uses contextualized content)
         vectorstore = Chroma.from_documents(
             documents=documents, embedding=self.embeddings, persist_directory=chroma_dir
         )
 
-        # Create retriever
-        retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
+        # Create retriever with configurable search_kwargs
+        retriever = vectorstore.as_retriever(
+            search_kwargs={"k": 5}  # default value
+        ).configurable_fields(
+            search_kwargs=ConfigurableField(
+                id="chroma_search_kwargs",
+                name="Chroma Search Kwargs",
+                description="Search kwargs for Chroma DB retriever",
+            )
+        )
 
-        print(f"[SUCCESS] ChromaDB created with {len(documents)} documents")
+        print(
+            f"[SUCCESS] ChromaDB created with {len(documents)} contextualized documents"
+        )
         return retriever
 
     def _build_bm25_retriever(
         self, documents: List[Document], bm25_path: str, reset: bool
     ):
-        """Build BM25 retriever with Vietnamese tokenization and save with pickle"""
+        """Build BM25 retriever with Vietnamese tokenization and configurable k parameter"""
 
         if reset and os.path.exists(bm25_path):
             os.remove(bm25_path)
             print("[INFO] Removed existing BM25 retriever for rebuild")
 
         # Create BM25 retriever with Vietnamese tokenizer as preprocess_func
-        print("[INFO] Using Vietnamese tokenizer for BM25...")
+        print("[INFO] Using Vietnamese tokenizer for BM25 on contextualized content...")
         retriever = BM25Retriever.from_documents(
             documents=documents,
-            preprocess_func=self.text_processor.bm25_tokenizer,  # Use existing tokenizer
+            preprocess_func=self.text_processor.bm25_tokenizer,
+            k=5,  # default value
+        ).configurable_fields(
+            k=ConfigurableField(
+                id="bm25_k",
+                name="BM25 Top K",
+                description="Number of documents to return from BM25",
+            )
         )
-        retriever.k = 5  # Set default k
 
         # Save with pickle
         with open(bm25_path, "wb") as f:
             pickle.dump(retriever, f)
 
         print(
-            f"[SUCCESS] BM25 retriever created and saved with {len(documents)} documents"
+            f"[SUCCESS] BM25 retriever created with {len(documents)} contextualized documents"
         )
-        print(f"[INFO] Vietnamese tokenization applied via preprocess_func")
         return retriever
 
 
-# Legacy name for backward compatibility if needed
-SimplifiedViettelKnowledgeBase = ViettelKnowledgeBase
+def test_contextual_kb(kb: ViettelKnowledgeBase, test_queries: List[str]):
+    """Test function for the contextual knowledge base"""
 
-
-def test_simplified_kb(kb: ViettelKnowledgeBase, test_queries: List[str]):
-    """Simple test function for the knowledge base"""
-
-    print("\n[INFO] Testing Knowledge Base")
-    print("=" * 50)
+    print("\n[INFO] Testing Contextual Knowledge Base")
+    print("=" * 60)
 
     for i, query in enumerate(test_queries, 1):
         print(f"\n#{i} Query: '{query}'")
-        print("-" * 30)
+        print("-" * 40)
 
         try:
-            # Test ensemble search
-            results = kb.search(query, k=3)
+            # Test ensemble search with configurable top-k
+            results = kb.search(query, top_k=3)
 
             if results:
                 for j, doc in enumerate(results, 1):
-                    content_preview = doc.page_content[:100].replace("\n", " ")
+                    content_preview = doc.page_content[:150].replace("\n", " ")
                     doc_type = doc.metadata.get("doc_type", "unknown")
-                    print(f"  {j}. [{doc_type}] {content_preview}...")
+                    has_context = doc.metadata.get("has_context", False)
+                    context_indicator = (
+                        " [CONTEXTUAL]" if has_context else " [ORIGINAL]"
+                    )
+                    print(
+                        f"  {j}. [{doc_type}]{context_indicator} {content_preview}..."
+                    )
             else:
                 print("  No results found")
 
@@ -343,38 +446,57 @@ def test_simplified_kb(kb: ViettelKnowledgeBase, test_queries: List[str]):
 
 # Example usage
 if __name__ == "__main__":
-    # File paths setup
-    data_dir = "./viettelpay_docs/processed"
-    file_paths = {
-        "definitions": os.path.join(data_dir, "dinh_nghia.csv"),
-        "error_handling": os.path.join(data_dir, "huong_dan_xu_ly_loi.csv"),
-        "payment_guide": os.path.join(data_dir, "huong_dan_thanh_toan.csv"),
-        "error_codes": os.path.join(data_dir, "bang_ma_loi.csv"),
-        "cancellation_rules": os.path.join(data_dir, "quy_dinh_huy_giao_dich.csv"),
-        "denominations": os.path.join(data_dir, "menh_gia.csv"),
-        "word_document": os.path.join(
-            data_dir, "nghiep_vu_thanh_toan_cuoc_vien_thong.docx"
-        ),
-    }
-
-    # Initialize knowledge base
-    kb = ViettelKnowledgeBase()
-
-    # Build knowledge base
-    ensemble_retriever = kb.build_knowledge_base(
-        file_paths, "./simplified_kb", reset=True
+    # Initialize knowledge base with OpenAI API key
+    # You can pass the API key directly or set OPENAI_API_KEY environment variable
+    kb = ViettelKnowledgeBase(
+        openai_api_key="your-openai-api-key-here"  # or None to use env variable
     )
 
-    # Test queries
-    test_queries = [
-        "lỗi 606",
-        "không nạp được tiền",
-        "hướng dẫn nạp cước",
-        "quy định hủy giao dịch",
-    ]
+    # Build knowledge base from a folder of Word documents
+    documents_folder = "./viettelpay_docs"  # Folder containing .doc/.docx files
 
-    # Test the knowledge base
-    test_simplified_kb(kb, test_queries)
+    try:
+        # Build knowledge base (or load existing one)
+        kb.build_knowledge_base(documents_folder, "./contextual_kb", reset=True)
 
-    # Show stats
-    print(f"\n[INFO] Knowledge Base Stats: {kb.get_stats()}")
+        # Alternative: Load existing knowledge base
+        # success = kb.load_knowledge_base("./contextual_kb")
+        # if not success:
+        #     print("[ERROR] Failed to load knowledge base")
+
+        # Test queries
+        test_queries = [
+            "lỗi 606",
+            "không nạp được tiền",
+            "hướng dẫn nạp cước",
+            "quy định hủy giao dịch",
+            "mệnh giá thẻ cào",
+        ]
+
+        # Test the knowledge base
+        test_contextual_kb(kb, test_queries)
+
+        # Example of runtime configuration for different top-k values
+        print(f"\n[INFO] Example of runtime configuration:")
+        print("=" * 50)
+
+        # Search with different top-k values
+        sample_query = "lỗi 606"
+
+        # Search with top_k=3
+        results1 = kb.search(sample_query, top_k=3)
+        print(f"Search with top_k=3: {len(results1)} total results")
+
+        # Search with top_k=8
+        results2 = kb.search(sample_query, top_k=8)
+        print(f"Search with top_k=8: {len(results2)} total results")
+
+        # Show stats
+        print(f"\n[INFO] Knowledge Base Stats: {kb.get_stats()}")
+
+    except Exception as e:
+        print(f"[ERROR] Error building knowledge base: {e}")
+        print("[INFO] Make sure you have:")
+        print("  1. Valid OpenAI API key")
+        print("  2. Word documents in the specified folder")
+        print("  3. Required dependencies installed (openai, markitdown, etc.)")
