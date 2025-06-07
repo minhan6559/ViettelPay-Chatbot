@@ -334,7 +334,7 @@ def knowledge_retrieval_node(
             raise ValueError("Knowledge retriever not available")
 
         # Retrieve relevant documents using enhanced query and pre-initialized ViettelKnowledgeBase
-        retrieved_docs = knowledge_retriever.search(enhanced_query, k=5)
+        retrieved_docs = knowledge_retriever.search(enhanced_query, top_k=10)
 
         print(
             f"📚 Retrieved {len(retrieved_docs)} documents for enhanced query: {enhanced_query}"
