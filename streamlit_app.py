@@ -44,11 +44,40 @@ if "conversation_started" not in st.session_state:
 def initialize_agent():
     """Khởi tạo agent ViettelPay với bộ nhớ đệm"""
     try:
+        print("[DEBUG] Starting agent initialization...")
+        st.write("🔍 [DEBUG] Starting agent initialization...")
+
         from src.agent.viettelpay_agent import ViettelPayAgent
 
-        return ViettelPayAgent()
+        print("[DEBUG] ViettelPayAgent imported successfully")
+        st.write("🔍 [DEBUG] ViettelPayAgent imported successfully")
+
+        print("[DEBUG] Creating ViettelPayAgent instance...")
+        st.write("🔍 [DEBUG] Creating ViettelPayAgent instance...")
+        agent = ViettelPayAgent()
+
+        print("[DEBUG] ViettelPayAgent created successfully!")
+        st.write("🔍 [DEBUG] ViettelPayAgent created successfully!")
+        return agent
+
     except Exception as e:
-        st.error(f"❌ Lỗi khởi tạo agent: {str(e)}")
+        error_msg = f"❌ Lỗi khởi tạo agent: {str(e)}"
+        print(f"[ERROR] {error_msg}")
+        print(f"[ERROR] Exception type: {type(e).__name__}")
+        print(f"[ERROR] Exception details: {repr(e)}")
+
+        st.error(error_msg)
+        st.error(f"🔍 [DEBUG] Exception type: {type(e).__name__}")
+        st.error(f"🔍 [DEBUG] Exception details: {repr(e)}")
+
+        # Try to show traceback
+        import traceback
+
+        traceback_str = traceback.format_exc()
+        print(f"[ERROR] Full traceback:\n{traceback_str}")
+        st.error(f"🔍 [DEBUG] Full traceback:")
+        st.code(traceback_str)
+
         return None
 
 
@@ -81,13 +110,31 @@ with st.sidebar:
         # Health check
         if st.button("🏥 Kiểm tra tình trạng"):
             try:
+                print("[DEBUG] Starting health check...")
+                st.write("🔍 [DEBUG] Starting health check...")
+
                 health = st.session_state.agent.health_check()
+                print(f"[DEBUG] Health check results: {health}")
+
                 for component, status in health.items():
                     if component != "overall":
                         icon = "✅" if status else "❌"
                         st.write(f"{icon} {component}")
+                        print(f"[DEBUG] {component}: {status}")
+
             except Exception as e:
-                st.error(f"Kiểm tra tình trạng thất bại: {e}")
+                error_msg = f"Kiểm tra tình trạng thất bại: {e}"
+                print(f"[ERROR] {error_msg}")
+                print(f"[ERROR] Health check exception: {repr(e)}")
+
+                st.error(error_msg)
+                st.error(f"🔍 [DEBUG] Exception: {repr(e)}")
+
+                import traceback
+
+                traceback_str = traceback.format_exc()
+                print(f"[ERROR] Health check traceback:\n{traceback_str}")
+                st.code(traceback_str)
 
     elif st.session_state.agent_initialization_status == "failed":
         st.error("❌ Khởi tạo agent thất bại")
@@ -107,11 +154,16 @@ with st.sidebar:
     # Show conversation stats
     if st.session_state.agent and st.session_state.conversation_started:
         try:
+            print(
+                f"[DEBUG] Getting conversation history for thread: {st.session_state.thread_id}"
+            )
             history = st.session_state.agent.get_conversation_history(
                 st.session_state.thread_id
             )
             st.write(f"**Số tin nhắn:** {len(history)}")
-        except:
+            print(f"[DEBUG] Conversation history length: {len(history)}")
+        except Exception as e:
+            print(f"[DEBUG] Error getting conversation history: {e}")
             st.write("**Số tin nhắn:** Không thể đếm")
 
     # Clear current conversation
@@ -200,16 +252,23 @@ if prompt := st.chat_input("Nhập câu hỏi của bạn..."):
     # Process message
     try:
         with st.spinner("Đang xử lý..."):
+            print(f"[DEBUG] Processing message: {prompt[:100]}...")
+            print(f"[DEBUG] Thread ID: {st.session_state.thread_id}")
+
             # Use the session's thread_id for conversation continuity
 
             # Check the time processing
             start_time = time.time()
+            print("[DEBUG] Calling agent.process_message()...")
+
             result = st.session_state.agent.process_message(
                 prompt, st.session_state.thread_id
             )
+
             end_time = time.time()
             processing_time = end_time - start_time
-            print(f"Thời gian xử lý: {processing_time:.2f} giây")
+            print(f"[DEBUG] Thời gian xử lý: {processing_time:.2f} giây")
+            print(f"[DEBUG] Result keys: {list(result.keys()) if result else 'None'}")
 
             # Add response
             st.session_state.messages.append(
@@ -229,14 +288,28 @@ if prompt := st.chat_input("Nhập câu hỏi của bạn..."):
             )
 
             if result.get("error"):
+                print(f"[DEBUG] Result contains error: {result['error']}")
                 st.session_state.messages.append(
                     {"role": "error", "content": f"Lỗi: {result['error']}"}
                 )
 
     except Exception as e:
-        st.session_state.messages.append(
-            {"role": "error", "content": f"Lỗi hệ thống: {str(e)}"}
-        )
+        error_msg = f"Lỗi hệ thống: {str(e)}"
+        print(f"[ERROR] {error_msg}")
+        print(f"[ERROR] Message processing exception: {repr(e)}")
+
+        # Add detailed error info
+        import traceback
+
+        traceback_str = traceback.format_exc()
+        print(f"[ERROR] Message processing traceback:\n{traceback_str}")
+
+        st.session_state.messages.append({"role": "error", "content": error_msg})
+
+        # Show debug info in UI
+        st.error(f"🔍 [DEBUG] Exception: {repr(e)}")
+        with st.expander("🔍 Debug Details"):
+            st.code(traceback_str)
 
     st.rerun()
 

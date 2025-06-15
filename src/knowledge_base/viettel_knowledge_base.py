@@ -169,29 +169,98 @@ class ViettelKnowledgeBase:
 
         print("[INFO] Loading knowledge base from disk...")
 
+        # Add Streamlit debug output
+        try:
+            import streamlit as st
+
+            st.write("🔍 [KB DEBUG] Starting knowledge base loading...")
+            st.write(f"🔍 [KB DEBUG] Persist directory: {persist_dir}")
+        except:
+            pass  # Streamlit not available or not in Streamlit context
+
         chroma_dir = os.path.join(persist_dir, "chroma")
+
+        try:
+            import streamlit as st
+
+            st.write(f"🔍 [KB DEBUG] ChromaDB directory: {chroma_dir}")
+            st.write(f"🔍 [KB DEBUG] ChromaDB exists: {os.path.exists(chroma_dir)}")
+        except:
+            pass
 
         try:
             # Load ChromaDB
             if os.path.exists(chroma_dir):
+                try:
+                    import streamlit as st
+
+                    st.write("🔍 [KB DEBUG] Loading ChromaDB...")
+                except:
+                    pass
+
                 vectorstore = Chroma(
                     persist_directory=chroma_dir, embedding_function=self.embeddings
                 )
 
                 self.chroma_retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
                 print("[SUCCESS] ChromaDB loaded")
+
+                try:
+                    import streamlit as st
+
+                    st.write("✅ [KB DEBUG] ChromaDB loaded successfully")
+                except:
+                    pass
             else:
                 print("[ERROR] ChromaDB not found")
+                try:
+                    import streamlit as st
+
+                    st.error(f"❌ [KB DEBUG] ChromaDB not found at: {chroma_dir}")
+                except:
+                    pass
                 return False
 
             # Extract all documents from ChromaDB to rebuild BM25
             print("[INFO] Extracting documents from ChromaDB to rebuild BM25...")
+
+            try:
+                import streamlit as st
+
+                st.write("🔍 [KB DEBUG] Extracting documents from ChromaDB...")
+            except:
+                pass
+
             try:
                 # Get all documents and metadata from ChromaDB
+                try:
+                    import streamlit as st
+
+                    st.write("🔍 [KB DEBUG] Calling vectorstore.get()...")
+                except:
+                    pass
+
                 all_docs = vectorstore.get(include=["documents", "metadatas"])
+
+                try:
+                    import streamlit as st
+
+                    st.write(
+                        f"🔍 [KB DEBUG] Retrieved data keys: {list(all_docs.keys())}"
+                    )
+                except:
+                    pass
 
                 documents = all_docs["documents"]
                 metadatas = all_docs["metadatas"]
+
+                try:
+                    import streamlit as st
+
+                    st.write(f"🔍 [KB DEBUG] Number of documents: {len(documents)}")
+                    st.write(f"🔍 [KB DEBUG] Number of metadatas: {len(metadatas)}")
+                except:
+                    pass
 
                 # Reconstruct Document objects
                 doc_objects = []
@@ -205,6 +274,16 @@ class ViettelKnowledgeBase:
 
                 print(f"[INFO] Extracted {len(doc_objects)} documents from ChromaDB")
 
+                try:
+                    import streamlit as st
+
+                    st.write(
+                        f"✅ [KB DEBUG] Extracted {len(doc_objects)} documents from ChromaDB"
+                    )
+                    st.write("🔍 [KB DEBUG] Rebuilding BM25 retriever...")
+                except:
+                    pass
+
                 # Rebuild BM25 retriever using existing method
                 self.bm25_retriever = self._build_bm25_retriever(
                     documents=doc_objects,
@@ -212,21 +291,74 @@ class ViettelKnowledgeBase:
                     reset=False,  # Not relevant for rebuilding
                 )
 
+                try:
+                    import streamlit as st
+
+                    st.write("✅ [KB DEBUG] BM25 retriever rebuilt successfully")
+                except:
+                    pass
+
             except Exception as e:
                 print(f"[ERROR] Error rebuilding BM25 from ChromaDB: {e}")
+
+                try:
+                    import streamlit as st
+
+                    st.error(f"❌ [KB DEBUG] Error rebuilding BM25: {e}")
+                    st.error(f"🔍 [KB DEBUG] Exception type: {type(e).__name__}")
+
+                    import traceback
+
+                    traceback_str = traceback.format_exc()
+                    st.error("🔍 [KB DEBUG] Full traceback:")
+                    st.code(traceback_str)
+                except:
+                    pass
+
                 return False
 
             # Create ensemble retriever with configurable top-k
+            try:
+                import streamlit as st
+
+                st.write("🔍 [KB DEBUG] Creating ensemble retriever...")
+            except:
+                pass
+
             self.ensemble_retriever = self._build_retriever(
                 self.bm25_retriever, self.chroma_retriever
             )
 
             print("[SUCCESS] Knowledge base loaded successfully!")
             print("[INFO] Use kb.search(query, top_k) to perform searches.")
+
+            try:
+                import streamlit as st
+
+                st.write("✅ [KB DEBUG] Ensemble retriever created successfully")
+                st.success("🎉 [KB DEBUG] Knowledge base loaded successfully!")
+            except:
+                pass
+
             return True
 
         except Exception as e:
             print(f"[ERROR] Error loading knowledge base: {e}")
+
+            try:
+                import streamlit as st
+
+                st.error(f"❌ [KB DEBUG] Error loading knowledge base: {e}")
+                st.error(f"🔍 [KB DEBUG] Exception type: {type(e).__name__}")
+
+                import traceback
+
+                traceback_str = traceback.format_exc()
+                st.error("🔍 [KB DEBUG] Full traceback:")
+                st.code(traceback_str)
+            except:
+                pass
+
             return False
 
     def search(self, query: str, top_k: int = 10) -> List[Document]:
@@ -409,22 +541,61 @@ class ViettelKnowledgeBase:
 
         # Create BM25 retriever with Vietnamese tokenizer as preprocess_func
         print("[INFO] Using Vietnamese tokenizer for BM25 on contextualized content...")
-        retriever = BM25Retriever.from_documents(
-            documents=documents,
-            preprocess_func=self.text_processor.bm25_tokenizer,
-            k=5,  # default value
-        ).configurable_fields(
-            k=ConfigurableField(
-                id="bm25_k",
-                name="BM25 Top K",
-                description="Number of documents to return from BM25",
-            )
-        )
 
-        print(
-            f"[SUCCESS] BM25 retriever created with {len(documents)} contextualized documents"
-        )
-        return retriever
+        try:
+            import streamlit as st
+
+            st.write(f"🔍 [KB DEBUG] Building BM25 with {len(documents)} documents")
+            st.write("🔍 [KB DEBUG] Using Vietnamese tokenizer...")
+        except:
+            pass
+
+        try:
+            retriever = BM25Retriever.from_documents(
+                documents=documents,
+                preprocess_func=self.text_processor.bm25_tokenizer,
+                k=5,  # default value
+            ).configurable_fields(
+                k=ConfigurableField(
+                    id="bm25_k",
+                    name="BM25 Top K",
+                    description="Number of documents to return from BM25",
+                )
+            )
+
+            print(
+                f"[SUCCESS] BM25 retriever created with {len(documents)} contextualized documents"
+            )
+
+            try:
+                import streamlit as st
+
+                st.write(
+                    f"✅ [KB DEBUG] BM25 retriever created with {len(documents)} documents"
+                )
+            except:
+                pass
+
+            return retriever
+
+        except Exception as e:
+            print(f"[ERROR] Error creating BM25 retriever: {e}")
+
+            try:
+                import streamlit as st
+
+                st.error(f"❌ [KB DEBUG] Error creating BM25 retriever: {e}")
+                st.error(f"🔍 [KB DEBUG] Exception type: {type(e).__name__}")
+
+                import traceback
+
+                traceback_str = traceback.format_exc()
+                st.error("🔍 [KB DEBUG] BM25 creation traceback:")
+                st.code(traceback_str)
+            except:
+                pass
+
+            raise e
 
 
 def test_contextual_kb(kb: ViettelKnowledgeBase, test_queries: List[str]):
