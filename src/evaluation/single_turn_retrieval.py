@@ -775,10 +775,10 @@ def main():
     args = parser.parse_args()
 
     # Configuration
-    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+    GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-    if not GEMINI_API_KEY:
-        print("❌ Please set GEMINI_API_KEY environment variable")
+    if not GOOGLE_API_KEY:
+        print("❌ Please set GOOGLE_API_KEY environment variable")
         return
 
     try:
@@ -794,7 +794,7 @@ def main():
         # Create dataset if requested
         if args.mode in ["create", "both"]:
             print(f"\n🎯 Creating synthetic evaluation dataset...")
-            creator = SingleTurnDatasetCreator(GEMINI_API_KEY, kb)
+            creator = SingleTurnDatasetCreator(GOOGLE_API_KEY, kb)
 
             dataset = creator.create_complete_dataset(
                 questions_per_chunk=args.questions_per_chunk,
@@ -812,7 +812,7 @@ def main():
                     print(f"❌ Dataset file not found: {args.dataset_path}")
                     return
 
-                creator = SingleTurnDatasetCreator(GEMINI_API_KEY, kb)
+                creator = SingleTurnDatasetCreator(GOOGLE_API_KEY, kb)
                 dataset = creator.load_dataset(args.dataset_path)
 
             # Run evaluation

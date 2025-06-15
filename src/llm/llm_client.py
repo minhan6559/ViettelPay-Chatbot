@@ -8,7 +8,7 @@ from typing import Dict, Any, Optional
 import os
 
 # Import configuration utility
-from src.utils.config import get_gemini_api_key, get_openai_api_key
+from src.utils.config import get_google_api_key, get_openai_api_key
 
 
 class BaseLLMClient(ABC):
@@ -32,7 +32,7 @@ class GeminiClient(BaseLLMClient):
     """Google Gemini client implementation"""
 
     def __init__(self, api_key: Optional[str] = None, model: str = "gemini-2.0-flash"):
-        self.api_key = api_key or get_gemini_api_key()
+        self.api_key = api_key or get_google_api_key()
         self.model = model
 
         if not self.api_key:

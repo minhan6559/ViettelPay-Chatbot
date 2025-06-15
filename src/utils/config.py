@@ -27,7 +27,8 @@ def get_secret(
 
         if hasattr(st, "secrets") and section in st.secrets:
             return st.secrets[section].get(key, default)
-    except (ImportError, AttributeError, KeyError):
+    except Exception as e:
+        print(e)
         pass
 
     # Fallback to environment variables
@@ -54,7 +55,8 @@ def get_config(
 
         if hasattr(st, "secrets") and section in st.secrets:
             return st.secrets[section].get(key, default)
-    except (ImportError, AttributeError, KeyError):
+    except Exception as e:
+        print(e)
         pass
 
     # Fallback to environment variables
@@ -81,7 +83,8 @@ def get_path(
 
         if hasattr(st, "secrets") and section in st.secrets:
             return st.secrets[section].get(key, default)
-    except (ImportError, AttributeError, KeyError):
+    except Exception as e:
+        print(e)
         pass
 
     # Fallback to environment variables
@@ -104,9 +107,9 @@ def is_streamlit_environment() -> bool:
 
 
 # Common API keys
-def get_gemini_api_key() -> Optional[str]:
-    """Get Gemini API key from secrets or environment"""
-    return get_secret("GEMINI_API_KEY")
+def get_google_api_key() -> Optional[str]:
+    """Get Google API key from secrets or environment"""
+    return get_secret("GOOGLE_API_KEY")
 
 
 def get_openai_api_key() -> Optional[str]:

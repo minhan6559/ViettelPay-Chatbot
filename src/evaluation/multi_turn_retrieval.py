@@ -727,10 +727,10 @@ def main():
     args = parser.parse_args()
 
     # Configuration
-    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+    GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-    if not GEMINI_API_KEY:
-        print("❌ Please set GEMINI_API_KEY environment variable")
+    if not GOOGLE_API_KEY:
+        print("❌ Please set GOOGLE_API_KEY environment variable")
         return
 
     try:
@@ -746,7 +746,7 @@ def main():
         # Step 1: Create multi-turn conversations if requested
         if args.mode in ["create", "full"]:
             print(f"\n🎯 Creating multi-turn conversation dataset...")
-            creator = MultiTurnDatasetCreator(GEMINI_API_KEY, kb)
+            creator = MultiTurnDatasetCreator(GOOGLE_API_KEY, kb)
 
             conversations_dataset = creator.create_multi_turn_dataset(
                 conversations_per_chunk=args.conversations_per_chunk,
@@ -769,7 +769,7 @@ def main():
                     conversations_dataset = json.load(f)
 
             # Enhance conversations
-            enhancer = ConversationEnhancer(GEMINI_API_KEY)
+            enhancer = ConversationEnhancer(GOOGLE_API_KEY)
             enhanced_dataset = enhancer.convert_dataset_to_single_turn_format(
                 conversations_dataset, args.enhanced_dataset
             )
