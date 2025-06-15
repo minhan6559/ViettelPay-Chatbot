@@ -158,7 +158,7 @@ class ViettelKnowledgeBase:
 
     def load_knowledge_base(self, persist_dir: str = "./knowledge_base") -> bool:
         """
-        Load existing knowledge base from disk
+        Load existing knowledge base from disk and rebuild BM25 from ChromaDB documents
 
         Args:
             persist_dir: Directory where the knowledge base is stored
@@ -170,7 +170,6 @@ class ViettelKnowledgeBase:
         print("[INFO] Loading knowledge base from disk...")
 
         chroma_dir = os.path.join(persist_dir, "chroma")
-        bm25_path = os.path.join(persist_dir, "bm25_retriever.pkl")
 
         try:
             # Load ChromaDB
@@ -185,13 +184,36 @@ class ViettelKnowledgeBase:
                 print("[ERROR] ChromaDB not found")
                 return False
 
-            # Load BM25
-            if os.path.exists(bm25_path):
-                with open(bm25_path, "rb") as f:
-                    self.bm25_retriever = pickle.load(f)
-                print("[SUCCESS] BM25 retriever loaded")
-            else:
-                print("[ERROR] BM25 retriever not found")
+            # Extract all documents from ChromaDB to rebuild BM25
+            print("[INFO] Extracting documents from ChromaDB to rebuild BM25...")
+            try:
+                # Get all documents and metadata from ChromaDB
+                all_docs = vectorstore.get(include=["documents", "metadatas"])
+
+                documents = all_docs["documents"]
+                metadatas = all_docs["metadatas"]
+
+                # Reconstruct Document objects
+                doc_objects = []
+                for i, (doc_content, metadata) in enumerate(zip(documents, metadatas)):
+                    # Handle case where metadata might be None
+                    if metadata is None:
+                        metadata = {}
+
+                    doc_obj = Document(page_content=doc_content, metadata=metadata)
+                    doc_objects.append(doc_obj)
+
+                print(f"[INFO] Extracted {len(doc_objects)} documents from ChromaDB")
+
+                # Rebuild BM25 retriever using existing method
+                self.bm25_retriever = self._build_bm25_retriever(
+                    documents=doc_objects,
+                    bm25_path=None,  # Not used anymore
+                    reset=False,  # Not relevant for rebuilding
+                )
+
+            except Exception as e:
+                print(f"[ERROR] Error rebuilding BM25 from ChromaDB: {e}")
                 return False
 
             # Create ensemble retriever with configurable top-k
@@ -382,9 +404,8 @@ class ViettelKnowledgeBase:
     ):
         """Build BM25 retriever with Vietnamese tokenization and configurable k parameter"""
 
-        if reset and os.path.exists(bm25_path):
-            os.remove(bm25_path)
-            print("[INFO] Removed existing BM25 retriever for rebuild")
+        # Note: We no longer save BM25 to pickle file to avoid Streamlit Cloud compatibility issues
+        # BM25 will be rebuilt from ChromaDB documents when loading the knowledge base
 
         # Create BM25 retriever with Vietnamese tokenizer as preprocess_func
         print("[INFO] Using Vietnamese tokenizer for BM25 on contextualized content...")
@@ -399,10 +420,6 @@ class ViettelKnowledgeBase:
                 description="Number of documents to return from BM25",
             )
         )
-
-        # Save with pickle
-        with open(bm25_path, "wb") as f:
-            pickle.dump(retriever, f)
 
         print(
             f"[SUCCESS] BM25 retriever created with {len(documents)} contextualized documents"

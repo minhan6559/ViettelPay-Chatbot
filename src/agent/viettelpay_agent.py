@@ -328,7 +328,7 @@ class ViettelPayAgent:
             # Test knowledge base (using pre-initialized retriever)
             if self.knowledge_base:
                 # Test a simple search to verify it's working
-                test_docs = self.knowledge_base.search("test", k=1)
+                test_docs = self.knowledge_base.search("test", top_k=1)
                 health_status["knowledge_base"] = True
                 print("✅ Knowledge retriever working")
             else:
