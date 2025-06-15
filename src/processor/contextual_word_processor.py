@@ -17,20 +17,57 @@ from docx.text.paragraph import Paragraph
 from langchain.schema import Document
 from markitdown import MarkItDown
 
+# Import LLM client factory and configuration
+from src.llm.llm_client import LLMClientFactory, BaseLLMClient
+from src.utils.config import get_google_api_key
+
 
 class ContextualWordProcessor:
     """
     Contextual processor for Word documents using LLM enhancement
     """
 
-    def __init__(self, llm_client=None):
+    def __init__(
+        self, llm_client=None, llm_provider: str = "gemini", api_key: str = None
+    ):
         """
         Initialize the processor with an LLM client for contextual enhancement
 
         Args:
-            llm_client: OpenAI client instance for generating context
+            llm_client: Pre-initialized LLM client instance (optional)
+            llm_provider: LLM provider to use ("gemini" or "openai")
+            api_key: API key for the LLM provider (optional, will use config if not provided)
         """
-        self.llm_client = llm_client
+        if llm_client:
+            self.llm_client = llm_client
+        else:
+            # Initialize LLM client using factory
+            try:
+                if llm_provider == "gemini":
+                    api_key = api_key or get_google_api_key()
+                    self.llm_client = LLMClientFactory.create_client(
+                        "gemini", api_key=api_key, model="gemini-2.0-flash"
+                    )
+                    print(
+                        "✅ ContextualWordProcessor initialized with Gemini 2.0 Flash"
+                    )
+                elif llm_provider == "openai":
+                    from src.utils.config import get_openai_api_key
+
+                    api_key = api_key or get_openai_api_key()
+                    self.llm_client = LLMClientFactory.create_client(
+                        "openai", api_key=api_key, model="gpt-4o-mini"
+                    )
+                    print(
+                        "✅ ContextualWordProcessor initialized with OpenAI GPT-4o-mini"
+                    )
+                else:
+                    raise ValueError(f"Unsupported LLM provider: {llm_provider}")
+            except Exception as e:
+                print(f"⚠️ Failed to initialize LLM client: {e}")
+                print("   Context generation will be disabled")
+                self.llm_client = None
+
         self.md_converter = MarkItDown()
         self.current_section_hierarchy = []
         self.section_counter = 0
@@ -164,16 +201,15 @@ Hãy cung cấp ngữ cảnh và tóm tắt ngắn gọn để giúp định v�
                 WHOLE_DOCUMENT=whole_document, CHUNK_CONTENT=chunk_content
             )
 
-            # Call OpenAI API
-            response = self.llm_client.chat.completions.create(
-                model="gpt-4o-mini",  # Cost-effective model for context generation
-                messages=[{"role": "user", "content": prompt}],
-                max_tokens=200,
+            # Call LLM API using the generic client interface
+            context = self.llm_client.generate(
+                prompt,
+                max_output_tokens=200,  # For Gemini
+                max_tokens=200,  # For OpenAI (will be ignored by Gemini)
                 temperature=0.1,  # Low temperature for consistent context generation
             )
 
-            context = response.choices[0].message.content.strip()
-            return context
+            return context.strip() if context else ""
 
         except Exception as e:
             print(f"[WARNING] Failed to generate context: {e}")
@@ -395,8 +431,8 @@ Hãy cung cấp ngữ cảnh và tóm tắt ngắn gọn để giúp định v�
 
 # Example usage and testing
 if __name__ == "__main__":
-    # Test the processor (would need OpenAI client in practice)
-    processor = ContextualWordProcessor()
+    # Test the processor with Gemini 2.0 Flash (default)
+    processor = ContextualWordProcessor(llm_provider="gemini")
 
     # Example file path (adjust as needed)
     test_file = "viettelpay_docs/raw/Nghiệp vụ.docx"

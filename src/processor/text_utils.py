@@ -14,15 +14,6 @@ class VietnameseTextProcessor:
     """Vietnamese text processing utilities for ViettelPay knowledge base"""
 
     def __init__(self):
-        # Keywords by document type
-        self.keyword_mappings = {
-            "error": "lỗi, error code, mã lỗi, sự cố, problem, thất bại, failed, hệ thống, system, maintenance, bảo trì, nâng cấp, upgrade",
-            "procedure": "hướng dẫn, guide, instruction, bước, step, quy trình, process, nạp cước, topup, recharge, mua, buy, purchase, chọn, select, bấm, click",
-            "definition": "định nghĩa, definition, nghĩa là, meaning, khái niệm, concept, giải thích, explain",
-            "policy": "quy định, policy, rule, chính sách, regulation, hủy, cancel, phí, fee, chiết khấu, discount",
-            "reference": "bảng, table, danh sách, list, thông tin, information, chi tiết, detail",
-        }
-
         # Vietnamese stop words
         self.vietnamese_stop_words = self._load_vietnamese_stop_words()
 
@@ -286,23 +277,6 @@ class VietnameseTextProcessor:
         ]
 
         return tokens
-
-    def enhance_for_bm25(
-        self,
-        content: str,
-        doc_type: str,
-        additional_keywords: str = "",
-    ) -> str:
-        """Enhanced content processing for BM25 with Vietnamese preprocessing"""
-        # Only use document-type specific keywords (no generic base keywords)
-        type_specific_keywords = self.keyword_mappings.get(doc_type, "")
-
-        enhanced_content = f"""
-        {type_specific_keywords} {additional_keywords}
-        {content}
-        """
-
-        return self.normalize_text_for_bm25(enhanced_content)
 
     def extract_error_code_variations(self, error_code: str) -> str:
         """Generate variations of error codes for better BM25 matching"""

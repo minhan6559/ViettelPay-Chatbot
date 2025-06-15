@@ -823,10 +823,10 @@ def main():
     args = parser.parse_args()
 
     # Configuration
-    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+    GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-    if not GEMINI_API_KEY:
-        print("❌ Please set GEMINI_API_KEY environment variable")
+    if not GOOGLE_API_KEY:
+        print("❌ Please set GOOGLE_API_KEY environment variable")
         return
 
     try:
@@ -845,7 +845,7 @@ def main():
         # Step 1: Create dataset if requested
         if args.mode in ["create", "full"]:
             print(f"\n🎯 Creating simplified intent classification dataset...")
-            creator = IntentDatasetCreator(GEMINI_API_KEY, kb)
+            creator = IntentDatasetCreator(GOOGLE_API_KEY, kb)
 
             dataset = creator.create_intent_dataset(
                 num_conversations_per_chunk=args.conversations_per_chunk,
@@ -868,7 +868,7 @@ def main():
             # Initialize LLM client for intent classification
             print("🤖 Initializing LLM client for intent classification...")
             llm_client = LLMClientFactory.create_client(
-                "gemini", api_key=GEMINI_API_KEY, model="gemini-2.0-flash"
+                "gemini", api_key=GOOGLE_API_KEY, model="gemini-2.0-flash"
             )
 
             # Run evaluation

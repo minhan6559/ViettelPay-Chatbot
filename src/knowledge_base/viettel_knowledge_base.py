@@ -14,8 +14,6 @@ import pickle
 # import torch
 from typing import List, Optional
 from pathlib import Path
-from openai import OpenAI
-
 from langchain.schema import Document
 from langchain.retrievers import EnsembleRetriever
 from langchain_community.retrievers import BM25Retriever
@@ -38,7 +36,7 @@ from src.processor.contextual_word_processor import ContextualWordProcessor
 from src.processor.text_utils import VietnameseTextProcessor
 
 # Import configuration utility
-from src.utils.config import get_cohere_api_key, get_openai_api_key, get_embedding_model
+from src.utils.config import get_cohere_api_key, get_google_api_key, get_embedding_model
 
 
 class ViettelKnowledgeBase:
@@ -82,7 +80,7 @@ class ViettelKnowledgeBase:
         documents_folder: str,
         persist_dir: str = "./knowledge_base",
         reset: bool = True,
-        openai_api_key: Optional[str] = None,
+        google_api_key: Optional[str] = None,
     ) -> None:
         """
         Build knowledge base from all Word documents in a folder
@@ -91,7 +89,7 @@ class ViettelKnowledgeBase:
             documents_folder: Path to folder containing doc/docx files
             persist_dir: Directory to persist the knowledge base
             reset: Whether to reset existing knowledge base
-            openai_api_key: OpenAI API key for contextual enhancement (optional)
+            google_api_key: Google API key for contextual enhancement (optional)
 
         Returns:
             None. Use the search() method to perform searches.
@@ -101,22 +99,21 @@ class ViettelKnowledgeBase:
             "[INFO] Building ViettelPay knowledge base with contextual enhancement..."
         )
 
-        # Initialize OpenAI client for contextual enhancement if API key provided
-        openai_client = None
-        if openai_api_key:
-            openai_client = OpenAI(api_key=openai_api_key)
-            print(f"[INFO] OpenAI client initialized for contextual enhancement")
-        elif get_openai_api_key():
-            api_key = get_openai_api_key()
-            openai_client = OpenAI(api_key=api_key)
-            print(f"[INFO] OpenAI client initialized from configuration")
+        # Initialize Gemini for contextual enhancement
+        if google_api_key or get_google_api_key():
+            api_key = google_api_key or get_google_api_key()
+            print(f"[INFO] Using Gemini 2.0 Flash for contextual enhancement")
+
+            # Initialize the contextual word processor with Gemini
+            word_processor = ContextualWordProcessor(
+                llm_provider="gemini", api_key=api_key
+            )
         else:
             print(
-                f"[WARNING] No OpenAI API key provided. Contextual enhancement disabled."
+                f"[WARNING] No Google API key provided. Contextual enhancement disabled."
             )
-
-        # Initialize the contextual word processor with OpenAI client
-        word_processor = ContextualWordProcessor(llm_client=openai_client)
+            # Initialize without LLM client
+            word_processor = ContextualWordProcessor(llm_client=None)
 
         # Find all Word documents in the folder
         word_files = self._find_word_documents(documents_folder)
@@ -470,12 +467,12 @@ if __name__ == "__main__":
     documents_folder = "./viettelpay_docs"  # Folder containing .doc/.docx files
 
     try:
-        # Build knowledge base (pass OpenAI API key here for contextual enhancement)
+        # Build knowledge base (pass Google API key here for contextual enhancement)
         kb.build_knowledge_base(
             documents_folder,
             "./contextual_kb",
             reset=True,
-            openai_api_key="your-openai-api-key-here",  # or None to use env variable
+            google_api_key="your-google-api-key-here",  # or None to use env variable
         )
 
         # Alternative: Load existing knowledge base
@@ -516,6 +513,8 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"[ERROR] Error building knowledge base: {e}")
         print("[INFO] Make sure you have:")
-        print("  1. Valid OpenAI API key")
+        print("  1. Valid Google API key")
         print("  2. Word documents in the specified folder")
-        print("  3. Required dependencies installed (openai, markitdown, etc.)")
+        print(
+            "  3. Required dependencies installed (google-generativeai, markitdown, etc.)"
+        )
