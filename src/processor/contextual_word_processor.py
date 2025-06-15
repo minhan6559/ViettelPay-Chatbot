@@ -36,14 +36,14 @@ class ContextualWordProcessor:
         self.section_counter = 0
 
         # Vietnamese contextual prompt template
-        self.contextual_prompt_template = """<tài_liệu>
+        self.contextual_prompt_template = """<document>
 {WHOLE_DOCUMENT}
-</tài_liệu>
+</document>
 
 Đây là đoạn văn bản cần được đặt trong ngữ cảnh của toàn bộ tài liệu:
-<đoạn_văn>
+<chunk>
 {CHUNK_CONTENT}
-</đoạn_văn>
+</chunk>
 
 Hãy cung cấp ngữ cảnh và tóm tắt ngắn gọn để giúp định vị đoạn văn này trong toàn bộ tài liệu ViettelPay Pro, nhằm cải thiện khả năng tìm kiếm thông tin. Chỉ trả lời bằng ngữ cảnh ngắn gọn, không cần giải thích thêm."""
 
