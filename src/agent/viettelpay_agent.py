@@ -6,7 +6,6 @@ Multi-turn conversation support with short-term memory using InMemorySaver
 import os
 from typing import Dict, Optional
 from functools import partial
-from dotenv import load_dotenv
 from langgraph.graph import StateGraph, END
 from langgraph.checkpoint.memory import InMemorySaver
 from langchain_core.messages import HumanMessage
@@ -23,8 +22,8 @@ from src.agent.nodes import (
     route_after_knowledge_retrieval,
 )
 
-# Load environment variables from .env file
-load_dotenv()
+# Import configuration utility
+from src.utils.config import get_knowledge_base_path, get_llm_provider
 
 
 class ViettelPayAgent:
@@ -32,19 +31,23 @@ class ViettelPayAgent:
 
     def __init__(
         self,
-        knowledge_base_path: str = "./knowledge_base",
+        knowledge_base_path: str = None,
         scripts_file: Optional[str] = None,
-        llm_provider: str = "gemini",
+        llm_provider: str = None,
     ):
+        knowledge_base_path = knowledge_base_path or get_knowledge_base_path()
+        scripts_file = scripts_file or "./viettelpay_docs/processed/kich_ban.csv"
+        llm_provider = llm_provider or get_llm_provider()
+
         self.knowledge_base_path = knowledge_base_path
-        self.scripts_file = scripts_file or "./viettelpay_docs/processed/kich_ban.csv"
+        self.scripts_file = scripts_file
         self.llm_provider = llm_provider
 
         # Initialize LLM client once during agent creation
-        print(f"🧠 Initializing LLM client ({llm_provider})...")
+        print(f"🧠 Initializing LLM client ({self.llm_provider})...")
         from src.llm.llm_client import LLMClientFactory
 
-        self.llm_client = LLMClientFactory.create_client(llm_provider)
+        self.llm_client = LLMClientFactory.create_client(self.llm_provider)
         print(f"✅ LLM client initialized and ready")
 
         # Initialize knowledge retriever once during agent creation
@@ -144,12 +147,14 @@ class ViettelPayAgent:
             human_message = HumanMessage(content=user_message)
 
             # Initialize state with the new message
+            # Note: conversation_context is set to None so it gets recomputed with fresh message history
             initial_state = {
                 "messages": [human_message],
                 "intent": None,
                 "confidence": None,
                 "enhanced_query": None,
                 "retrieved_docs": None,
+                "conversation_context": None,  # Reset to ensure fresh context computation
                 "response_type": None,
                 "error": None,
                 "processing_info": None,
@@ -278,6 +283,7 @@ class ViettelPayAgent:
             "optimizations": {
                 "llm_client": "Single initialization with functools.partial",
                 "knowledge_retriever": "Single initialization with functools.partial",
+                "conversation_context": "Cached in state to avoid repeated computation",
             },
         }
 

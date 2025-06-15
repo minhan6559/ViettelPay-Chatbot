@@ -6,10 +6,9 @@ Supports multiple LLM providers without hardcoding
 from abc import ABC, abstractmethod
 from typing import Dict, Any, Optional
 import os
-from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
+# Import configuration utility
+from src.utils.config import get_gemini_api_key, get_openai_api_key
 
 
 class BaseLLMClient(ABC):
@@ -32,10 +31,8 @@ class BaseLLMClient(ABC):
 class GeminiClient(BaseLLMClient):
     """Google Gemini client implementation"""
 
-    def __init__(
-        self, api_key: Optional[str] = None, model: str = "gemini-2.0-flash-lite"
-    ):
-        self.api_key = api_key or os.getenv("GEMINI_API_KEY")
+    def __init__(self, api_key: Optional[str] = None, model: str = "gemini-2.0-flash"):
+        self.api_key = api_key or get_gemini_api_key()
         self.model = model
 
         if not self.api_key:
@@ -82,7 +79,7 @@ class OpenAIClient(BaseLLMClient):
     """OpenAI client implementation"""
 
     def __init__(self, api_key: Optional[str] = None, model: str = "gpt-4"):
-        self.api_key = api_key or os.getenv("OPENAI_API_KEY")
+        self.api_key = api_key or get_openai_api_key()
         self.model = model
 
         if not self.api_key:

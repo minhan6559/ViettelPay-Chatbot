@@ -1,0 +1,7121 @@
+{
+  "hit_rates": {
+    "1": 0.5597269624573379,
+    "3": 0.7918088737201365,
+    "5": 0.863481228668942,
+    "10": 0.8976109215017065
+  },
+  "mrr": 0.684626740343464,
+  "per_query_results": {
+    "conv_chunk_53_0": {
+      "query": "Khách hàng cần thao tác gì khi hủy giao dịch nạp cước bị lỗi có OTP không? Hoặc, quy trình hủy giao dịch nạp cước có OTP và yêu cầu thao tác từ phía khách hàng như thế nào?",
+      "source_chunk": "chunk_53",
+      "retrieved": [
+        "chunk_53",
+        "chunk_23",
+        "chunk_24",
+        "chunk_50",
+        "chunk_95",
+        "chunk_94",
+        "chunk_25",
+        "chunk_54",
+        "chunk_51",
+        "chunk_96"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_53_1": {
+      "query": "Ai là người có thẩm quyền duyệt hủy giao dịch không cần OTP cho hộ kinh doanh trên ViettelPay Pro? Ai sẽ phê duyệt yêu cầu hủy giao dịch không cần OTP của hộ kinh doanh?",
+      "source_chunk": "chunk_53",
+      "retrieved": [
+        "chunk_53",
+        "chunk_25",
+        "chunk_24",
+        "chunk_54",
+        "chunk_50",
+        "chunk_23",
+        "chunk_51",
+        "chunk_94",
+        "chunk_96",
+        "chunk_49"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_53_2": {
+      "query": "Hệ thống sẽ xử lý như thế nào sau khi hủy giao dịch thành công trên ViettelPay Pro? Quy trình hoàn tiền sau khi hủy giao dịch trên ứng dụng ViettelPay Pro là gì?",
+      "source_chunk": "chunk_53",
+      "retrieved": [
+        "chunk_53",
+        "chunk_95",
+        "chunk_50",
+        "chunk_78",
+        "chunk_96",
+        "chunk_44",
+        "chunk_77",
+        "chunk_54",
+        "chunk_23",
+        "chunk_51"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_50_0": {
+      "query": "Khách hàng không đủ tiền trong tài khoản khuyến mãi để hủy giao dịch nạp tiền điện thoại được không? Hoặc là, hủy giao dịch nạp tiền điện thoại khi tài khoản khuyến mãi của khách hàng không đủ số dư thì có được không?",
+      "source_chunk": "chunk_50",
+      "retrieved": [
+        "chunk_50",
+        "chunk_51",
+        "chunk_94",
+        "chunk_49",
+        "chunk_53",
+        "chunk_65",
+        "chunk_18",
+        "chunk_93",
+        "chunk_95",
+        "chunk_66"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_50_1": {
+      "query": "Giao dịch gạch nợ cước trả sau bị sai, nếu phát hiện sai sót vào tháng sau thì có được hủy không? Hoặc là, quy trình hủy giao dịch gạch nợ cước trả sau khi phát hiện sai sót sau một tháng như thế nào?",
+      "source_chunk": "chunk_50",
+      "retrieved": [
+        "chunk_50",
+        "chunk_52",
+        "chunk_53",
+        "chunk_93",
+        "chunk_49",
+        "chunk_44",
+        "chunk_51",
+        "chunk_94",
+        "chunk_64",
+        "chunk_34"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_50_2": {
+      "query": "Việc hủy giao dịch cước đóng trước dịch vụ cố định Viettel trong thời gian chốt cước có được không? Hoặc là, có thể hủy giao dịch thanh toán cước cố định Viettel trong giai đoạn chốt cước không?",
+      "source_chunk": "chunk_50",
+      "retrieved": [
+        "chunk_50",
+        "chunk_53",
+        "chunk_49",
+        "chunk_54",
+        "chunk_93",
+        "chunk_51",
+        "chunk_96",
+        "chunk_94",
+        "chunk_52",
+        "chunk_34"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_71_0": {
+      "query": "Khách không chịu chờ xử lý lỗi W02 khi thanh toán cước thì có phương án nào khác không? Có thể tạm dừng giao dịch và xử lý sau được không?",
+      "source_chunk": "chunk_71",
+      "retrieved": [
+        "chunk_72",
+        "chunk_71",
+        "chunk_73",
+        "chunk_57",
+        "chunk_97",
+        "chunk_82",
+        "chunk_84",
+        "chunk_81",
+        "chunk_89",
+        "chunk_79"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_71_1": {
+      "query": "Xử lý lỗi W04 khi mua thẻ cào Viettel và sau T+1 vẫn chưa có kết quả thì phải làm gì? Hoặc là, cách giải quyết khi giao dịch mua thẻ cào Viettel báo lỗi W04 mà sau một ngày vẫn chưa thành công?",
+      "source_chunk": "chunk_71",
+      "retrieved": [
+        "chunk_72",
+        "chunk_71",
+        "chunk_73",
+        "chunk_78",
+        "chunk_65",
+        "chunk_90",
+        "chunk_57",
+        "chunk_92",
+        "chunk_82",
+        "chunk_84"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_71_2": {
+      "query": "Khách hàng đòi tiền lại khi giao dịch thất bại thì xử lý thế nào? Hoặc là, em cần làm gì khi khách hàng yêu cầu hoàn tiền do giao dịch không thành công?",
+      "source_chunk": "chunk_71",
+      "retrieved": [
+        "chunk_78",
+        "chunk_72",
+        "chunk_77",
+        "chunk_73",
+        "chunk_74",
+        "chunk_71",
+        "chunk_79",
+        "chunk_75",
+        "chunk_85",
+        "chunk_83"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 1
+      },
+      "rr": 0.16666666666666666,
+      "source_rank": 6
+    },
+    "conv_chunk_72_0": {
+      "query": "Khách hàng không chịu chờ xử lý lỗi W02 khi thanh toán cước thì phải làm thế nào? Xử lý ra sao khi khách hàng muốn hoàn tiền?",
+      "source_chunk": "chunk_72",
+      "retrieved": [
+        "chunk_72",
+        "chunk_71",
+        "chunk_73",
+        "chunk_57",
+        "chunk_82",
+        "chunk_95",
+        "chunk_84",
+        "chunk_77",
+        "chunk_89",
+        "chunk_79"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_72_1": {
+      "query": "Làm thế nào để kiểm tra trạng thái thành công của giao dịch thanh toán cước sau khi bị báo đang xử lý? Hoặc làm sao để biết giao dịch thanh toán cước đã hoàn tất chưa?",
+      "source_chunk": "chunk_72",
+      "retrieved": [
+        "chunk_65",
+        "chunk_95",
+        "chunk_72",
+        "chunk_89",
+        "chunk_71",
+        "chunk_73",
+        "chunk_77",
+        "chunk_75",
+        "chunk_68",
+        "chunk_83"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_72_2": {
+      "query": "Khách hàng báo không nhận được mã thẻ cào sau khi giao dịch thành công thì phải làm gì? Xử lý ra sao khi khách hàng không nhận được mã thẻ cào?",
+      "source_chunk": "chunk_72",
+      "retrieved": [
+        "chunk_72",
+        "chunk_90",
+        "chunk_78",
+        "chunk_91",
+        "chunk_73",
+        "chunk_46",
+        "chunk_71",
+        "chunk_92",
+        "chunk_45",
+        "chunk_55"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_94_0": {
+      "query": "Giao dịch nào trên ViettelPay Pro được phép hủy và giao dịch nào không? Làm sao để kiểm tra được trạng thái hủy giao dịch?",
+      "source_chunk": "chunk_94",
+      "retrieved": [
+        "chunk_50",
+        "chunk_53",
+        "chunk_95",
+        "chunk_49",
+        "chunk_93",
+        "chunk_96",
+        "chunk_51",
+        "chunk_94",
+        "chunk_54",
+        "chunk_52"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 1
+      },
+      "rr": 0.125,
+      "source_rank": 8
+    },
+    "conv_chunk_94_1": {
+      "query": "Các điều kiện để hủy giao dịch thanh toán cước Viettel là gì? Hướng dẫn chi tiết về quy trình hủy giao dịch thanh toán cước Viettel như thế nào?",
+      "source_chunk": "chunk_94",
+      "retrieved": [
+        "chunk_50",
+        "chunk_53",
+        "chunk_94",
+        "chunk_54",
+        "chunk_51",
+        "chunk_49",
+        "chunk_52",
+        "chunk_93",
+        "chunk_95",
+        "chunk_96"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_94_2": {
+      "query": "Giới hạn số lần hủy giao dịch thanh toán cước Viettel là bao nhiêu? Có quy định nào về số lượng hủy giao dịch không?",
+      "source_chunk": "chunk_94",
+      "retrieved": [
+        "chunk_51",
+        "chunk_50",
+        "chunk_53",
+        "chunk_54",
+        "chunk_49",
+        "chunk_94",
+        "chunk_52",
+        "chunk_64",
+        "chunk_93",
+        "chunk_88"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 1
+      },
+      "rr": 0.16666666666666666,
+      "source_rank": 6
+    },
+    "conv_chunk_95_0": {
+      "query": "Tiền hoàn lại từ giao dịch hủy cước Viettel chưa về tài khoản, kiểm tra không thấy thì phải làm gì? Hoặc: Tôi đã hủy giao dịch thanh toán cước Viettel thành công nhưng tiền vẫn chưa được hoàn, tôi cần hỗ trợ.",
+      "source_chunk": "chunk_95",
+      "retrieved": [
+        "chunk_95",
+        "chunk_94",
+        "chunk_72",
+        "chunk_89",
+        "chunk_71",
+        "chunk_96",
+        "chunk_53",
+        "chunk_82",
+        "chunk_83",
+        "chunk_79"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_95_1": {
+      "query": "Kiểm tra hoàn tiền giao dịch Bankplus BCCS đã hủy cho khách hàng ở đâu? Tra cứu lịch sử hoàn tiền Bankplus BCCS như thế nào?",
+      "source_chunk": "chunk_95",
+      "retrieved": [
+        "chunk_95",
+        "chunk_84",
+        "chunk_71",
+        "chunk_82",
+        "chunk_65",
+        "chunk_25",
+        "chunk_78",
+        "chunk_53",
+        "chunk_94",
+        "chunk_23"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_95_2": {
+      "query": "Cần cung cấp những thông tin gì khi gửi yêu cầu hỗ trợ về giao dịch trên ứng dụng ViettelPay Pro? Hoặc, khiếu nại về giao dịch cần cung cấp những thông tin gì để được hỗ trợ?",
+      "source_chunk": "chunk_95",
+      "retrieved": [
+        "chunk_67",
+        "chunk_68",
+        "chunk_77",
+        "chunk_69",
+        "chunk_73",
+        "chunk_70",
+        "chunk_79",
+        "chunk_96",
+        "chunk_66",
+        "chunk_74"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_77_0": {
+      "query": "Khách hàng không chuyển mạng giữ số thì xử lý thanh toán cước như thế nào khi gặp lỗi 472? Hoặc, làm sao để thanh toán cước thành công cho khách hàng không chuyển mạng giữ số sau khi gặp lỗi 472?",
+      "source_chunk": "chunk_77",
+      "retrieved": [
+        "chunk_77",
+        "chunk_62",
+        "chunk_76",
+        "chunk_75",
+        "chunk_72",
+        "chunk_82",
+        "chunk_89",
+        "chunk_79",
+        "chunk_84",
+        "chunk_95"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_77_1": {
+      "query": "Tôi muốn biết cách gửi yêu cầu hỗ trợ trên ứng dụng ViettelPay Pro, cụ thể là mục nào để liên hệ khi gặp sự cố? Hoặc làm thế nào để tôi có thể báo cáo vấn đề trên ViettelPay Pro?",
+      "source_chunk": "chunk_77",
+      "retrieved": [
+        "chunk_75",
+        "chunk_68",
+        "chunk_67",
+        "chunk_79",
+        "chunk_77",
+        "chunk_70",
+        "chunk_69",
+        "chunk_92",
+        "chunk_71",
+        "chunk_74"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.2,
+      "source_rank": 5
+    },
+    "conv_chunk_77_2": {
+      "query": "Tiền hoàn lại từ giao dịch nạp cước lỗi 472 sẽ được hoàn về tài khoản ViettelPay Pro của khách hàng hay sao? Hoàn tiền giao dịch lỗi được xử lý như thế nào?",
+      "source_chunk": "chunk_77",
+      "retrieved": [
+        "chunk_77",
+        "chunk_62",
+        "chunk_72",
+        "chunk_82",
+        "chunk_79",
+        "chunk_78",
+        "chunk_71",
+        "chunk_65",
+        "chunk_73",
+        "chunk_95"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_54_0": {
+      "query": "Cần chuẩn bị giấy tờ gì để hủy giao dịch thanh toán cước vượt hạn mức? Giấy tờ cần thiết để hủy giao dịch cước bị lỗi là gì?",
+      "source_chunk": "chunk_54",
+      "retrieved": [
+        "chunk_54",
+        "chunk_51",
+        "chunk_50",
+        "chunk_53",
+        "chunk_94",
+        "chunk_87",
+        "chunk_95",
+        "chunk_93",
+        "chunk_49",
+        "chunk_96"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_54_1": {
+      "query": "Thời gian tối đa để yêu cầu hủy giao dịch thanh toán cước Viettel do vượt hạn mức là bao lâu? Hoặc, trong bao lâu thì tôi có thể yêu cầu hủy giao dịch thanh toán cước Viettel nếu phát hiện vượt hạn mức?",
+      "source_chunk": "chunk_54",
+      "retrieved": [
+        "chunk_50",
+        "chunk_51",
+        "chunk_54",
+        "chunk_53",
+        "chunk_81",
+        "chunk_94",
+        "chunk_49",
+        "chunk_52",
+        "chunk_93",
+        "chunk_87"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_54_2": {
+      "query": "Lấy mã BM01, BM02, BM03 ở đâu để thực hiện giao dịch? Tìm kiếm thông tin về các mã BM này.",
+      "source_chunk": "chunk_54",
+      "retrieved": [
+        "chunk_54",
+        "chunk_46",
+        "chunk_45",
+        "chunk_64",
+        "chunk_41",
+        "chunk_42",
+        "chunk_39",
+        "chunk_40",
+        "chunk_44",
+        "chunk_35"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_75_0": {
+      "query": "Khách hàng không muốn chuyển mạng thì phải làm thế nào để thanh toán cước thành công? Hoặc, xử lý ra sao khi khách hàng không đồng ý chuyển đổi nhà mạng trong quá trình thanh toán cước?",
+      "source_chunk": "chunk_75",
+      "retrieved": [
+        "chunk_77",
+        "chunk_72",
+        "chunk_75",
+        "chunk_71",
+        "chunk_79",
+        "chunk_89",
+        "chunk_53",
+        "chunk_0",
+        "chunk_62",
+        "chunk_41"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_75_1": {
+      "query": "Khách hàng chuyển mạng sang Viettel thì quy trình xử lý như thế nào? Cần lưu ý những gì khi khách hàng chuyển mạng?",
+      "source_chunk": "chunk_75",
+      "retrieved": [
+        "chunk_77",
+        "chunk_75",
+        "chunk_72",
+        "chunk_71",
+        "chunk_42",
+        "chunk_97",
+        "chunk_73",
+        "chunk_53",
+        "chunk_79",
+        "chunk_47"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_75_2": {
+      "query": "Giao dịch bị treo khi gặp lỗi 974 và không trừ tiền của khách hàng thì sao? Giao dịch có bị treo nếu lỗi 974 không trừ tiền không?",
+      "source_chunk": "chunk_75",
+      "retrieved": [
+        "chunk_75",
+        "chunk_74",
+        "chunk_59",
+        "chunk_79",
+        "chunk_88",
+        "chunk_72",
+        "chunk_82",
+        "chunk_81",
+        "chunk_71",
+        "chunk_84"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_89_0": {
+      "query": "Tôi phải làm gì nếu thanh toán cước ViettelPay Pro thành công mà khách hàng vẫn chưa nhận được tiền? Cần kiểm tra và xử lý như thế nào?",
+      "source_chunk": "chunk_89",
+      "retrieved": [
+        "chunk_95",
+        "chunk_89",
+        "chunk_72",
+        "chunk_80",
+        "chunk_71",
+        "chunk_78",
+        "chunk_79",
+        "chunk_65",
+        "chunk_75",
+        "chunk_77"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_89_1": {
+      "query": "Khách hàng thanh toán cước ViettelPay Pro thành công nhưng chưa cộng tiền, có cách nào khác ngoài gọi tổng đài để xử lý không? Hoặc là, có phương án nào khác để hỗ trợ khách hàng khi giao dịch nạp cước ViettelPay Pro bị lỗi cộng tiền không?",
+      "source_chunk": "chunk_89",
+      "retrieved": [
+        "chunk_89",
+        "chunk_79",
+        "chunk_72",
+        "chunk_80",
+        "chunk_77",
+        "chunk_75",
+        "chunk_95",
+        "chunk_71",
+        "chunk_92",
+        "chunk_83"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_89_2": {
+      "query": "Làm thế nào để xác định chắc chắn nguyên nhân thuê bao chưa được gạch nợ sau khi thanh toán cước, liệu có phải do thuê bao đó có số dư âm trước đó hay không? Hoặc: Làm sao để biết chính xác nguyên nhân thuê bao bị trừ tiền trước khi thanh toán cước?",
+      "source_chunk": "chunk_89",
+      "retrieved": [
+        "chunk_89",
+        "chunk_95",
+        "chunk_79",
+        "chunk_77",
+        "chunk_80",
+        "chunk_76",
+        "chunk_75",
+        "chunk_72",
+        "chunk_94",
+        "chunk_82"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_73_0": {
+      "query": "Khách hàng không muốn chờ xử lý giao dịch mua thẻ game thì phải làm thế nào? Xử lý ra sao khi giao dịch treo và tiền đã bị trừ?",
+      "source_chunk": "chunk_73",
+      "retrieved": [
+        "chunk_73",
+        "chunk_78",
+        "chunk_71",
+        "chunk_72",
+        "chunk_92",
+        "chunk_74",
+        "chunk_45",
+        "chunk_91",
+        "chunk_38",
+        "chunk_67"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_73_1": {
+      "query": "Khách hàng có nhận được thông báo gì khi giao dịch mua thẻ game thành công không? Hoặc là, làm sao để biết chắc chắn giao dịch mua thẻ game đã thành công để thông báo cho khách?",
+      "source_chunk": "chunk_73",
+      "retrieved": [
+        "chunk_91",
+        "chunk_45",
+        "chunk_78",
+        "chunk_73",
+        "chunk_92",
+        "chunk_74",
+        "chunk_38",
+        "chunk_46",
+        "chunk_90",
+        "chunk_55"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_73_2": {
+      "query": "Thời gian đối soát kết quả giao dịch trên ViettelPay Pro là bao lâu? Bao lâu thì biết kết quả giao dịch thành công hay thất bại?",
+      "source_chunk": "chunk_73",
+      "retrieved": [
+        "chunk_72",
+        "chunk_73",
+        "chunk_71",
+        "chunk_78",
+        "chunk_65",
+        "chunk_77",
+        "chunk_57",
+        "chunk_55",
+        "chunk_97",
+        "chunk_89"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_47_0": {
+      "query": "Làm thế nào để kiểm tra thông tin về chính sách chiết khấu mới nhất cho các giao dịch trên ViettelPay Pro? Hoặc, có cách nào để xem thông tin cập nhật về ưu đãi chiết khấu khi thực hiện các giao dịch không?",
+      "source_chunk": "chunk_47",
+      "retrieved": [
+        "chunk_48",
+        "chunk_47",
+        "chunk_65",
+        "chunk_42",
+        "chunk_41",
+        "chunk_39",
+        "chunk_40",
+        "chunk_35",
+        "chunk_36",
+        "chunk_34"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_47_1": {
+      "query": "Tôi có được ưu đãi gì khi thanh toán trước cước cố định Viettel và cách tính chiết khấu như thế nào?",
+      "source_chunk": "chunk_47",
+      "retrieved": [
+        "chunk_47",
+        "chunk_43",
+        "chunk_48",
+        "chunk_40",
+        "chunk_6",
+        "chunk_34",
+        "chunk_49",
+        "chunk_20",
+        "chunk_50",
+        "chunk_39"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_47_2": {
+      "query": "Làm thế nào để xem chiết khấu hiện tại khi thanh toán cước viễn thông trên ViettelPay Pro? Hoặc, xem chiết khấu khi thanh toán cước viễn thông trên ứng dụng ViettelPay Pro như thế nào?",
+      "source_chunk": "chunk_47",
+      "retrieved": [
+        "chunk_48",
+        "chunk_47",
+        "chunk_42",
+        "chunk_41",
+        "chunk_39",
+        "chunk_6",
+        "chunk_34",
+        "chunk_43",
+        "chunk_36",
+        "chunk_35"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_51_0": {
+      "query": "Hạn mức nào khác có thể bị vượt quá khi hủy giao dịch thanh toán cước ViettelPay Pro không thành công? Có những loại hạn mức nào khác liên quan đến giao dịch?",
+      "source_chunk": "chunk_51",
+      "retrieved": [
+        "chunk_51",
+        "chunk_54",
+        "chunk_94",
+        "chunk_50",
+        "chunk_49",
+        "chunk_87",
+        "chunk_88",
+        "chunk_53",
+        "chunk_64",
+        "chunk_93"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_51_1": {
+      "query": "Quy định hủy giao dịch thanh toán cước viễn thông ViettelPay Pro khi tổng giá trị giao dịch vượt quá 10 triệu đồng là gì? Hoặc, giới hạn hủy giao dịch cước viễn thông trên ViettelPay Pro khi tổng giá trị các giao dịch cần hủy lớn hơn 10 triệu đồng?",
+      "source_chunk": "chunk_51",
+      "retrieved": [
+        "chunk_51",
+        "chunk_54",
+        "chunk_50",
+        "chunk_53",
+        "chunk_49",
+        "chunk_52",
+        "chunk_94",
+        "chunk_0",
+        "chunk_61",
+        "chunk_87"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_51_2": {
+      "query": "Hủy giao dịch trên ViettelPay Pro khi số lượng hủy trong tháng của người lập giao dịch là 81 có được không? Giới hạn hủy giao dịch là bao nhiêu và áp dụng cho những đối tượng nào?",
+      "source_chunk": "chunk_51",
+      "retrieved": [
+        "chunk_51",
+        "chunk_50",
+        "chunk_54",
+        "chunk_53",
+        "chunk_49",
+        "chunk_93",
+        "chunk_52",
+        "chunk_94",
+        "chunk_25",
+        "chunk_0"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_52_0": {
+      "query": "Giao dịch điều chỉnh sau khi gạch nợ cước trả sau bị lỗi thì xử lý thế nào? Hoặc, quy trình điều chỉnh giao dịch gạch nợ cước trả sau khi có lỗi là gì?",
+      "source_chunk": "chunk_52",
+      "retrieved": [
+        "chunk_89",
+        "chunk_53",
+        "chunk_52",
+        "chunk_64",
+        "chunk_72",
+        "chunk_68",
+        "chunk_81",
+        "chunk_76",
+        "chunk_44",
+        "chunk_82"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_52_1": {
+      "query": "Làm thế nào để hủy giao dịch gạch nợ cước trả sau cũ nhất trên ViettelPay Pro? Tôi có thể hủy giao dịch gạch nợ cước trả sau theo thứ tự thời gian được không?",
+      "source_chunk": "chunk_52",
+      "retrieved": [
+        "chunk_52",
+        "chunk_53",
+        "chunk_50",
+        "chunk_44",
+        "chunk_51",
+        "chunk_54",
+        "chunk_49",
+        "chunk_34",
+        "chunk_95",
+        "chunk_93"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_52_2": {
+      "query": "Làm thế nào để hủy giao dịch gạch nợ cước trả sau đầu tiên trong trường hợp có hai giao dịch gạch nợ liên tiếp? Cần lưu ý những điều gì khi hủy giao dịch gạch nợ cước trả sau?",
+      "source_chunk": "chunk_52",
+      "retrieved": [
+        "chunk_52",
+        "chunk_50",
+        "chunk_53",
+        "chunk_44",
+        "chunk_49",
+        "chunk_51",
+        "chunk_89",
+        "chunk_64",
+        "chunk_34",
+        "chunk_54"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_85_0": {
+      "query": "Làm sao để biết lý do tài khoản ViettelPay của tôi bị khóa và liên hệ với ai để được hỗ trợ? Hoặc, tôi cần liên hệ với ai để kiểm tra nguyên nhân tài khoản ViettelPay bị khóa?",
+      "source_chunk": "chunk_85",
+      "retrieved": [
+        "chunk_85",
+        "chunk_83",
+        "chunk_79",
+        "chunk_86",
+        "chunk_89",
+        "chunk_77",
+        "chunk_72",
+        "chunk_75",
+        "chunk_84",
+        "chunk_92"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_85_1": {
+      "query": "Làm thế nào để mở khóa tài khoản ViettelPay Pro khi bị khóa? Hoặc, cách xử lý khi tài khoản ViettelPay Pro bị khóa và cần mở lại?",
+      "source_chunk": "chunk_85",
+      "retrieved": [
+        "chunk_86",
+        "chunk_85",
+        "chunk_83",
+        "chunk_79",
+        "chunk_77",
+        "chunk_71",
+        "chunk_75",
+        "chunk_65",
+        "chunk_95",
+        "chunk_89"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_85_2": {
+      "query": "Tổng đài 18009000 của Viettel có tính phí cuộc gọi không? Gọi lên tổng đài Viettel có mất tiền không?",
+      "source_chunk": "chunk_85",
+      "retrieved": [
+        "chunk_85",
+        "chunk_79",
+        "chunk_80",
+        "chunk_77",
+        "chunk_47",
+        "chunk_75",
+        "chunk_40",
+        "chunk_89",
+        "chunk_41",
+        "chunk_42"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_79_0": {
+      "query": "Khách hàng báo lỗi KH5 khi nạp tiền, số điện thoại vẫn dùng được thì phải xử lý thế nào? Hoặc là, làm sao để khắc phục lỗi KH5 khi nạp tiền cho khách hàng mà số điện thoại vẫn hoạt động bình thường?",
+      "source_chunk": "chunk_79",
+      "retrieved": [
+        "chunk_79",
+        "chunk_66",
+        "chunk_81",
+        "chunk_77",
+        "chunk_70",
+        "chunk_80",
+        "chunk_68",
+        "chunk_72",
+        "chunk_92",
+        "chunk_83"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_79_1": {
+      "query": "Khách hàng đã liên hệ tổng đài ViettelPay Pro mà vẫn không khắc phục được lỗi KH5 khi nạp tiền điện thoại thì phải làm thế nào? Hoặc, hướng xử lý khi khách hàng báo lỗi KH5 khi nạp tiền điện thoại nhưng đã liên hệ tổng đài?",
+      "source_chunk": "chunk_79",
+      "retrieved": [
+        "chunk_79",
+        "chunk_75",
+        "chunk_77",
+        "chunk_90",
+        "chunk_72",
+        "chunk_92",
+        "chunk_70",
+        "chunk_89",
+        "chunk_82",
+        "chunk_80"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_79_2": {
+      "query": "Giao dịch nạp tiền điện thoại trả trước báo lỗi KH5, tiền có bị trừ không? Hoặc là, lỗi KH5 khi nạp tiền điện thoại, tiền có bị trừ trong tài khoản ViettelPay Pro không?",
+      "source_chunk": "chunk_79",
+      "retrieved": [
+        "chunk_79",
+        "chunk_70",
+        "chunk_66",
+        "chunk_77",
+        "chunk_68",
+        "chunk_85",
+        "chunk_82",
+        "chunk_67",
+        "chunk_87",
+        "chunk_80"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_34_0": {
+      "query": "Lỗi nạp tiền ViettelPay Pro có thường xuyên xảy ra không? Làm thế nào để hạn chế lỗi giao dịch nạp tiền cho khách hàng?",
+      "source_chunk": "chunk_34",
+      "retrieved": [
+        "chunk_79",
+        "chunk_92",
+        "chunk_72",
+        "chunk_77",
+        "chunk_66",
+        "chunk_75",
+        "chunk_78",
+        "chunk_71",
+        "chunk_89",
+        "chunk_84"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_34_1": {
+      "query": "Mua thẻ Vcoin trên ViettelPay Pro như thế nào? Có hỗ trợ mua thẻ game Vcoin không?",
+      "source_chunk": "chunk_34",
+      "retrieved": [
+        "chunk_34",
+        "chunk_38",
+        "chunk_92",
+        "chunk_45",
+        "chunk_91",
+        "chunk_78",
+        "chunk_74",
+        "chunk_73",
+        "chunk_37",
+        "chunk_9"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_34_2": {
+      "query": "Thanh toán cước truyền hình AVG trên ViettelPay Pro như thế nào? Tôi có thể nạp tiền cước AVG qua ứng dụng không?",
+      "source_chunk": "chunk_34",
+      "retrieved": [
+        "chunk_34",
+        "chunk_39",
+        "chunk_42",
+        "chunk_36",
+        "chunk_41",
+        "chunk_35",
+        "chunk_43",
+        "chunk_37",
+        "chunk_8",
+        "chunk_38"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_90_0": {
+      "query": "Tôi phải làm gì nếu khách hàng không nhận được mã thẻ cào sau khi giao dịch thành công trên ViettelPay Pro? Tôi cần hỗ trợ gì nếu mã thẻ không được gửi sau khi mua thẻ điện thoại?",
+      "source_chunk": "chunk_90",
+      "retrieved": [
+        "chunk_90",
+        "chunk_91",
+        "chunk_72",
+        "chunk_78",
+        "chunk_46",
+        "chunk_92",
+        "chunk_73",
+        "chunk_71",
+        "chunk_45",
+        "chunk_53"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_90_1": {
+      "query": "Khách nhập sai số điện thoại khi mua thẻ cào thì có thể gửi lại mã thẻ được không? Hoặc là, làm thế nào để gửi lại mã thẻ cào cho khách nếu khách hàng nhập sai số điện thoại?",
+      "source_chunk": "chunk_90",
+      "retrieved": [
+        "chunk_46",
+        "chunk_90",
+        "chunk_91",
+        "chunk_45",
+        "chunk_37",
+        "chunk_72",
+        "chunk_92",
+        "chunk_9",
+        "chunk_73",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_90_2": {
+      "query": "Khách hàng chặn tin nhắn có lấy lại được mã thẻ cào đã mua thành công không? Hoặc làm thế nào để lấy lại mã thẻ cào nếu khách hàng không nhận được do chặn tin nhắn?",
+      "source_chunk": "chunk_90",
+      "retrieved": [
+        "chunk_90",
+        "chunk_91",
+        "chunk_46",
+        "chunk_45",
+        "chunk_78",
+        "chunk_73",
+        "chunk_72",
+        "chunk_71",
+        "chunk_92",
+        "chunk_9"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_96_0": {
+      "query": "Tôi phải làm gì nếu tiền đã bị trừ khi hủy thanh toán cước đóng trước internet không thành công? Tôi cần hỗ trợ về giao dịch này.",
+      "source_chunk": "chunk_96",
+      "retrieved": [
+        "chunk_96",
+        "chunk_95",
+        "chunk_70",
+        "chunk_94",
+        "chunk_72",
+        "chunk_97",
+        "chunk_89",
+        "chunk_78",
+        "chunk_77",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_96_1": {
+      "query": "Khi nào thì biểu tượng 'i' để hủy giao dịch thanh toán cước đóng trước internet, truyền hình hiển thị? Hoặc là, khi nào thì tôi có thể hủy giao dịch thanh toán cước internet, truyền hình đã đóng trước đó?",
+      "source_chunk": "chunk_96",
+      "retrieved": [
+        "chunk_96",
+        "chunk_50",
+        "chunk_53",
+        "chunk_54",
+        "chunk_51",
+        "chunk_52",
+        "chunk_34",
+        "chunk_49",
+        "chunk_97",
+        "chunk_43"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_96_2": {
+      "query": "Tôi cần gửi yêu cầu hỗ trợ về việc hủy giao dịch thanh toán cước đóng trước internet đã báo thành công ở đâu trên ứng dụng ViettelPay Pro? Hoặc, làm thế nào để tôi liên hệ hỗ trợ khi không hủy được giao dịch thanh toán cước internet?",
+      "source_chunk": "chunk_96",
+      "retrieved": [
+        "chunk_96",
+        "chunk_54",
+        "chunk_95",
+        "chunk_53",
+        "chunk_70",
+        "chunk_89",
+        "chunk_94",
+        "chunk_79",
+        "chunk_93",
+        "chunk_72"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_84_0": {
+      "query": "Có cách nào khác để thanh toán cước Viettel khi gặp lỗi 45 mà không cần liên hệ ngân hàng MB không? Hoặc là, có phương thức thanh toán nào khác thay thế khi tài khoản MB gặp sự cố không?",
+      "source_chunk": "chunk_84",
+      "retrieved": [
+        "chunk_84",
+        "chunk_82",
+        "chunk_39",
+        "chunk_42",
+        "chunk_41",
+        "chunk_40",
+        "chunk_86",
+        "chunk_83",
+        "chunk_85",
+        "chunk_43"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_84_1": {
+      "query": "Video hướng dẫn khắc phục lỗi giao dịch thanh toán cước Viettel bằng MB Bank trên ViettelPay Pro? Hoặc là, có video nào hướng dẫn xử lý lỗi khi thanh toán cước Viettel bằng MB Bank không?",
+      "source_chunk": "chunk_84",
+      "retrieved": [
+        "chunk_84",
+        "chunk_85",
+        "chunk_87",
+        "chunk_82",
+        "chunk_86",
+        "chunk_93",
+        "chunk_89",
+        "chunk_79",
+        "chunk_71",
+        "chunk_39"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_84_2": {
+      "query": "Lỗi 45 chỉ áp dụng cho giao dịch thanh toán cước Viettel hay các dịch vụ khác cũng có thể gặp phải?",
+      "source_chunk": "chunk_84",
+      "retrieved": [
+        "chunk_84",
+        "chunk_49",
+        "chunk_82",
+        "chunk_72",
+        "chunk_81",
+        "chunk_47",
+        "chunk_88",
+        "chunk_96",
+        "chunk_85",
+        "chunk_77"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_91_0": {
+      "query": "Làm thế nào để gửi lại mã thẻ game đã mua trên ViettelPay Pro cho khách hàng? Hoặc là, quy trình cấp lại mã thẻ game cho khách hàng trên ViettelPay Pro như thế nào?",
+      "source_chunk": "chunk_91",
+      "retrieved": [
+        "chunk_45",
+        "chunk_91",
+        "chunk_46",
+        "chunk_38",
+        "chunk_90",
+        "chunk_78",
+        "chunk_92",
+        "chunk_73",
+        "chunk_74",
+        "chunk_37"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_91_1": {
+      "query": "Video hướng dẫn lấy lại mã thẻ game đã mua trên ViettelPay Pro như thế nào? Hoặc là xem lại mã thẻ game đã mua ở đâu?",
+      "source_chunk": "chunk_91",
+      "retrieved": [
+        "chunk_45",
+        "chunk_46",
+        "chunk_91",
+        "chunk_38",
+        "chunk_90",
+        "chunk_37",
+        "chunk_92",
+        "chunk_39",
+        "chunk_42",
+        "chunk_78"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_91_2": {
+      "query": "Khách báo mua thẻ game thành công mà không có mã thẻ do lỗi hệ thống thì xử lý thế nào? Cần làm gì khi gặp sự cố này?",
+      "source_chunk": "chunk_91",
+      "retrieved": [
+        "chunk_78",
+        "chunk_73",
+        "chunk_91",
+        "chunk_92",
+        "chunk_74",
+        "chunk_45",
+        "chunk_90",
+        "chunk_72",
+        "chunk_71",
+        "chunk_67"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_86_0": {
+      "query": "ViettelPay bị khóa cần mở lại thì cần những thủ tục gì? Hoặc là, làm thế nào để mở lại tài khoản ViettelPay đã bị khóa?",
+      "source_chunk": "chunk_86",
+      "retrieved": [
+        "chunk_85",
+        "chunk_83",
+        "chunk_86",
+        "chunk_79",
+        "chunk_75",
+        "chunk_71",
+        "chunk_77",
+        "chunk_44",
+        "chunk_65",
+        "chunk_95"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_86_1": {
+      "query": "Khách hàng tự mở khóa ViettelPay được không sau khi bị lỗi 711 khi thanh toán cước Viettel? Có thể tự kích hoạt lại tài khoản ViettelPay sau khi gặp sự cố thanh toán không?",
+      "source_chunk": "chunk_86",
+      "retrieved": [
+        "chunk_86",
+        "chunk_82",
+        "chunk_85",
+        "chunk_80",
+        "chunk_79",
+        "chunk_81",
+        "chunk_83",
+        "chunk_72",
+        "chunk_95",
+        "chunk_89"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_86_2": {
+      "query": "Khi nào tài khoản ViettelPay bị khóa và các nguyên nhân có thể là gì? Hoặc, tài khoản ViettelPay bị khóa trong những trường hợp nào?",
+      "source_chunk": "chunk_86",
+      "retrieved": [
+        "chunk_85",
+        "chunk_86",
+        "chunk_83",
+        "chunk_79",
+        "chunk_72",
+        "chunk_71",
+        "chunk_80",
+        "chunk_77",
+        "chunk_84",
+        "chunk_75"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_78_0": {
+      "query": "Tiền hoàn giao dịch thẻ game lỗi sau T+1 chưa về thì phải làm thế nào? Hoặc là, xử lý ra sao nếu quá thời gian hoàn tiền giao dịch thẻ game bị lỗi?",
+      "source_chunk": "chunk_78",
+      "retrieved": [
+        "chunk_78",
+        "chunk_73",
+        "chunk_74",
+        "chunk_92",
+        "chunk_72",
+        "chunk_71",
+        "chunk_91",
+        "chunk_45",
+        "chunk_38",
+        "chunk_65"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_78_1": {
+      "query": "Mã thẻ game sau khi đối soát thành công sẽ được gửi đến đâu? Hoặc là, thông tin mã thẻ game sau khi giao dịch thành công sẽ được chuyển đến đâu?",
+      "source_chunk": "chunk_78",
+      "retrieved": [
+        "chunk_38",
+        "chunk_45",
+        "chunk_78",
+        "chunk_91",
+        "chunk_73",
+        "chunk_46",
+        "chunk_74",
+        "chunk_92",
+        "chunk_9",
+        "chunk_72"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_78_2": {
+      "query": "Ngày T+1 trong giao dịch hoàn tiền khi mua thẻ game được tính như thế nào? Hoặc: Quy định về thời gian hoàn tiền sau khi giao dịch mua thẻ game không thành công (lỗi 99) là gì?",
+      "source_chunk": "chunk_78",
+      "retrieved": [
+        "chunk_78",
+        "chunk_73",
+        "chunk_74",
+        "chunk_72",
+        "chunk_57",
+        "chunk_71",
+        "chunk_38",
+        "chunk_45",
+        "chunk_92",
+        "chunk_91"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_83_0": {
+      "query": "Có cách nào khác để thanh toán cước Viettel khi gặp lỗi 901 mà không cần liên hệ LPB không? Hoặc là, làm thế nào để khắc phục lỗi 901 khi thanh toán cước Viettel mà không cần hỗ trợ từ LPB?",
+      "source_chunk": "chunk_83",
+      "retrieved": [
+        "chunk_83",
+        "chunk_82",
+        "chunk_84",
+        "chunk_80",
+        "chunk_81",
+        "chunk_79",
+        "chunk_95",
+        "chunk_88",
+        "chunk_89",
+        "chunk_72"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_83_1": {
+      "query": "LPB yêu cầu gì để mở khóa tài khoản khi gặp lỗi 901 thanh toán cước Viettel qua ViettelPay Pro? Hoặc, cần thông tin gì từ LPB để mở khóa khi gặp lỗi 901 khi thanh toán cước Viettel?",
+      "source_chunk": "chunk_83",
+      "retrieved": [
+        "chunk_83",
+        "chunk_82",
+        "chunk_79",
+        "chunk_85",
+        "chunk_86",
+        "chunk_80",
+        "chunk_39",
+        "chunk_89",
+        "chunk_95",
+        "chunk_88"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_83_2": {
+      "query": "Thời gian mở khóa tài khoản LPB là bao lâu? Hoặc bao lâu thì tài khoản LPB được mở khóa?",
+      "source_chunk": "chunk_83",
+      "retrieved": [
+        "chunk_83",
+        "chunk_86",
+        "chunk_7",
+        "chunk_85",
+        "chunk_50",
+        "chunk_51",
+        "chunk_65",
+        "chunk_79",
+        "chunk_71",
+        "chunk_72"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_74_0": {
+      "query": "Nếu thanh toán thẻ game bị lỗi 974 nhiều lần thì phải xử lý thế nào?",
+      "source_chunk": "chunk_74",
+      "retrieved": [
+        "chunk_74",
+        "chunk_59",
+        "chunk_75",
+        "chunk_78",
+        "chunk_92",
+        "chunk_73",
+        "chunk_45",
+        "chunk_91",
+        "chunk_38",
+        "chunk_60"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_74_1": {
+      "query": "Lỗi 974 mua thẻ game có trừ tiền không? Giao dịch thẻ game báo lỗi 974 có bị trừ tiền không?",
+      "source_chunk": "chunk_74",
+      "retrieved": [
+        "chunk_74",
+        "chunk_75",
+        "chunk_73",
+        "chunk_78",
+        "chunk_92",
+        "chunk_91",
+        "chunk_59",
+        "chunk_88",
+        "chunk_72",
+        "chunk_67"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_74_2": {
+      "query": "Em gặp lỗi 974 khi mua thẻ game, hệ thống báo lỗi. Nếu không có thông báo bảo trì thì em cần xử lý thế nào? Hoặc, làm sao để khắc phục lỗi 974 khi mua thẻ game?",
+      "source_chunk": "chunk_74",
+      "retrieved": [
+        "chunk_74",
+        "chunk_75",
+        "chunk_78",
+        "chunk_92",
+        "chunk_73",
+        "chunk_59",
+        "chunk_91",
+        "chunk_67",
+        "chunk_45",
+        "chunk_38"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_82_0": {
+      "query": "Sau khi kích hoạt BankPlus thì có thanh toán cước Viettel được ngay không? Hay là cần phải đợi thêm thời gian?",
+      "source_chunk": "chunk_82",
+      "retrieved": [
+        "chunk_82",
+        "chunk_80",
+        "chunk_84",
+        "chunk_95",
+        "chunk_81",
+        "chunk_39",
+        "chunk_77",
+        "chunk_72",
+        "chunk_83",
+        "chunk_40"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_82_1": {
+      "query": "Có video hướng dẫn thanh toán cước Viettel trên ViettelPay Pro không? Hoặc là, em muốn xem video hướng dẫn cách thanh toán cước Viettel cho khách hàng trên ứng dụng ViettelPay Pro.",
+      "source_chunk": "chunk_82",
+      "retrieved": [
+        "chunk_39",
+        "chunk_42",
+        "chunk_43",
+        "chunk_41",
+        "chunk_35",
+        "chunk_36",
+        "chunk_37",
+        "chunk_38",
+        "chunk_46",
+        "chunk_45"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_82_2": {
+      "query": "Lỗi \"Dich vu BankPlus chua duoc kich hoat\" khi thanh toán cước Viettel có thường xuyên xảy ra không? Tần suất gặp lỗi này khi giao dịch nạp cước Viettel là bao nhiêu?",
+      "source_chunk": "chunk_82",
+      "retrieved": [
+        "chunk_82",
+        "chunk_84",
+        "chunk_80",
+        "chunk_85",
+        "chunk_72",
+        "chunk_95",
+        "chunk_86",
+        "chunk_71",
+        "chunk_81",
+        "chunk_87"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_81_0": {
+      "query": "Em có thể thanh toán cước Viettel cho khách bằng cách nhập tay số tiền được không? Hoặc là, việc nhập thủ công số tiền có giúp em khắc phục lỗi BL2 khi thanh toán cước Viettel không?",
+      "source_chunk": "chunk_81",
+      "retrieved": [
+        "chunk_81",
+        "chunk_87",
+        "chunk_39",
+        "chunk_42",
+        "chunk_40",
+        "chunk_41",
+        "chunk_64",
+        "chunk_44",
+        "chunk_77",
+        "chunk_36"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_81_1": {
+      "query": "Lỗi BL2 có gây cản trở việc thanh toán cước Viettel bằng cách nhập số tiền thủ công không? Hoặc, lỗi BL2 có ảnh hưởng đến giao dịch thanh toán cước Viettel khi nhập tay số tiền cần thanh toán không?",
+      "source_chunk": "chunk_81",
+      "retrieved": [
+        "chunk_81",
+        "chunk_64",
+        "chunk_87",
+        "chunk_77",
+        "chunk_82",
+        "chunk_79",
+        "chunk_84",
+        "chunk_85",
+        "chunk_83",
+        "chunk_75"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_81_2": {
+      "query": "Hệ thống chặn truy vấn nợ cước Viettel trong bao lâu? Thời gian khóa truy vấn nợ cước là bao lâu?",
+      "source_chunk": "chunk_81",
+      "retrieved": [
+        "chunk_81",
+        "chunk_50",
+        "chunk_97",
+        "chunk_79",
+        "chunk_53",
+        "chunk_64",
+        "chunk_77",
+        "chunk_72",
+        "chunk_71",
+        "chunk_70"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_87_0": {
+      "query": "Làm thế nào để thanh toán cước Viettel khi gặp lỗi 624? Em cần xử lý như thế nào để tiếp tục giao dịch cho khách hàng?",
+      "source_chunk": "chunk_87",
+      "retrieved": [
+        "chunk_87",
+        "chunk_61",
+        "chunk_82",
+        "chunk_84",
+        "chunk_79",
+        "chunk_81",
+        "chunk_65",
+        "chunk_95",
+        "chunk_39",
+        "chunk_72"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_87_1": {
+      "query": "Hạn mức thanh toán cước Viettel qua ViettelPay Pro của các ngân hàng khác nhau là bao nhiêu? Giới hạn giao dịch nạp cước Viettel của từng ngân hàng là bao nhiêu?",
+      "source_chunk": "chunk_87",
+      "retrieved": [
+        "chunk_51",
+        "chunk_88",
+        "chunk_34",
+        "chunk_87",
+        "chunk_50",
+        "chunk_54",
+        "chunk_35",
+        "chunk_49",
+        "chunk_42",
+        "chunk_43"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_87_2": {
+      "query": "Trạng thái giao dịch nạp cước Viettel khi gặp lỗi 624 là gì? Giao dịch có thành công không và tiền có bị trừ không?",
+      "source_chunk": "chunk_87",
+      "retrieved": [
+        "chunk_87",
+        "chunk_61",
+        "chunk_79",
+        "chunk_82",
+        "chunk_84",
+        "chunk_96",
+        "chunk_88",
+        "chunk_81",
+        "chunk_97",
+        "chunk_90"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_92_0": {
+      "query": "Khách chưa nạp thẻ game và đã nhập đúng cú pháp mà vẫn báo lỗi 00 thì phải làm thế nào? Cần hỗ trợ xử lý lỗi nạp thẻ game.",
+      "source_chunk": "chunk_92",
+      "retrieved": [
+        "chunk_92",
+        "chunk_91",
+        "chunk_78",
+        "chunk_73",
+        "chunk_74",
+        "chunk_90",
+        "chunk_55",
+        "chunk_97",
+        "chunk_89",
+        "chunk_94"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_92_1": {
+      "query": "Khách hàng nạp thẻ cào sai nhiều lần có bị khóa tài khoản ViettelPay Pro không? Nếu có thì quy định về số lần nạp sai tối đa là bao nhiêu?",
+      "source_chunk": "chunk_92",
+      "retrieved": [
+        "chunk_86",
+        "chunk_50",
+        "chunk_85",
+        "chunk_92",
+        "chunk_83",
+        "chunk_0",
+        "chunk_51",
+        "chunk_49",
+        "chunk_79",
+        "chunk_90"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_92_2": {
+      "query": "Thời gian xử lý yêu cầu hỗ trợ trên ứng dụng ViettelPay Pro là bao lâu? Hoặc, bao lâu thì yêu cầu hỗ trợ trên ứng dụng được giải quyết?",
+      "source_chunk": "chunk_92",
+      "retrieved": [
+        "chunk_72",
+        "chunk_71",
+        "chunk_73",
+        "chunk_77",
+        "chunk_54",
+        "chunk_34",
+        "chunk_75",
+        "chunk_67",
+        "chunk_89",
+        "chunk_79"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_97_0": {
+      "query": "Khi nào tôi có thể thanh toán cước internet cho khách hàng thành công sau khi gặp lỗi 00? Hoặc khi nào hệ thống cho phép thanh toán lại cước internet?",
+      "source_chunk": "chunk_97",
+      "retrieved": [
+        "chunk_97",
+        "chunk_89",
+        "chunk_96",
+        "chunk_92",
+        "chunk_95",
+        "chunk_55",
+        "chunk_93",
+        "chunk_94",
+        "chunk_81",
+        "chunk_70"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_97_1": {
+      "query": "Lỗi thanh toán cước internet đóng trước có trừ tiền của đại lý ViettelPay Pro không? Giao dịch báo lỗi có ảnh hưởng đến số dư và hoa hồng không?",
+      "source_chunk": "chunk_97",
+      "retrieved": [
+        "chunk_70",
+        "chunk_69",
+        "chunk_97",
+        "chunk_79",
+        "chunk_77",
+        "chunk_96",
+        "chunk_66",
+        "chunk_81",
+        "chunk_80",
+        "chunk_75"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_97_2": {
+      "query": "Thời gian tạm dừng thanh toán cước đóng trước internet do lỗi 00 thường kéo dài bao lâu? Hoặc: Lỗi 00 khi thanh toán cước internet đóng trước, thời gian khắc phục là bao lâu?",
+      "source_chunk": "chunk_97",
+      "retrieved": [
+        "chunk_97",
+        "chunk_96",
+        "chunk_89",
+        "chunk_95",
+        "chunk_92",
+        "chunk_94",
+        "chunk_93",
+        "chunk_70",
+        "chunk_81",
+        "chunk_91"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_93_0": {
+      "query": "Hướng dẫn hủy giao dịch thanh toán cước Viettel đã thực hiện nhầm số điện thoại? Hoặc là, làm thế nào để hủy bỏ giao dịch nạp cước Viettel sai số?",
+      "source_chunk": "chunk_93",
+      "retrieved": [
+        "chunk_50",
+        "chunk_93",
+        "chunk_53",
+        "chunk_49",
+        "chunk_77",
+        "chunk_54",
+        "chunk_94",
+        "chunk_95",
+        "chunk_80",
+        "chunk_51"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_93_1": {
+      "query": "Cách hủy giao dịch nạp cước ViettelPay Pro khi thanh toán nhầm và xem hướng dẫn chi tiết ở đâu? Hoặc, làm thế nào để hủy giao dịch nạp tiền cước Viettel đã thực hiện sai và xem các bước hướng dẫn?",
+      "source_chunk": "chunk_93",
+      "retrieved": [
+        "chunk_53",
+        "chunk_50",
+        "chunk_93",
+        "chunk_54",
+        "chunk_95",
+        "chunk_94",
+        "chunk_96",
+        "chunk_51",
+        "chunk_39",
+        "chunk_44"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_93_2": {
+      "query": "Hướng dẫn hủy giao dịch nạp cước Viettel bị sai số và các điều kiện cần thiết? Hoặc là, xem hướng dẫn hủy giao dịch nạp cước Viettel sai số ở đâu?",
+      "source_chunk": "chunk_93",
+      "retrieved": [
+        "chunk_50",
+        "chunk_93",
+        "chunk_53",
+        "chunk_54",
+        "chunk_94",
+        "chunk_51",
+        "chunk_95",
+        "chunk_96",
+        "chunk_49",
+        "chunk_77"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_68_0": {
+      "query": "Em gặp lỗi 606 khi thanh toán cước trả sau, không phải bảo trì thì cần xử lý thế nào để thanh toán thành công?",
+      "source_chunk": "chunk_68",
+      "retrieved": [
+        "chunk_68",
+        "chunk_69",
+        "chunk_70",
+        "chunk_66",
+        "chunk_67",
+        "chunk_58",
+        "chunk_81",
+        "chunk_82",
+        "chunk_72",
+        "chunk_84"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_68_1": {
+      "query": "Khách hàng báo lỗi 606 khi thanh toán cước trả sau đa mạng, không phải bảo trì thì phải xử lý thế nào? Có cách nào thanh toán cước trả sau đa mạng thành công khi gặp lỗi 606 không?",
+      "source_chunk": "chunk_68",
+      "retrieved": [
+        "chunk_68",
+        "chunk_66",
+        "chunk_67",
+        "chunk_69",
+        "chunk_70",
+        "chunk_58",
+        "chunk_72",
+        "chunk_81",
+        "chunk_82",
+        "chunk_79"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_68_2": {
+      "query": "Giao dịch thanh toán cước trả sau đa mạng lỗi 606 không bị trừ tiền có được thực hiện lại không? Hoặc là, nếu giao dịch không thành công và không bị trừ tiền thì có thể thực hiện lại giao dịch thanh toán cước trả sau đa mạng không?",
+      "source_chunk": "chunk_68",
+      "retrieved": [
+        "chunk_68",
+        "chunk_66",
+        "chunk_67",
+        "chunk_69",
+        "chunk_70",
+        "chunk_82",
+        "chunk_81",
+        "chunk_84",
+        "chunk_79",
+        "chunk_72"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_76_0": {
+      "query": "Khách hàng chưa đăng ký Ezpay thì hướng dẫn họ đăng ký như thế nào để thanh toán cước trả sau VinaPhone thành công? Hoặc là, các bước cần thực hiện nếu khách hàng chưa có Ezpay để thanh toán cước trả sau VinaPhone là gì?",
+      "source_chunk": "chunk_76",
+      "retrieved": [
+        "chunk_76",
+        "chunk_35",
+        "chunk_36",
+        "chunk_63",
+        "chunk_37",
+        "chunk_40",
+        "chunk_34",
+        "chunk_72",
+        "chunk_42",
+        "chunk_41"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_76_1": {
+      "query": "Đăng ký Ezpay có mất phí tin nhắn không? Hoặc là phí tin nhắn đăng ký Ezpay là bao nhiêu?",
+      "source_chunk": "chunk_76",
+      "retrieved": [
+        "chunk_76",
+        "chunk_63",
+        "chunk_21",
+        "chunk_91",
+        "chunk_90",
+        "chunk_17",
+        "chunk_9",
+        "chunk_73",
+        "chunk_45",
+        "chunk_5"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_76_2": {
+      "query": "Giao dịch lỗi 473 có bị trừ tiền không? Nếu bị trừ rồi thì có cách nào lấy lại tiền không?",
+      "source_chunk": "chunk_76",
+      "retrieved": [
+        "chunk_76",
+        "chunk_84",
+        "chunk_77",
+        "chunk_82",
+        "chunk_79",
+        "chunk_96",
+        "chunk_88",
+        "chunk_95",
+        "chunk_72",
+        "chunk_81"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_43_0": {
+      "query": "Làm thế nào để kiểm tra trước khi thực hiện giao dịch gạch nợ cước internet xem hợp đồng có đủ điều kiện hay không để tránh lỗi và tiết kiệm thời gian? Hoặc, có phương pháp nào để xác định trước khả năng gạch nợ cước internet cho một hợp đồng cụ thể không?",
+      "source_chunk": "chunk_43",
+      "retrieved": [
+        "chunk_43",
+        "chunk_44",
+        "chunk_89",
+        "chunk_19",
+        "chunk_52",
+        "chunk_50",
+        "chunk_41",
+        "chunk_53",
+        "chunk_97",
+        "chunk_65"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_43_1": {
+      "query": "Đóng trước cước internet Viettel được tối đa bao nhiêu tháng? Hoặc là, số tháng đóng trước cước internet Viettel tối đa là bao nhiêu?",
+      "source_chunk": "chunk_43",
+      "retrieved": [
+        "chunk_50",
+        "chunk_43",
+        "chunk_51",
+        "chunk_20",
+        "chunk_54",
+        "chunk_97",
+        "chunk_49",
+        "chunk_34",
+        "chunk_47",
+        "chunk_41"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_43_2": {
+      "query": "Khách hàng hủy dịch vụ internet đã đóng trước thì có được hoàn tiền không? Hoàn tiền cước internet trả trước khi khách hàng hủy dịch vụ như thế nào?",
+      "source_chunk": "chunk_43",
+      "retrieved": [
+        "chunk_53",
+        "chunk_50",
+        "chunk_96",
+        "chunk_70",
+        "chunk_20",
+        "chunk_49",
+        "chunk_44",
+        "chunk_34",
+        "chunk_43",
+        "chunk_95"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 1
+      },
+      "rr": 0.1111111111111111,
+      "source_rank": 9
+    },
+    "conv_chunk_69_0": {
+      "query": "Em không thấy thông báo bảo trì khi thanh toán cước internet bị lỗi 606 thì phải xử lý thế nào? Hoặc là, làm sao để khắc phục lỗi 606 khi không có thông báo bảo trì?",
+      "source_chunk": "chunk_69",
+      "retrieved": [
+        "chunk_69",
+        "chunk_70",
+        "chunk_67",
+        "chunk_68",
+        "chunk_66",
+        "chunk_58",
+        "chunk_96",
+        "chunk_79",
+        "chunk_97",
+        "chunk_72"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_69_1": {
+      "query": "Khách hàng cần thanh toán cước internet Viettel gấp khi gặp lỗi 606, có phương án thanh toán nào khác không? Hoặc là, có thể hướng dẫn khách hàng thanh toán cước internet Viettel ngay lập tức bằng cách nào khác khi gặp sự cố?",
+      "source_chunk": "chunk_69",
+      "retrieved": [
+        "chunk_69",
+        "chunk_70",
+        "chunk_68",
+        "chunk_67",
+        "chunk_66",
+        "chunk_41",
+        "chunk_39",
+        "chunk_43",
+        "chunk_42",
+        "chunk_79"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_69_2": {
+      "query": "Khách hàng bị trừ tiền khi gặp lỗi 606 khi thanh toán cước internet Viettel thì phải làm gì? Xử lý ra sao nếu giao dịch đã trừ tiền nhưng lỗi vẫn xảy ra?",
+      "source_chunk": "chunk_69",
+      "retrieved": [
+        "chunk_69",
+        "chunk_70",
+        "chunk_68",
+        "chunk_67",
+        "chunk_66",
+        "chunk_72",
+        "chunk_71",
+        "chunk_96",
+        "chunk_82",
+        "chunk_95"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_38_0": {
+      "query": "Làm thế nào để mua thẻ game thành công trên ViettelPay Pro khi giao dịch bị lỗi? Hoặc là các bước để thực hiện giao dịch mua thẻ game thành công là gì?",
+      "source_chunk": "chunk_38",
+      "retrieved": [
+        "chunk_45",
+        "chunk_78",
+        "chunk_91",
+        "chunk_38",
+        "chunk_74",
+        "chunk_92",
+        "chunk_73",
+        "chunk_46",
+        "chunk_72",
+        "chunk_90"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_38_1": {
+      "query": "Chọn nhà cung cấp nào để mua thẻ Zing trên ViettelPay Pro? Hoặc là, làm thế nào để mua thẻ Zing cho khách hàng trên ứng dụng?",
+      "source_chunk": "chunk_38",
+      "retrieved": [
+        "chunk_38",
+        "chunk_34",
+        "chunk_37",
+        "chunk_46",
+        "chunk_28",
+        "chunk_35",
+        "chunk_32",
+        "chunk_27",
+        "chunk_26",
+        "chunk_42"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_38_2": {
+      "query": "Mã thẻ game đã mua trên ViettelPay Pro được gửi từ số điện thoại nào? Số gửi mã thẻ game là số nào?",
+      "source_chunk": "chunk_38",
+      "retrieved": [
+        "chunk_38",
+        "chunk_37",
+        "chunk_45",
+        "chunk_9",
+        "chunk_46",
+        "chunk_91",
+        "chunk_73",
+        "chunk_34",
+        "chunk_78",
+        "chunk_90"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_67_0": {
+      "query": "Lỗi 606 khi mua thẻ cào mà app không báo bảo trì thì phải làm sao? Hoặc là, mua thẻ cào báo lỗi 606 nhưng không có thông báo bảo trì thì cần xử lý thế nào?",
+      "source_chunk": "chunk_67",
+      "retrieved": [
+        "chunk_67",
+        "chunk_70",
+        "chunk_68",
+        "chunk_69",
+        "chunk_66",
+        "chunk_58",
+        "chunk_71",
+        "chunk_90",
+        "chunk_72",
+        "chunk_73"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_67_1": {
+      "query": "Em cần mua thẻ cào đa mạng gấp mà bị lỗi 606 thì có cách nào khác để mua được không? Hoặc có thể mua thẻ cào ngay lập tức bằng hình thức nào khác không?",
+      "source_chunk": "chunk_67",
+      "retrieved": [
+        "chunk_67",
+        "chunk_66",
+        "chunk_68",
+        "chunk_70",
+        "chunk_69",
+        "chunk_58",
+        "chunk_37",
+        "chunk_72",
+        "chunk_73",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_67_2": {
+      "query": "Liên hệ hỗ trợ ViettelPay Pro khi không thấy thông báo bảo trì ở đâu? Hoặc, làm thế nào để liên hệ bộ phận hỗ trợ khi không có thông báo bảo trì?",
+      "source_chunk": "chunk_67",
+      "retrieved": [
+        "chunk_67",
+        "chunk_68",
+        "chunk_69",
+        "chunk_70",
+        "chunk_66",
+        "chunk_74",
+        "chunk_77",
+        "chunk_75",
+        "chunk_79",
+        "chunk_92"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_70_0": {
+      "query": "Làm thế nào để khắc phục lỗi thanh toán cước internet đóng trước (606) khi không có thông báo bảo trì trên ViettelPay Pro? Hoặc, xử lý ra sao khi gặp lỗi 606 khi thanh toán cước internet và không thấy thông báo bảo trì?",
+      "source_chunk": "chunk_70",
+      "retrieved": [
+        "chunk_70",
+        "chunk_69",
+        "chunk_67",
+        "chunk_66",
+        "chunk_68",
+        "chunk_79",
+        "chunk_96",
+        "chunk_97",
+        "chunk_89",
+        "chunk_81"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_70_1": {
+      "query": "Khi nào thì tôi có thể thanh toán cước đóng trước internet cho khách hàng sau khi gặp lỗi 606? Giao dịch sẽ được thực hiện lại khi nào?",
+      "source_chunk": "chunk_70",
+      "retrieved": [
+        "chunk_70",
+        "chunk_69",
+        "chunk_68",
+        "chunk_66",
+        "chunk_67",
+        "chunk_97",
+        "chunk_81",
+        "chunk_58",
+        "chunk_79",
+        "chunk_96"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_70_2": {
+      "query": "Tôi có thể tiếp tục giao dịch khi gặp lỗi 606 không? Hoặc là, có nên tiếp tục thực hiện giao dịch khi ViettelPay Pro báo lỗi 606?",
+      "source_chunk": "chunk_70",
+      "retrieved": [
+        "chunk_67",
+        "chunk_68",
+        "chunk_69",
+        "chunk_70",
+        "chunk_66",
+        "chunk_72",
+        "chunk_71",
+        "chunk_73",
+        "chunk_65",
+        "chunk_58"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_80_0": {
+      "query": "Khách hàng gọi 900 để làm gì và sau đó có thể thanh toán cước Viettel được ngay không? Hay là sau khi gọi 900 thì phải làm gì để thanh toán cước Viettel thành công?",
+      "source_chunk": "chunk_80",
+      "retrieved": [
+        "chunk_80",
+        "chunk_40",
+        "chunk_39",
+        "chunk_36",
+        "chunk_89",
+        "chunk_42",
+        "chunk_79",
+        "chunk_72",
+        "chunk_41",
+        "chunk_75"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_80_1": {
+      "query": "Khách hàng không gọi 900 để kích hoạt dịch vụ viễn thông thì có thể đến cửa hàng Viettel để được hỗ trợ không? Hoặc là, kích hoạt dịch vụ viễn thông tại cửa hàng Viettel thay vì gọi 900 được không?",
+      "source_chunk": "chunk_80",
+      "retrieved": [
+        "chunk_80",
+        "chunk_85",
+        "chunk_54",
+        "chunk_89",
+        "chunk_86",
+        "chunk_75",
+        "chunk_83",
+        "chunk_92",
+        "chunk_71",
+        "chunk_82"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_80_2": {
+      "query": "Giao dịch báo lỗi có bị trừ tiền không? Nếu giao dịch nạp tiền/thanh toán cước Viettel báo lỗi thì có bị trừ tiền trong tài khoản không?",
+      "source_chunk": "chunk_80",
+      "retrieved": [
+        "chunk_85",
+        "chunk_79",
+        "chunk_83",
+        "chunk_77",
+        "chunk_69",
+        "chunk_88",
+        "chunk_87",
+        "chunk_70",
+        "chunk_86",
+        "chunk_66"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_65_0": {
+      "query": "Giao dịch đang xử lý mà khách chưa nhận được tiền, tôi cần kiểm tra và xử lý như thế nào? Hoặc là, làm thế nào để kiểm tra giao dịch chưa thành công trên ViettelPay Pro?",
+      "source_chunk": "chunk_65",
+      "retrieved": [
+        "chunk_65",
+        "chunk_72",
+        "chunk_71",
+        "chunk_95",
+        "chunk_78",
+        "chunk_73",
+        "chunk_89",
+        "chunk_75",
+        "chunk_77",
+        "chunk_80"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_65_1": {
+      "query": "Làm thế nào để xem trạng thái của giao dịch bị treo trên ViettelPay Pro? Hoặc xem lại tình trạng giao dịch bị treo ở đâu?",
+      "source_chunk": "chunk_65",
+      "retrieved": [
+        "chunk_65",
+        "chunk_71",
+        "chunk_73",
+        "chunk_72",
+        "chunk_77",
+        "chunk_75",
+        "chunk_69",
+        "chunk_95",
+        "chunk_68",
+        "chunk_70"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_65_2": {
+      "query": "Thời gian đối soát giao dịch trên ViettelPay Pro là bao lâu? Bao lâu thì biết kết quả đối soát?",
+      "source_chunk": "chunk_65",
+      "retrieved": [
+        "chunk_72",
+        "chunk_71",
+        "chunk_73",
+        "chunk_78",
+        "chunk_65",
+        "chunk_50",
+        "chunk_77",
+        "chunk_97",
+        "chunk_42",
+        "chunk_57"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.2,
+      "source_rank": 5
+    },
+    "conv_chunk_44_0": {
+      "query": "Khi gặp lỗi gạch nợ thuê bao cắt hủy, cần kiểm tra những gì trước khi thực hiện lại giao dịch để tránh lỗi tương tự? Hoặc, các bước kiểm tra cần thiết trước khi gạch nợ thuê bao cắt hủy nếu gặp lỗi?",
+      "source_chunk": "chunk_44",
+      "retrieved": [
+        "chunk_44",
+        "chunk_89",
+        "chunk_79",
+        "chunk_65",
+        "chunk_50",
+        "chunk_52",
+        "chunk_78",
+        "chunk_95",
+        "chunk_94",
+        "chunk_53"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_44_1": {
+      "query": "Cách thanh toán một phần nợ cước thuê bao trên ViettelPay Pro như thế nào? Hoặc là, làm sao để trả một phần tiền nợ cước cho thuê bao đã cắt hủy trên ứng dụng?",
+      "source_chunk": "chunk_44",
+      "retrieved": [
+        "chunk_44",
+        "chunk_34",
+        "chunk_39",
+        "chunk_36",
+        "chunk_43",
+        "chunk_42",
+        "chunk_40",
+        "chunk_41",
+        "chunk_35",
+        "chunk_53"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_44_2": {
+      "query": "Các lựa chọn nguồn tiền thanh toán khi gạch nợ thuê bao cắt hủy là gì? Gạch nợ cho thuê bao đã cắt có thể thanh toán bằng những hình thức nào?",
+      "source_chunk": "chunk_44",
+      "retrieved": [
+        "chunk_44",
+        "chunk_34",
+        "chunk_49",
+        "chunk_50",
+        "chunk_52",
+        "chunk_19",
+        "chunk_43",
+        "chunk_40",
+        "chunk_89",
+        "chunk_95"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_88_0": {
+      "query": "Thanh toán cước Viettel dưới 5.000đ có bị trừ tiền không và lỗi JK1 là gì? Giao dịch này có ảnh hưởng đến hoa hồng của đại lý không?",
+      "source_chunk": "chunk_88",
+      "retrieved": [
+        "chunk_88",
+        "chunk_87",
+        "chunk_60",
+        "chunk_82",
+        "chunk_84",
+        "chunk_77",
+        "chunk_70",
+        "chunk_85",
+        "chunk_79",
+        "chunk_69"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_88_1": {
+      "query": "Thanh toán cước Viettel qua ViettelPay Pro với số tiền nhỏ hơn 5000đ có được không? Hoặc là, có giới hạn số tiền thanh toán cước Viettel tối thiểu trên ViettelPay Pro không?",
+      "source_chunk": "chunk_88",
+      "retrieved": [
+        "chunk_88",
+        "chunk_87",
+        "chunk_32",
+        "chunk_29",
+        "chunk_60",
+        "chunk_42",
+        "chunk_41",
+        "chunk_40",
+        "chunk_34",
+        "chunk_39"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_88_2": {
+      "query": "Tại sao lại có quy định về hạn mức thanh toán cước Viettel tối thiểu trên ViettelPay Pro? Quy định này nhằm mục đích gì?",
+      "source_chunk": "chunk_88",
+      "retrieved": [
+        "chunk_88",
+        "chunk_54",
+        "chunk_47",
+        "chunk_51",
+        "chunk_0",
+        "chunk_87",
+        "chunk_15",
+        "chunk_48",
+        "chunk_49",
+        "chunk_61"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_37_0": {
+      "query": "Lỗi giao dịch mua thẻ cào đa mạng có thường xuyên xảy ra không? Làm thế nào để hạn chế tình trạng này khi thực hiện giao dịch?",
+      "source_chunk": "chunk_37",
+      "retrieved": [
+        "chunk_67",
+        "chunk_92",
+        "chunk_78",
+        "chunk_90",
+        "chunk_72",
+        "chunk_68",
+        "chunk_71",
+        "chunk_66",
+        "chunk_73",
+        "chunk_61"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_37_1": {
+      "query": "Mã thẻ cào đã mua sẽ được gửi đến đâu? Hoặc là, thông tin mã thẻ cào sau khi mua sẽ được chuyển đến đâu?",
+      "source_chunk": "chunk_37",
+      "retrieved": [
+        "chunk_37",
+        "chunk_9",
+        "chunk_46",
+        "chunk_38",
+        "chunk_45",
+        "chunk_90",
+        "chunk_91",
+        "chunk_23",
+        "chunk_78",
+        "chunk_73"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_37_2": {
+      "query": "Mua thẻ cào đa mạng số lượng lớn có giới hạn không? Mua nhiều thẻ cào cùng lúc có bị giới hạn số lượng giao dịch không?",
+      "source_chunk": "chunk_37",
+      "retrieved": [
+        "chunk_67",
+        "chunk_37",
+        "chunk_61",
+        "chunk_34",
+        "chunk_28",
+        "chunk_32",
+        "chunk_54",
+        "chunk_33",
+        "chunk_72",
+        "chunk_29"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_66_0": {
+      "query": "Lỗi 606 khi nạp tiền điện thoại cho khách là gì và cách khắc phục nếu không có thông báo bảo trì?",
+      "source_chunk": "chunk_66",
+      "retrieved": [
+        "chunk_66",
+        "chunk_68",
+        "chunk_67",
+        "chunk_70",
+        "chunk_69",
+        "chunk_58",
+        "chunk_79",
+        "chunk_72",
+        "chunk_90",
+        "chunk_92"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_66_1": {
+      "query": "Khách báo lỗi 606 khi nạp tiền điện thoại mà vẫn bị trừ tiền thì phải xử lý thế nào? Xử lý khiếu nại lỗi 606 và trừ tiền không thành công cho khách ra sao?",
+      "source_chunk": "chunk_66",
+      "retrieved": [
+        "chunk_66",
+        "chunk_68",
+        "chunk_70",
+        "chunk_69",
+        "chunk_67",
+        "chunk_72",
+        "chunk_58",
+        "chunk_79",
+        "chunk_73",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_66_2": {
+      "query": "Thời gian bảo trì ViettelPay Pro lỗi 606 dự kiến hoàn thành là khi nào? Hoặc bao giờ thì lỗi 606 được khắc phục xong?",
+      "source_chunk": "chunk_66",
+      "retrieved": [
+        "chunk_67",
+        "chunk_68",
+        "chunk_69",
+        "chunk_66",
+        "chunk_70",
+        "chunk_72",
+        "chunk_71",
+        "chunk_58",
+        "chunk_73",
+        "chunk_34"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_41_0": {
+      "query": "Lỗi thanh toán cước internet có thường xuyên xảy ra không? Làm thế nào để hạn chế tình trạng này khi thực hiện giao dịch trên ViettelPay Pro?",
+      "source_chunk": "chunk_41",
+      "retrieved": [
+        "chunk_79",
+        "chunk_69",
+        "chunk_70",
+        "chunk_77",
+        "chunk_81",
+        "chunk_75",
+        "chunk_89",
+        "chunk_72",
+        "chunk_97",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_41_1": {
+      "query": "Xử lý sai mã account khi thanh toán cước internet Viettel như thế nào? Hoặc, điều gì xảy ra nếu nhập sai mã tài khoản khi thanh toán cước internet Viettel?",
+      "source_chunk": "chunk_41",
+      "retrieved": [
+        "chunk_86",
+        "chunk_41",
+        "chunk_42",
+        "chunk_39",
+        "chunk_77",
+        "chunk_89",
+        "chunk_22",
+        "chunk_85",
+        "chunk_79",
+        "chunk_43"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_41_2": {
+      "query": "Thanh toán cước internet Viettel nhiều lần trong ngày có giới hạn gì không? Hoặc, có hạn mức giao dịch khi thanh toán cước internet Viettel nhiều lần không?",
+      "source_chunk": "chunk_41",
+      "retrieved": [
+        "chunk_51",
+        "chunk_50",
+        "chunk_81",
+        "chunk_87",
+        "chunk_88",
+        "chunk_54",
+        "chunk_61",
+        "chunk_77",
+        "chunk_41",
+        "chunk_49"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 1
+      },
+      "rr": 0.1111111111111111,
+      "source_rank": 9
+    },
+    "conv_chunk_42_0": {
+      "query": "Lỗi thanh toán cước truyền hình Viettel bị lặp lại có thường xuyên không? Cách khắc phục và phòng tránh lỗi khi thanh toán cước truyền hình như thế nào?",
+      "source_chunk": "chunk_42",
+      "retrieved": [
+        "chunk_81",
+        "chunk_79",
+        "chunk_77",
+        "chunk_86",
+        "chunk_69",
+        "chunk_70",
+        "chunk_75",
+        "chunk_72",
+        "chunk_80",
+        "chunk_97"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_42_1": {
+      "query": "Xử lý sai mã account khi thanh toán cước truyền hình Viettel trên ViettelPay Pro như thế nào? Hoặc, điều gì xảy ra nếu nhập sai mã tài khoản khi thanh toán cước truyền hình Viettel trên ứng dụng?",
+      "source_chunk": "chunk_42",
+      "retrieved": [
+        "chunk_86",
+        "chunk_72",
+        "chunk_39",
+        "chunk_42",
+        "chunk_77",
+        "chunk_89",
+        "chunk_93",
+        "chunk_41",
+        "chunk_75",
+        "chunk_90"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_42_2": {
+      "query": "Có video hướng dẫn thanh toán cước truyền hình Viettel trên ViettelPay Pro không? Hoặc là, tôi có thể xem video hướng dẫn thanh toán cước truyền hình Viettel trên ứng dụng này ở đâu?",
+      "source_chunk": "chunk_42",
+      "retrieved": [
+        "chunk_39",
+        "chunk_42",
+        "chunk_43",
+        "chunk_41",
+        "chunk_37",
+        "chunk_35",
+        "chunk_36",
+        "chunk_38",
+        "chunk_46",
+        "chunk_87"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_39_0": {
+      "query": "Làm thế nào để tránh lỗi khi thanh toán cước truyền hình Viettel và cần lưu ý những gì trong các giao dịch sau này? Hoặc, những lưu ý quan trọng để thanh toán cước truyền hình Viettel thành công và không gặp lỗi?",
+      "source_chunk": "chunk_39",
+      "retrieved": [
+        "chunk_81",
+        "chunk_77",
+        "chunk_72",
+        "chunk_39",
+        "chunk_97",
+        "chunk_71",
+        "chunk_95",
+        "chunk_85",
+        "chunk_42",
+        "chunk_83"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_39_1": {
+      "query": "Làm thế nào để tra cứu mã account để thanh toán cước truyền hình Viettel trên ViettelPay Pro? Hoặc là, có cách nào để tìm mã tài khoản truyền hình Viettel khi thanh toán trên ứng dụng không?",
+      "source_chunk": "chunk_39",
+      "retrieved": [
+        "chunk_39",
+        "chunk_42",
+        "chunk_43",
+        "chunk_41",
+        "chunk_46",
+        "chunk_65",
+        "chunk_48",
+        "chunk_37",
+        "chunk_95",
+        "chunk_89"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_39_2": {
+      "query": "Hoàn tiền khi thanh toán cước truyền hình Viettel sai mã account như thế nào? Hoàn tiền giao dịch sai account truyền hình Viettel ra sao?",
+      "source_chunk": "chunk_39",
+      "retrieved": [
+        "chunk_39",
+        "chunk_86",
+        "chunk_42",
+        "chunk_93",
+        "chunk_77",
+        "chunk_85",
+        "chunk_72",
+        "chunk_95",
+        "chunk_41",
+        "chunk_22"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_36_0": {
+      "query": "Làm thế nào để nạp cước trả sau thành công trên ViettelPay Pro? Hoặc là các bước thực hiện nạp cước trả sau thành công là gì?",
+      "source_chunk": "chunk_36",
+      "retrieved": [
+        "chunk_36",
+        "chunk_35",
+        "chunk_39",
+        "chunk_42",
+        "chunk_40",
+        "chunk_41",
+        "chunk_45",
+        "chunk_37",
+        "chunk_95",
+        "chunk_8"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_36_1": {
+      "query": "Có video hướng dẫn nạp cước điện thoại trả sau cho khách hàng như thế nào? Hoặc là, hướng dẫn bằng video về cách nạp tiền điện thoại trả sau cho khách hàng khi họ muốn thanh toán đúng số tiền nợ là gì?",
+      "source_chunk": "chunk_36",
+      "retrieved": [
+        "chunk_36",
+        "chunk_35",
+        "chunk_8",
+        "chunk_39",
+        "chunk_42",
+        "chunk_43",
+        "chunk_37",
+        "chunk_40",
+        "chunk_34",
+        "chunk_19"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_36_2": {
+      "query": "Nạp toàn bộ nợ cước trả sau được không? Có giới hạn số tiền nạp cước trả sau không?",
+      "source_chunk": "chunk_36",
+      "retrieved": [
+        "chunk_36",
+        "chunk_50",
+        "chunk_49",
+        "chunk_44",
+        "chunk_8",
+        "chunk_81",
+        "chunk_34",
+        "chunk_53",
+        "chunk_64",
+        "chunk_19"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_35_0": {
+      "query": "Lỗi nạp tiền điện thoại cho khách có thường xuyên xảy ra không? Làm thế nào để hạn chế lỗi khi nạp tiền điện thoại?",
+      "source_chunk": "chunk_35",
+      "retrieved": [
+        "chunk_79",
+        "chunk_66",
+        "chunk_92",
+        "chunk_78",
+        "chunk_68",
+        "chunk_72",
+        "chunk_56",
+        "chunk_90",
+        "chunk_61",
+        "chunk_77"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_35_1": {
+      "query": "Em cần nhập mã PIN để hoàn tất giao dịch nạp tiền điện thoại cho khách hàng như thế nào?",
+      "source_chunk": "chunk_35",
+      "retrieved": [
+        "chunk_35",
+        "chunk_36",
+        "chunk_40",
+        "chunk_39",
+        "chunk_41",
+        "chunk_42",
+        "chunk_44",
+        "chunk_43",
+        "chunk_37",
+        "chunk_46"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_35_2": {
+      "query": "Nạp tiền điện thoại trả trước khác mạng Viettel qua ViettelPay Pro có mất phí không? Nạp tiền cho số khác mạng có gì khác biệt?",
+      "source_chunk": "chunk_35",
+      "retrieved": [
+        "chunk_8",
+        "chunk_34",
+        "chunk_35",
+        "chunk_47",
+        "chunk_49",
+        "chunk_11",
+        "chunk_33",
+        "chunk_36",
+        "chunk_16",
+        "chunk_66"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_45_0": {
+      "query": "Làm thế nào để gửi lại mã thẻ game cho khách hàng qua tin nhắn sau khi đã tìm thấy giao dịch trong lịch sử? Hoặc là, cách thức gửi mã thẻ game đã mua cho khách hàng qua SMS?",
+      "source_chunk": "chunk_45",
+      "retrieved": [
+        "chunk_45",
+        "chunk_91",
+        "chunk_46",
+        "chunk_38",
+        "chunk_78",
+        "chunk_73",
+        "chunk_90",
+        "chunk_92",
+        "chunk_9",
+        "chunk_74"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_45_1": {
+      "query": "Em không tìm thấy mã thẻ game đã mua trong lịch sử giao dịch thì phải làm thế nào? Hoặc là, làm sao để kiểm tra lại giao dịch mua thẻ game mà không thấy mã?",
+      "source_chunk": "chunk_45",
+      "retrieved": [
+        "chunk_45",
+        "chunk_78",
+        "chunk_91",
+        "chunk_92",
+        "chunk_46",
+        "chunk_73",
+        "chunk_74",
+        "chunk_38",
+        "chunk_90",
+        "chunk_65"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_45_2": {
+      "query": "Video hướng dẫn cách gửi lại mã thẻ game cho khách hàng sau khi giao dịch thành công như thế nào? Hoặc là xem lại video hướng dẫn thao tác gửi lại mã thẻ game cho khách hàng sau khi mua thành công.",
+      "source_chunk": "chunk_45",
+      "retrieved": [
+        "chunk_45",
+        "chunk_91",
+        "chunk_38",
+        "chunk_46",
+        "chunk_78",
+        "chunk_90",
+        "chunk_73",
+        "chunk_92",
+        "chunk_74",
+        "chunk_37"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_46_0": {
+      "query": "Làm thế nào để gửi lại mã thẻ cào cho khách hàng sau khi giao dịch báo thành công trên ViettelPay Pro? Hoặc, cách thức gửi lại mã thẻ cào cho khách hàng khi họ chưa nhận được mã?",
+      "source_chunk": "chunk_46",
+      "retrieved": [
+        "chunk_46",
+        "chunk_45",
+        "chunk_90",
+        "chunk_91",
+        "chunk_72",
+        "chunk_73",
+        "chunk_78",
+        "chunk_71",
+        "chunk_37",
+        "chunk_92"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_46_1": {
+      "query": "Làm thế nào để gửi lại mã thẻ cào đã bán qua SMS cho khách hàng? Hoặc là, tôi muốn xem lại và gửi lại mã thẻ cào cho khách hàng qua tin nhắn SMS thì phải làm thế nào?",
+      "source_chunk": "chunk_46",
+      "retrieved": [
+        "chunk_46",
+        "chunk_45",
+        "chunk_90",
+        "chunk_91",
+        "chunk_78",
+        "chunk_73",
+        "chunk_72",
+        "chunk_37",
+        "chunk_71",
+        "chunk_9"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_46_2": {
+      "query": "Làm thế nào để tìm kiếm giao dịch mua thẻ cào trong lịch sử giao dịch? Hoặc là, tôi muốn lọc giao dịch mua thẻ cào trong lịch sử giao dịch để tìm giao dịch cụ thể thì làm thế nào?",
+      "source_chunk": "chunk_46",
+      "retrieved": [
+        "chunk_46",
+        "chunk_45",
+        "chunk_48",
+        "chunk_78",
+        "chunk_65",
+        "chunk_90",
+        "chunk_91",
+        "chunk_53",
+        "chunk_71",
+        "chunk_37"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_40_0": {
+      "query": "Lỗi thanh toán cước cố định ViettelPay Pro có thường xuyên xảy ra không? Làm thế nào để hạn chế lỗi khi thanh toán cước cố định? Có cách nào để tránh gặp phải lỗi khi giao dịch thanh toán cước cố định không?",
+      "source_chunk": "chunk_40",
+      "retrieved": [
+        "chunk_79",
+        "chunk_77",
+        "chunk_75",
+        "chunk_85",
+        "chunk_81",
+        "chunk_89",
+        "chunk_80",
+        "chunk_86",
+        "chunk_84",
+        "chunk_88"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_40_1": {
+      "query": "Làm thế nào để tra cứu cước Homephone Viettel cho khách hàng khi họ không nhớ số tiền cần thanh toán trên ViettelPay Pro? Hoặc, cách kiểm tra số tiền cước Homephone Viettel cần thanh toán trên ứng dụng ViettelPay Pro là gì?",
+      "source_chunk": "chunk_40",
+      "retrieved": [
+        "chunk_40",
+        "chunk_39",
+        "chunk_42",
+        "chunk_48",
+        "chunk_43",
+        "chunk_41",
+        "chunk_36",
+        "chunk_95",
+        "chunk_65",
+        "chunk_89"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_40_2": {
+      "query": "Thanh toán cước cố định bằng ViettelPay có mất phí không? Phí giao dịch khi thanh toán cước cố định bằng tài khoản ViettelPay là bao nhiêu?",
+      "source_chunk": "chunk_40",
+      "retrieved": [
+        "chunk_47",
+        "chunk_40",
+        "chunk_5",
+        "chunk_43",
+        "chunk_41",
+        "chunk_42",
+        "chunk_34",
+        "chunk_88",
+        "chunk_39",
+        "chunk_49"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_8_0": {
+      "query": "Lỗi nạp tiền cho khách có thường xuyên xảy ra không? Làm thế nào để hạn chế lỗi khi thực hiện giao dịch nạp tiền ViettelPay Pro? Có cách nào để tránh gặp phải lỗi nạp tiền không thành công không?",
+      "source_chunk": "chunk_8",
+      "retrieved": [
+        "chunk_79",
+        "chunk_92",
+        "chunk_72",
+        "chunk_78",
+        "chunk_75",
+        "chunk_71",
+        "chunk_77",
+        "chunk_66",
+        "chunk_65",
+        "chunk_73"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_8_1": {
+      "query": "Nạp tiền điện thoại trả sau trên ViettelPay Pro có gì khác biệt?",
+      "source_chunk": "chunk_8",
+      "retrieved": [
+        "chunk_8",
+        "chunk_34",
+        "chunk_36",
+        "chunk_49",
+        "chunk_50",
+        "chunk_12",
+        "chunk_35",
+        "chunk_11",
+        "chunk_66",
+        "chunk_17"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_8_2": {
+      "query": "Nạp tiền điện thoại trả sau trên ViettelPay Pro có giới hạn số tiền nạp không? Mức nạp tối đa cho thuê bao trả sau là bao nhiêu?",
+      "source_chunk": "chunk_8",
+      "retrieved": [
+        "chunk_50",
+        "chunk_8",
+        "chunk_34",
+        "chunk_36",
+        "chunk_51",
+        "chunk_49",
+        "chunk_35",
+        "chunk_87",
+        "chunk_12",
+        "chunk_11"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_0_0": {
+      "query": "Lỗi thanh toán cước ViettelPay Pro có thường xuyên xảy ra không? Làm thế nào để hạn chế lỗi khi thanh toán cước cho khách hàng? Có những biện pháp nào để phòng tránh lỗi giao dịch nạp cước không?",
+      "source_chunk": "chunk_0",
+      "retrieved": [
+        "chunk_79",
+        "chunk_77",
+        "chunk_75",
+        "chunk_72",
+        "chunk_89",
+        "chunk_81",
+        "chunk_80",
+        "chunk_84",
+        "chunk_71",
+        "chunk_88"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_0_1": {
+      "query": "Làm thế nào để hủy giao dịch thanh toán cước viễn thông đã thực hiện trên ViettelPay Pro cho khách hàng? Hoặc quy trình hoàn tiền khi giao dịch thanh toán cước viễn thông bị hủy là gì?",
+      "source_chunk": "chunk_0",
+      "retrieved": [
+        "chunk_53",
+        "chunk_50",
+        "chunk_54",
+        "chunk_95",
+        "chunk_51",
+        "chunk_52",
+        "chunk_49",
+        "chunk_23",
+        "chunk_44",
+        "chunk_24"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_0_2": {
+      "query": "Chính sách chiết khấu khi bán thẻ cào số lượng lớn là gì? Có được ưu đãi gì khi bán nhiều thẻ cào không?",
+      "source_chunk": "chunk_0",
+      "retrieved": [
+        "chunk_47",
+        "chunk_6",
+        "chunk_48",
+        "chunk_0",
+        "chunk_5",
+        "chunk_18",
+        "chunk_61",
+        "chunk_37",
+        "chunk_34",
+        "chunk_67"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_48_0": {
+      "query": "Làm sao để kiểm tra thông tin giao dịch nạp cước không thành công? Xem lại lịch sử giao dịch ở đâu khi thanh toán cước bị lỗi?",
+      "source_chunk": "chunk_48",
+      "retrieved": [
+        "chunk_95",
+        "chunk_65",
+        "chunk_75",
+        "chunk_77",
+        "chunk_71",
+        "chunk_84",
+        "chunk_79",
+        "chunk_78",
+        "chunk_66",
+        "chunk_94"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_48_1": {
+      "query": "\"Chỗ nào hiển thị số tiền sau khi đã được chiết khấu khi thanh toán cước phí?\"",
+      "source_chunk": "chunk_48",
+      "retrieved": [
+        "chunk_48",
+        "chunk_96",
+        "chunk_47",
+        "chunk_95",
+        "chunk_6",
+        "chunk_44",
+        "chunk_39",
+        "chunk_40",
+        "chunk_18",
+        "chunk_36"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_48_2": {
+      "query": "Xem chi tiết chiết khấu bán thẻ cào trong mục lịch sử giao dịch ở đâu? Hoặc là xem thông tin chiết khấu thẻ cào trong lịch sử giao dịch như thế nào?",
+      "source_chunk": "chunk_48",
+      "retrieved": [
+        "chunk_48",
+        "chunk_46",
+        "chunk_47",
+        "chunk_90",
+        "chunk_45",
+        "chunk_53",
+        "chunk_65",
+        "chunk_6",
+        "chunk_91",
+        "chunk_37"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_7_0": {
+      "query": "Tôi có thể sử dụng ngân hàng nào khác để thanh toán cước ViettelPay Pro khi gặp lỗi với MB Bank? Hoặc, ngân hàng nào khác hỗ trợ thanh toán cước trên ViettelPay Pro?",
+      "source_chunk": "chunk_7",
+      "retrieved": [
+        "chunk_84",
+        "chunk_7",
+        "chunk_83",
+        "chunk_82",
+        "chunk_85",
+        "chunk_86",
+        "chunk_87",
+        "chunk_34",
+        "chunk_95",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_7_1": {
+      "query": "Danh sách ngân hàng liên kết với ViettelPay Pro có thường xuyên thay đổi không? Hay là danh sách này cố định?",
+      "source_chunk": "chunk_7",
+      "retrieved": [
+        "chunk_7",
+        "chunk_34",
+        "chunk_84",
+        "chunk_83",
+        "chunk_82",
+        "chunk_47",
+        "chunk_95",
+        "chunk_86",
+        "chunk_87",
+        "chunk_33"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_7_2": {
+      "query": "ViettelPay Pro liên kết với những ngân hàng nào để thực hiện giao dịch? Ngân hàng nào được hỗ trợ trên ViettelPay Pro?",
+      "source_chunk": "chunk_7",
+      "retrieved": [
+        "chunk_7",
+        "chunk_34",
+        "chunk_83",
+        "chunk_37",
+        "chunk_84",
+        "chunk_35",
+        "chunk_95",
+        "chunk_86",
+        "chunk_42",
+        "chunk_54"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_5_0": {
+      "query": "Lỗi thanh toán cước có ảnh hưởng đến chiết khấu/hoa hồng bán hàng của tôi không?",
+      "source_chunk": "chunk_5",
+      "retrieved": [
+        "chunk_47",
+        "chunk_0",
+        "chunk_48",
+        "chunk_6",
+        "chunk_70",
+        "chunk_83",
+        "chunk_95",
+        "chunk_88",
+        "chunk_68",
+        "chunk_85"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_5_1": {
+      "query": "Chính sách phí bán hàng cước viễn thông do ai quy định? Ai là người đưa ra quyết định về mức phí này?",
+      "source_chunk": "chunk_5",
+      "retrieved": [
+        "chunk_5",
+        "chunk_47",
+        "chunk_48",
+        "chunk_0",
+        "chunk_88",
+        "chunk_1",
+        "chunk_54",
+        "chunk_49",
+        "chunk_61",
+        "chunk_51"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_5_2": {
+      "query": "Phí bán hàng có áp dụng cho tất cả giao dịch thanh toán cước viễn thông trên ViettelPay Pro không? Hay là phí này chỉ áp dụng cho một số loại giao dịch nhất định?",
+      "source_chunk": "chunk_5",
+      "retrieved": [
+        "chunk_47",
+        "chunk_5",
+        "chunk_48",
+        "chunk_0",
+        "chunk_49",
+        "chunk_29",
+        "chunk_28",
+        "chunk_15",
+        "chunk_26",
+        "chunk_54"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_24_0": {
+      "query": "Làm thế nào để hủy giao dịch không cần OTP trên ViettelPay Pro khi gặp lỗi? Hoặc, các bước để hủy giao dịch đã báo lỗi mà không cần mã OTP?",
+      "source_chunk": "chunk_24",
+      "retrieved": [
+        "chunk_53",
+        "chunk_95",
+        "chunk_50",
+        "chunk_24",
+        "chunk_54",
+        "chunk_96",
+        "chunk_93",
+        "chunk_77",
+        "chunk_65",
+        "chunk_51"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_24_1": {
+      "query": "Ai sẽ là người phê duyệt giao dịch hủy không cần OTP trên ViettelPay Pro? Ai có quyền duyệt hủy giao dịch không cần mã OTP?",
+      "source_chunk": "chunk_24",
+      "retrieved": [
+        "chunk_25",
+        "chunk_53",
+        "chunk_24",
+        "chunk_50",
+        "chunk_54",
+        "chunk_51",
+        "chunk_23",
+        "chunk_49",
+        "chunk_52",
+        "chunk_94"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_24_2": {
+      "query": "Ai là người có thẩm quyền quyết định hủy giao dịch ViettelPay Pro không cần OTP? Ai sẽ phê duyệt việc hủy bỏ giao dịch không có OTP?",
+      "source_chunk": "chunk_24",
+      "retrieved": [
+        "chunk_53",
+        "chunk_25",
+        "chunk_24",
+        "chunk_54",
+        "chunk_50",
+        "chunk_23",
+        "chunk_51",
+        "chunk_94",
+        "chunk_52",
+        "chunk_49"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_4_0": {
+      "query": "Ai là người hướng dẫn sử dụng ứng dụng ViettelPay Pro cho điểm bán của tôi? Hoặc, tôi cần ai hỗ trợ khi gặp khó khăn trong quá trình sử dụng app?",
+      "source_chunk": "chunk_4",
+      "retrieved": [
+        "chunk_4",
+        "chunk_89",
+        "chunk_77",
+        "chunk_88",
+        "chunk_71",
+        "chunk_75",
+        "chunk_92",
+        "chunk_72",
+        "chunk_54",
+        "chunk_34"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_4_1": {
+      "query": "Người hỗ trợ điểm bán ViettelPay Pro có hỗ trợ tạo tài khoản ViettelPay Pro không? Hoặc là, người hỗ trợ có giúp tôi đăng ký tài khoản ViettelPay Pro được không?",
+      "source_chunk": "chunk_4",
+      "retrieved": [
+        "chunk_4",
+        "chunk_34",
+        "chunk_13",
+        "chunk_85",
+        "chunk_75",
+        "chunk_77",
+        "chunk_76",
+        "chunk_86",
+        "chunk_35",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_4_2": {
+      "query": "Vai trò của nhân viên phát triển điểm trong việc hỗ trợ điểm bán ViettelPay Pro là gì? Họ giúp gì cho tôi?",
+      "source_chunk": "chunk_4",
+      "retrieved": [
+        "chunk_4",
+        "chunk_34",
+        "chunk_3",
+        "chunk_89",
+        "chunk_54",
+        "chunk_25",
+        "chunk_77",
+        "chunk_75",
+        "chunk_79",
+        "chunk_8"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_17_0": {
+      "query": "Tài khoản gốc có ảnh hưởng gì đến giao dịch nạp tiền điện thoại bị lỗi không? Hoặc là, việc nạp tiền điện thoại bị lỗi có liên quan gì đến tài khoản gốc không?",
+      "source_chunk": "chunk_17",
+      "retrieved": [
+        "chunk_17",
+        "chunk_50",
+        "chunk_72",
+        "chunk_66",
+        "chunk_79",
+        "chunk_71",
+        "chunk_65",
+        "chunk_85",
+        "chunk_78",
+        "chunk_68"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_17_1": {
+      "query": "Tài khoản gốc ViettelPay Pro có dùng để đăng ký 4G được không? Hay là tôi có thể dùng tài khoản gốc để mua các gói cước 4G?",
+      "source_chunk": "chunk_17",
+      "retrieved": [
+        "chunk_17",
+        "chunk_13",
+        "chunk_34",
+        "chunk_18",
+        "chunk_27",
+        "chunk_28",
+        "chunk_30",
+        "chunk_37",
+        "chunk_41",
+        "chunk_29"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_17_2": {
+      "query": "Tài khoản gốc có dùng để gọi điện thoại được không? Hay tài khoản gốc có chức năng gọi điện thoại không?",
+      "source_chunk": "chunk_17",
+      "retrieved": [
+        "chunk_17",
+        "chunk_50",
+        "chunk_13",
+        "chunk_8",
+        "chunk_11",
+        "chunk_18",
+        "chunk_80",
+        "chunk_72",
+        "chunk_10",
+        "chunk_9"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_9_0": {
+      "query": "Làm thế nào để tôi có thể mua thẻ cào thành công cho khách hàng? Hoặc là, tôi cần làm gì khi gặp lỗi khi mua thẻ cào cho khách hàng?",
+      "source_chunk": "chunk_9",
+      "retrieved": [
+        "chunk_46",
+        "chunk_90",
+        "chunk_78",
+        "chunk_92",
+        "chunk_72",
+        "chunk_71",
+        "chunk_91",
+        "chunk_73",
+        "chunk_67",
+        "chunk_45"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_9_1": {
+      "query": "Khách hàng dùng thẻ cào để làm gì và các giao dịch liên quan đến thẻ cào?",
+      "source_chunk": "chunk_9",
+      "retrieved": [
+        "chunk_2",
+        "chunk_9",
+        "chunk_46",
+        "chunk_92",
+        "chunk_90",
+        "chunk_34",
+        "chunk_37",
+        "chunk_72",
+        "chunk_73",
+        "chunk_53"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_9_2": {
+      "query": "Ai là người sẽ nhận được mã thẻ cào sau khi mua trên ViettelPay Pro? Hoặc, ai là người được cung cấp mã thẻ cào khi mua thẻ cào (pincode) qua ứng dụng?",
+      "source_chunk": "chunk_9",
+      "retrieved": [
+        "chunk_37",
+        "chunk_9",
+        "chunk_2",
+        "chunk_46",
+        "chunk_38",
+        "chunk_34",
+        "chunk_90",
+        "chunk_4",
+        "chunk_78",
+        "chunk_1"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_20_0": {
+      "query": "Đóng trước cước là gì trên ViettelPay Pro? Hoặc, đóng trước cước có nghĩa là gì trong ứng dụng ViettelPay Pro?",
+      "source_chunk": "chunk_20",
+      "retrieved": [
+        "chunk_20",
+        "chunk_11",
+        "chunk_43",
+        "chunk_8",
+        "chunk_15",
+        "chunk_12",
+        "chunk_35",
+        "chunk_34",
+        "chunk_19",
+        "chunk_17"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_20_1": {
+      "query": "Đóng trước cước ViettelPay Pro áp dụng cho dịch vụ nào? Hay đóng trước cước được dùng để thanh toán dịch vụ gì?",
+      "source_chunk": "chunk_20",
+      "retrieved": [
+        "chunk_34",
+        "chunk_20",
+        "chunk_43",
+        "chunk_47",
+        "chunk_49",
+        "chunk_15",
+        "chunk_17",
+        "chunk_11",
+        "chunk_54",
+        "chunk_35"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_20_2": {
+      "query": "Đóng trước cước có được ưu đãi gì không? Hoặc là, khi đóng trước cước thì có chương trình khuyến mãi nào không?",
+      "source_chunk": "chunk_20",
+      "retrieved": [
+        "chunk_18",
+        "chunk_20",
+        "chunk_47",
+        "chunk_50",
+        "chunk_43",
+        "chunk_34",
+        "chunk_49",
+        "chunk_35",
+        "chunk_48",
+        "chunk_70"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_49_0": {
+      "query": "Lỗi nạp tiền điện thoại cho khách hàng có thường xuyên xảy ra không? Làm thế nào để giảm thiểu tình trạng này trên ViettelPay Pro?",
+      "source_chunk": "chunk_49",
+      "retrieved": [
+        "chunk_79",
+        "chunk_66",
+        "chunk_92",
+        "chunk_72",
+        "chunk_77",
+        "chunk_68",
+        "chunk_80",
+        "chunk_75",
+        "chunk_90",
+        "chunk_81"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_49_1": {
+      "query": "Các loại cước viễn thông nào được phép thanh toán trên ViettelPay Pro, bao gồm cả cước trả sau? Tôi có thể thanh toán những loại cước nào?",
+      "source_chunk": "chunk_49",
+      "retrieved": [
+        "chunk_34",
+        "chunk_49",
+        "chunk_15",
+        "chunk_43",
+        "chunk_40",
+        "chunk_36",
+        "chunk_41",
+        "chunk_35",
+        "chunk_44",
+        "chunk_8"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_49_2": {
+      "query": "Các giao dịch thanh toán cước nào trên ViettelPay Pro được phép hủy bỏ và quy trình hủy như thế nào? Hoặc, tôi có thể hủy những giao dịch thanh toán cước nào đã thực hiện trên ứng dụng ViettelPay Pro?",
+      "source_chunk": "chunk_49",
+      "retrieved": [
+        "chunk_53",
+        "chunk_50",
+        "chunk_49",
+        "chunk_51",
+        "chunk_54",
+        "chunk_93",
+        "chunk_44",
+        "chunk_52",
+        "chunk_23",
+        "chunk_96"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_18_0": {
+      "query": "Tài khoản khuyến mại nhận được sau khi nạp thẻ ViettelPay Pro dùng để làm gì? Có thể sử dụng tài khoản khuyến mại cho những dịch vụ nào?",
+      "source_chunk": "chunk_18",
+      "retrieved": [
+        "chunk_18",
+        "chunk_17",
+        "chunk_34",
+        "chunk_50",
+        "chunk_13",
+        "chunk_11",
+        "chunk_47",
+        "chunk_8",
+        "chunk_9",
+        "chunk_32"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_18_1": {
+      "query": "Tài khoản khuyến mại có phải là tiền nạp vào và cách sử dụng như thế nào? Tiền khuyến mại khác gì với tiền nạp thông thường?",
+      "source_chunk": "chunk_18",
+      "retrieved": [
+        "chunk_18",
+        "chunk_50",
+        "chunk_17",
+        "chunk_8",
+        "chunk_11",
+        "chunk_13",
+        "chunk_2",
+        "chunk_6",
+        "chunk_41",
+        "chunk_51"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_18_2": {
+      "query": "Tài khoản khuyến mại có luôn được cộng khi nạp tiền điện thoại không? Hay là chỉ có trong một số trường hợp nhất định?",
+      "source_chunk": "chunk_18",
+      "retrieved": [
+        "chunk_18",
+        "chunk_50",
+        "chunk_8",
+        "chunk_17",
+        "chunk_89",
+        "chunk_49",
+        "chunk_11",
+        "chunk_66",
+        "chunk_79",
+        "chunk_13"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_11_0": {
+      "query": "TBTT là gì và tại sao lỗi liên quan đến TBTT khi nạp tiền điện thoại? Hoặc, lỗi TBTT trong giao dịch nạp tiền điện thoại là gì?",
+      "source_chunk": "chunk_11",
+      "retrieved": [
+        "chunk_11",
+        "chunk_66",
+        "chunk_79",
+        "chunk_12",
+        "chunk_8",
+        "chunk_68",
+        "chunk_90",
+        "chunk_72",
+        "chunk_10",
+        "chunk_89"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_11_1": {
+      "query": "Sự khác biệt giữa TBTT và trả sau là gì? Hoặc là, TBTT khác gì với thuê bao trả sau?",
+      "source_chunk": "chunk_11",
+      "retrieved": [
+        "chunk_11",
+        "chunk_12",
+        "chunk_8",
+        "chunk_10",
+        "chunk_18",
+        "chunk_17",
+        "chunk_19",
+        "chunk_52",
+        "chunk_20",
+        "chunk_81"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_11_2": {
+      "query": "Trước khi sử dụng TBTT thì cần chuẩn bị những gì? Cần làm gì trước khi thực hiện giao dịch TBTT?",
+      "source_chunk": "chunk_11",
+      "retrieved": [
+        "chunk_11",
+        "chunk_36",
+        "chunk_35",
+        "chunk_44",
+        "chunk_40",
+        "chunk_42",
+        "chunk_39",
+        "chunk_41",
+        "chunk_37",
+        "chunk_38"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_3_0": {
+      "query": "ViettelPay Pro có phải chỉ là ứng dụng trung gian trong các giao dịch thanh toán không? Hay ViettelPay Pro có vai trò gì khác ngoài việc làm trung gian thanh toán?",
+      "source_chunk": "chunk_3",
+      "retrieved": [
+        "chunk_3",
+        "chunk_34",
+        "chunk_4",
+        "chunk_8",
+        "chunk_7",
+        "chunk_15",
+        "chunk_9",
+        "chunk_47",
+        "chunk_43",
+        "chunk_41"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_3_1": {
+      "query": "NCCDV chịu trách nhiệm như thế nào khi giao dịch ViettelPay Pro bị lỗi? Trách nhiệm của NCCDV khi giao dịch trên ứng dụng ViettelPay Pro gặp sự cố là gì?",
+      "source_chunk": "chunk_3",
+      "retrieved": [
+        "chunk_75",
+        "chunk_77",
+        "chunk_71",
+        "chunk_89",
+        "chunk_79",
+        "chunk_80",
+        "chunk_69",
+        "chunk_67",
+        "chunk_70",
+        "chunk_68"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_3_2": {
+      "query": "ViettelPay Pro có phải là nhà cung cấp dịch vụ duy nhất trên ứng dụng không? Hay chỉ có ViettelPay Pro là NCCDV?",
+      "source_chunk": "chunk_3",
+      "retrieved": [
+        "chunk_3",
+        "chunk_34",
+        "chunk_14",
+        "chunk_28",
+        "chunk_4",
+        "chunk_33",
+        "chunk_26",
+        "chunk_32",
+        "chunk_27",
+        "chunk_13"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_15_0": {
+      "query": "Thanh toán cước Viettel trên ViettelPay Pro bao gồm những dịch vụ nào? Các dịch vụ cước Viettel được hỗ trợ thanh toán là gì?",
+      "source_chunk": "chunk_15",
+      "retrieved": [
+        "chunk_34",
+        "chunk_15",
+        "chunk_40",
+        "chunk_43",
+        "chunk_49",
+        "chunk_41",
+        "chunk_42",
+        "chunk_39",
+        "chunk_44",
+        "chunk_14"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_15_1": {
+      "query": "Các loại cước Viettel nào có thể thanh toán trên ViettelPay Pro? Tôi có thể thanh toán những loại cước nào cho khách hàng?",
+      "source_chunk": "chunk_15",
+      "retrieved": [
+        "chunk_34",
+        "chunk_40",
+        "chunk_15",
+        "chunk_43",
+        "chunk_49",
+        "chunk_41",
+        "chunk_35",
+        "chunk_37",
+        "chunk_42",
+        "chunk_39"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_15_2": {
+      "query": "Thanh toán cước Viettel trên ViettelPay Pro bao gồm những dịch vụ nào? Các dịch vụ cước Viettel nào được hỗ trợ thanh toán?",
+      "source_chunk": "chunk_15",
+      "retrieved": [
+        "chunk_34",
+        "chunk_15",
+        "chunk_40",
+        "chunk_43",
+        "chunk_49",
+        "chunk_41",
+        "chunk_42",
+        "chunk_39",
+        "chunk_44",
+        "chunk_0"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_19_0": {
+      "query": "Gạch nợ cước là gì và quy trình thực hiện như thế nào? Hoặc, gạch nợ cước có nghĩa là gì trong ViettelPay Pro?",
+      "source_chunk": "chunk_19",
+      "retrieved": [
+        "chunk_19",
+        "chunk_44",
+        "chunk_43",
+        "chunk_36",
+        "chunk_42",
+        "chunk_89",
+        "chunk_15",
+        "chunk_34",
+        "chunk_20",
+        "chunk_37"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_19_1": {
+      "query": "Các loại cước nào được hỗ trợ khi gạch nợ cước cho khách hàng? Hoặc, gạch nợ cước ViettelPay Pro hỗ trợ những loại cước nào?",
+      "source_chunk": "chunk_19",
+      "retrieved": [
+        "chunk_34",
+        "chunk_44",
+        "chunk_43",
+        "chunk_19",
+        "chunk_49",
+        "chunk_89",
+        "chunk_50",
+        "chunk_15",
+        "chunk_40",
+        "chunk_39"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_19_2": {
+      "query": "Gạch nợ cước internet được áp dụng như thế nào? Gạch nợ cước internet có giống gạch nợ cước di động không?",
+      "source_chunk": "chunk_19",
+      "retrieved": [
+        "chunk_19",
+        "chunk_43",
+        "chunk_50",
+        "chunk_34",
+        "chunk_49",
+        "chunk_44",
+        "chunk_52",
+        "chunk_89",
+        "chunk_0",
+        "chunk_11"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_21_0": {
+      "query": "Số điện thoại nào được dùng để nhận thông báo kết quả giao dịch nạp cước cho khách hàng? Hoặc, số điện thoại nào sẽ nhận tin nhắn thông báo khi thanh toán cước thành công?",
+      "source_chunk": "chunk_21",
+      "retrieved": [
+        "chunk_21",
+        "chunk_80",
+        "chunk_72",
+        "chunk_76",
+        "chunk_37",
+        "chunk_89",
+        "chunk_71",
+        "chunk_36",
+        "chunk_35",
+        "chunk_53"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_21_1": {
+      "query": "Vai trò của số điện thoại nhận tin nhắn trong giao dịch là gì? Chức năng của số điện thoại này trong các giao dịch ra sao?",
+      "source_chunk": "chunk_21",
+      "retrieved": [
+        "chunk_21",
+        "chunk_9",
+        "chunk_38",
+        "chunk_37",
+        "chunk_76",
+        "chunk_78",
+        "chunk_90",
+        "chunk_77",
+        "chunk_80",
+        "chunk_45"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_21_2": {
+      "query": "Số điện thoại nhận tin nhắn có thể thay đổi được không? Hay là có thể cập nhật số điện thoại nhận thông báo không?",
+      "source_chunk": "chunk_21",
+      "retrieved": [
+        "chunk_21",
+        "chunk_77",
+        "chunk_76",
+        "chunk_9",
+        "chunk_90",
+        "chunk_37",
+        "chunk_38",
+        "chunk_78",
+        "chunk_91",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_25_0": {
+      "query": "Ai có thẩm quyền duyệt hủy giao dịch không cần xác thực OTP? Hoặc, ai có quyền phê duyệt việc hủy giao dịch mà không cần mã OTP?",
+      "source_chunk": "chunk_25",
+      "retrieved": [
+        "chunk_25",
+        "chunk_24",
+        "chunk_53",
+        "chunk_50",
+        "chunk_23",
+        "chunk_54",
+        "chunk_51",
+        "chunk_49",
+        "chunk_52",
+        "chunk_94"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_25_1": {
+      "query": "Hình thức phê duyệt giao dịch hủy không OTP được thực hiện như thế nào? Quy trình phê duyệt giao dịch hủy không OTP ra sao?",
+      "source_chunk": "chunk_25",
+      "retrieved": [
+        "chunk_53",
+        "chunk_24",
+        "chunk_25",
+        "chunk_23",
+        "chunk_50",
+        "chunk_49",
+        "chunk_54",
+        "chunk_52",
+        "chunk_94",
+        "chunk_51"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_25_2": {
+      "query": "Quy trình phê duyệt hủy giao dịch không cần OTP được thực hiện ở đâu? Hoặc, vị trí thực hiện phê duyệt hủy giao dịch không cần OTP là ở đâu?",
+      "source_chunk": "chunk_25",
+      "retrieved": [
+        "chunk_53",
+        "chunk_24",
+        "chunk_25",
+        "chunk_23",
+        "chunk_50",
+        "chunk_54",
+        "chunk_51",
+        "chunk_49",
+        "chunk_52",
+        "chunk_94"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_16_0": {
+      "query": "Lỗi nạp tiền điện thoại cho khách dùng mạng VinaPhone có liên quan gì đến nhà mạng không? Hoặc là, nạp tiền điện thoại cho thuê bao Vina bị lỗi thì nguyên nhân có thể là gì?",
+      "source_chunk": "chunk_16",
+      "retrieved": [
+        "chunk_76",
+        "chunk_63",
+        "chunk_72",
+        "chunk_79",
+        "chunk_66",
+        "chunk_62",
+        "chunk_92",
+        "chunk_68",
+        "chunk_78",
+        "chunk_77"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_16_1": {
+      "query": "Cách thanh toán cước di động Mobi như thế nào? Quy trình nạp tiền điện thoại Mobi có gì khác biệt?",
+      "source_chunk": "chunk_16",
+      "retrieved": [
+        "chunk_35",
+        "chunk_8",
+        "chunk_37",
+        "chunk_36",
+        "chunk_34",
+        "chunk_17",
+        "chunk_50",
+        "chunk_11",
+        "chunk_40",
+        "chunk_19"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_16_2": {
+      "query": "Thanh toán cước Vinaphone, Mobifone có được coi là thanh toán cước ngoại mạng trên ViettelPay Pro không?",
+      "source_chunk": "chunk_16",
+      "retrieved": [
+        "chunk_34",
+        "chunk_26",
+        "chunk_32",
+        "chunk_16",
+        "chunk_27",
+        "chunk_33",
+        "chunk_31",
+        "chunk_30",
+        "chunk_28",
+        "chunk_29"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_64_0": {
+      "query": "Làm thế nào để kiểm tra số lần thanh toán cước trả sau đã thực hiện để tránh lỗi BL2? Hoặc, làm sao để biết số lần giao dịch đã thực hiện trước khi bị lỗi BL2 khi thanh toán cước trả sau?",
+      "source_chunk": "chunk_64",
+      "retrieved": [
+        "chunk_81",
+        "chunk_64",
+        "chunk_48",
+        "chunk_95",
+        "chunk_68",
+        "chunk_79",
+        "chunk_77",
+        "chunk_36",
+        "chunk_89",
+        "chunk_76"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_64_1": {
+      "query": "Lỗi BL2 có ảnh hưởng đến các giao dịch khác trên ViettelPay Pro không? Giao dịch nào có thể bị ảnh hưởng khi gặp lỗi BL2?",
+      "source_chunk": "chunk_64",
+      "retrieved": [
+        "chunk_64",
+        "chunk_81",
+        "chunk_77",
+        "chunk_72",
+        "chunk_71",
+        "chunk_78",
+        "chunk_75",
+        "chunk_69",
+        "chunk_70",
+        "chunk_74"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_64_2": {
+      "query": "Giới hạn số lần thanh toán cước trả sau trong ngày là bao nhiêu? Có quy định nào về số lượng giao dịch thanh toán cước trả sau tối đa trong một ngày không?",
+      "source_chunk": "chunk_64",
+      "retrieved": [
+        "chunk_51",
+        "chunk_64",
+        "chunk_50",
+        "chunk_61",
+        "chunk_0",
+        "chunk_81",
+        "chunk_49",
+        "chunk_88",
+        "chunk_47",
+        "chunk_52"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_32_0": {
+      "query": "Thẻ cào 500k Viettel bị lỗi nạp tiền có dùng được không? Cách kiểm tra và xử lý khi nạp thẻ Viettel 500.000đ không thành công?",
+      "source_chunk": "chunk_32",
+      "retrieved": [
+        "chunk_79",
+        "chunk_92",
+        "chunk_72",
+        "chunk_65",
+        "chunk_67",
+        "chunk_71",
+        "chunk_66",
+        "chunk_84",
+        "chunk_32",
+        "chunk_78"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 1
+      },
+      "rr": 0.1111111111111111,
+      "source_rank": 9
+    },
+    "conv_chunk_32_1": {
+      "query": "Thẻ cào 500k có dùng được cho cả 4 nhà mạng không? Hay thẻ cào 500k có thể nạp cho các nhà mạng nào?",
+      "source_chunk": "chunk_32",
+      "retrieved": [
+        "chunk_32",
+        "chunk_29",
+        "chunk_27",
+        "chunk_26",
+        "chunk_30",
+        "chunk_31",
+        "chunk_33",
+        "chunk_28",
+        "chunk_35",
+        "chunk_37"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_32_2": {
+      "query": "App ViettelPay Pro hỗ trợ bán thẻ cào 500k cho những nhà mạng nào? Có bán được thẻ 500k cho tất cả các nhà mạng không?",
+      "source_chunk": "chunk_32",
+      "retrieved": [
+        "chunk_32",
+        "chunk_29",
+        "chunk_34",
+        "chunk_27",
+        "chunk_33",
+        "chunk_26",
+        "chunk_28",
+        "chunk_30",
+        "chunk_31",
+        "chunk_37"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_29_0": {
+      "query": "Thẻ 50k nạp cho khách báo lỗi có dùng được cho mọi nhà mạng không? Hoặc: thẻ cào 50k nạp tiền điện thoại cho khách bị lỗi, có áp dụng được cho tất cả các nhà mạng không?",
+      "source_chunk": "chunk_29",
+      "retrieved": [
+        "chunk_29",
+        "chunk_32",
+        "chunk_33",
+        "chunk_27",
+        "chunk_26",
+        "chunk_30",
+        "chunk_28",
+        "chunk_92",
+        "chunk_31",
+        "chunk_0"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_29_1": {
+      "query": "Thẻ cào 50k ViettelPay Pro bán được cho những nhà mạng nào?",
+      "source_chunk": "chunk_29",
+      "retrieved": [
+        "chunk_29",
+        "chunk_32",
+        "chunk_34",
+        "chunk_27",
+        "chunk_37",
+        "chunk_26",
+        "chunk_30",
+        "chunk_33",
+        "chunk_31",
+        "chunk_35"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_29_2": {
+      "query": "Thẻ cào 50k ViettelPay Pro dùng được cho những nhà mạng nào? Hoặc Thẻ cào 50.000đ ViettelPay Pro có thể sử dụng cho những nhà mạng nào?",
+      "source_chunk": "chunk_29",
+      "retrieved": [
+        "chunk_29",
+        "chunk_32",
+        "chunk_34",
+        "chunk_30",
+        "chunk_27",
+        "chunk_26",
+        "chunk_33",
+        "chunk_31",
+        "chunk_37",
+        "chunk_35"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_61_0": {
+      "query": "Lỗi 624 khi thanh toán cước ViettelPay Pro do thanh toán nhiều có cách nào khắc phục? Làm sao để thanh toán cước thành công khi gặp lỗi này?",
+      "source_chunk": "chunk_61",
+      "retrieved": [
+        "chunk_87",
+        "chunk_61",
+        "chunk_81",
+        "chunk_88",
+        "chunk_72",
+        "chunk_84",
+        "chunk_79",
+        "chunk_82",
+        "chunk_95",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_61_1": {
+      "query": "Cách thanh toán cước viễn thông cho khách hàng với số tiền vượt hạn mức giao dịch như thế nào? Có phương án nào khác không?",
+      "source_chunk": "chunk_61",
+      "retrieved": [
+        "chunk_87",
+        "chunk_54",
+        "chunk_51",
+        "chunk_61",
+        "chunk_88",
+        "chunk_41",
+        "chunk_81",
+        "chunk_42",
+        "chunk_64",
+        "chunk_36"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_61_2": {
+      "query": "Hạn mức giao dịch thanh toán cước viễn thông ViettelPay Pro và thông báo lỗi khi vượt quá hạn mức là gì? Hoặc, lỗi hiển thị khi thanh toán cước viễn thông vượt quá giới hạn cho phép là gì?",
+      "source_chunk": "chunk_61",
+      "retrieved": [
+        "chunk_87",
+        "chunk_88",
+        "chunk_51",
+        "chunk_61",
+        "chunk_54",
+        "chunk_81",
+        "chunk_64",
+        "chunk_77",
+        "chunk_70",
+        "chunk_69"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_23_0": {
+      "query": "Khách hàng không nhận được OTP hủy giao dịch thì làm thế nào để họ nhận được OTP? Hoặc là, làm thế nào để xử lý khi khách hàng không nhận được mã OTP để hủy giao dịch?",
+      "source_chunk": "chunk_23",
+      "retrieved": [
+        "chunk_53",
+        "chunk_24",
+        "chunk_23",
+        "chunk_25",
+        "chunk_50",
+        "chunk_90",
+        "chunk_78",
+        "chunk_91",
+        "chunk_73",
+        "chunk_72"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_23_1": {
+      "query": "OTP này được gửi đến số điện thoại nào khi hủy giao dịch? Hoặc, ai là người nhận OTP khi tôi hủy giao dịch?",
+      "source_chunk": "chunk_23",
+      "retrieved": [
+        "chunk_53",
+        "chunk_23",
+        "chunk_24",
+        "chunk_25",
+        "chunk_38",
+        "chunk_50",
+        "chunk_9",
+        "chunk_21",
+        "chunk_46",
+        "chunk_54"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_23_2": {
+      "query": "Ai là người tạo yêu cầu hủy giao dịch có OTP? Hoặc, ai là người khởi tạo yêu cầu hủy giao dịch có mã OTP?",
+      "source_chunk": "chunk_23",
+      "retrieved": [
+        "chunk_53",
+        "chunk_23",
+        "chunk_24",
+        "chunk_25",
+        "chunk_54",
+        "chunk_50",
+        "chunk_1",
+        "chunk_51",
+        "chunk_52",
+        "chunk_96"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_27_0": {
+      "query": "Thẻ cào 20k có nạp được cho tất cả các nhà mạng trên ViettelPay Pro không? Hoặc là, thẻ cào 20.000 đồng có dùng được cho mọi nhà mạng khi nạp tiền trên ứng dụng ViettelPay Pro không?",
+      "source_chunk": "chunk_27",
+      "retrieved": [
+        "chunk_27",
+        "chunk_34",
+        "chunk_31",
+        "chunk_26",
+        "chunk_32",
+        "chunk_29",
+        "chunk_33",
+        "chunk_30",
+        "chunk_28",
+        "chunk_35"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_27_1": {
+      "query": "Thẻ cào 20k dùng được cho Mobifone không?",
+      "source_chunk": "chunk_27",
+      "retrieved": [
+        "chunk_27",
+        "chunk_31",
+        "chunk_32",
+        "chunk_26",
+        "chunk_30",
+        "chunk_29",
+        "chunk_28",
+        "chunk_33",
+        "chunk_34",
+        "chunk_37"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_27_2": {
+      "query": "ViettelPay Pro có bán thẻ cào Vinaphone 20k không? Thẻ này có dùng được không?",
+      "source_chunk": "chunk_27",
+      "retrieved": [
+        "chunk_27",
+        "chunk_31",
+        "chunk_34",
+        "chunk_32",
+        "chunk_30",
+        "chunk_26",
+        "chunk_28",
+        "chunk_33",
+        "chunk_29",
+        "chunk_37"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_30_0": {
+      "query": "Lỗi nạp thẻ 100k cho khách có thường xuyên xảy ra không? Hay là lỗi này chỉ xảy ra một lần?",
+      "source_chunk": "chunk_30",
+      "retrieved": [
+        "chunk_79",
+        "chunk_92",
+        "chunk_66",
+        "chunk_78",
+        "chunk_57",
+        "chunk_60",
+        "chunk_55",
+        "chunk_73",
+        "chunk_56",
+        "chunk_67"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_30_1": {
+      "query": "Khách hàng dùng Vinaphone có mua được thẻ cào 100k trên ViettelPay Pro không?",
+      "source_chunk": "chunk_30",
+      "retrieved": [
+        "chunk_30",
+        "chunk_34",
+        "chunk_32",
+        "chunk_27",
+        "chunk_37",
+        "chunk_26",
+        "chunk_33",
+        "chunk_28",
+        "chunk_29",
+        "chunk_31"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_30_2": {
+      "query": "Thẻ cào 100k ViettelPay Pro hỗ trợ các nhà mạng nào? Mua thẻ cào 100k trên ViettelPay Pro dùng được cho những mạng nào?",
+      "source_chunk": "chunk_30",
+      "retrieved": [
+        "chunk_30",
+        "chunk_34",
+        "chunk_32",
+        "chunk_27",
+        "chunk_26",
+        "chunk_29",
+        "chunk_37",
+        "chunk_33",
+        "chunk_28",
+        "chunk_31"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_6_0": {
+      "query": "Chiết khấu có áp dụng cho tất cả các sản phẩm và dịch vụ trên ViettelPay Pro không? Hay là chiết khấu chỉ áp dụng cho một số sản phẩm nhất định?",
+      "source_chunk": "chunk_6",
+      "retrieved": [
+        "chunk_47",
+        "chunk_6",
+        "chunk_48",
+        "chunk_29",
+        "chunk_0",
+        "chunk_33",
+        "chunk_26",
+        "chunk_32",
+        "chunk_28",
+        "chunk_31"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_6_1": {
+      "query": "Chiết khấu được áp dụng vào giá bán như thế nào? Hay chiết khấu có được giảm trực tiếp vào giá khi giao dịch không?",
+      "source_chunk": "chunk_6",
+      "retrieved": [
+        "chunk_6",
+        "chunk_47",
+        "chunk_48",
+        "chunk_0",
+        "chunk_5",
+        "chunk_50",
+        "chunk_88",
+        "chunk_49",
+        "chunk_28",
+        "chunk_8"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_6_2": {
+      "query": "Chiết khấu có phải là giảm giá khi thực hiện giao dịch trên ViettelPay Pro không? Cách giải thích về chiết khấu cho khách hàng như thế nào?",
+      "source_chunk": "chunk_6",
+      "retrieved": [
+        "chunk_6",
+        "chunk_47",
+        "chunk_48",
+        "chunk_18",
+        "chunk_2",
+        "chunk_15",
+        "chunk_5",
+        "chunk_20",
+        "chunk_0",
+        "chunk_19"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_14_0": {
+      "query": "Các dịch vụ cố định Viettel bao gồm những dịch vụ nào và có liên quan gì đến việc thanh toán cước internet trên ViettelPay Pro không? Hoặc, tôi muốn biết các dịch vụ cố định của Viettel là gì để xem có liên quan đến việc thanh toán cước internet bị lỗi không?",
+      "source_chunk": "chunk_14",
+      "retrieved": [
+        "chunk_34",
+        "chunk_14",
+        "chunk_40",
+        "chunk_43",
+        "chunk_69",
+        "chunk_15",
+        "chunk_97",
+        "chunk_70",
+        "chunk_75",
+        "chunk_89"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_14_1": {
+      "query": "Thanh toán cước truyền hình Viettel qua ViettelPay Pro được không? Có hỗ trợ thanh toán cước truyền hình không?",
+      "source_chunk": "chunk_14",
+      "retrieved": [
+        "chunk_34",
+        "chunk_42",
+        "chunk_39",
+        "chunk_77",
+        "chunk_43",
+        "chunk_75",
+        "chunk_69",
+        "chunk_89",
+        "chunk_70",
+        "chunk_41"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_31_0": {
+      "query": "Nạp thẻ Mobifone 200k trên ViettelPay Pro có gặp lỗi tương tự như khi nạp thẻ Viettel không thành công không? Hoặc là, lỗi nạp tiền điện thoại 200.000đ cho Mobifone có giống với lỗi nạp tiền Viettel trước đó không?",
+      "source_chunk": "chunk_31",
+      "retrieved": [
+        "chunk_79",
+        "chunk_66",
+        "chunk_92",
+        "chunk_90",
+        "chunk_75",
+        "chunk_67",
+        "chunk_77",
+        "chunk_80",
+        "chunk_68",
+        "chunk_89"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_31_1": {
+      "query": "Thẻ cào 200k bán trên ViettelPay Pro dùng được cho những nhà mạng nào? Hoặc là, thẻ cào 200.000đ trên ViettelPay Pro có thể sử dụng cho những mạng di động nào?",
+      "source_chunk": "chunk_31",
+      "retrieved": [
+        "chunk_31",
+        "chunk_27",
+        "chunk_34",
+        "chunk_32",
+        "chunk_30",
+        "chunk_29",
+        "chunk_37",
+        "chunk_26",
+        "chunk_33",
+        "chunk_28"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_31_2": {
+      "query": "Mệnh giá thẻ cào 200.000 VNĐ có thể bán trên ViettelPay Pro áp dụng cho những nhà mạng nào? Các nhà mạng nào hỗ trợ mệnh giá thẻ cào 200.000 VNĐ trên ứng dụng?",
+      "source_chunk": "chunk_31",
+      "retrieved": [
+        "chunk_31",
+        "chunk_34",
+        "chunk_37",
+        "chunk_33",
+        "chunk_32",
+        "chunk_35",
+        "chunk_29",
+        "chunk_28",
+        "chunk_27",
+        "chunk_26"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_28_0": {
+      "query": "Lỗi nạp thẻ 30k bị trừ tiền nhưng báo lỗi có thường xuyên xảy ra không? Làm thế nào để hạn chế tình trạng này khi thực hiện giao dịch nạp tiền điện thoại cho khách hàng?",
+      "source_chunk": "chunk_28",
+      "retrieved": [
+        "chunk_72",
+        "chunk_79",
+        "chunk_66",
+        "chunk_78",
+        "chunk_92",
+        "chunk_90",
+        "chunk_68",
+        "chunk_95",
+        "chunk_73",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_28_1": {
+      "query": "Mua thẻ cào Vinaphone 30k cho khách hàng như thế nào? Có thể mua được không?",
+      "source_chunk": "chunk_28",
+      "retrieved": [
+        "chunk_28",
+        "chunk_37",
+        "chunk_34",
+        "chunk_27",
+        "chunk_32",
+        "chunk_29",
+        "chunk_35",
+        "chunk_30",
+        "chunk_46",
+        "chunk_26"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_28_2": {
+      "query": "Thẻ cào 30k có bán cho Vietnamobile trên ViettelPay Pro không? Tôi có thể mua thẻ Vietnamobile 30.000đ trên ứng dụng không?",
+      "source_chunk": "chunk_28",
+      "retrieved": [
+        "chunk_28",
+        "chunk_34",
+        "chunk_37",
+        "chunk_47",
+        "chunk_30",
+        "chunk_27",
+        "chunk_32",
+        "chunk_29",
+        "chunk_48",
+        "chunk_26"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_1_0": {
+      "query": "'Người lập giao dịch' có thể gây ra lỗi khi thanh toán cước viễn thông không? Hoặc, 'người lập giao dịch' có liên quan gì đến việc không thể thanh toán cước viễn thông cho khách hàng?",
+      "source_chunk": "chunk_1",
+      "retrieved": [
+        "chunk_1",
+        "chunk_80",
+        "chunk_89",
+        "chunk_79",
+        "chunk_81",
+        "chunk_22",
+        "chunk_88",
+        "chunk_64",
+        "chunk_72",
+        "chunk_95"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_1_1": {
+      "query": "Em là đại lý ViettelPay Pro, khi em thực hiện giao dịch thì em có được xem là người tạo giao dịch không? Hay: Đại lý ViettelPay Pro thực hiện giao dịch có phải là người lập giao dịch không?",
+      "source_chunk": "chunk_1",
+      "retrieved": [
+        "chunk_1",
+        "chunk_4",
+        "chunk_23",
+        "chunk_8",
+        "chunk_20",
+        "chunk_2",
+        "chunk_19",
+        "chunk_22",
+        "chunk_9",
+        "chunk_47"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_1_2": {
+      "query": "Quyền hạn của người lập giao dịch trong thanh toán cước ViettelPay Pro là gì? Hoặc, Người lập giao dịch có những quyền hạn nào liên quan đến việc thanh toán hóa đơn cước trên ViettelPay Pro?",
+      "source_chunk": "chunk_1",
+      "retrieved": [
+        "chunk_51",
+        "chunk_54",
+        "chunk_47",
+        "chunk_1",
+        "chunk_25",
+        "chunk_49",
+        "chunk_50",
+        "chunk_20",
+        "chunk_44",
+        "chunk_0"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_12_0": {
+      "query": "TBTS là gì liên quan đến việc thanh toán cước trả sau và các lỗi giao dịch? Tìm hiểu về TBTS trong ViettelPay Pro và các vấn đề liên quan đến thanh toán cước trả sau.",
+      "source_chunk": "chunk_12",
+      "retrieved": [
+        "chunk_81",
+        "chunk_12",
+        "chunk_52",
+        "chunk_68",
+        "chunk_89",
+        "chunk_75",
+        "chunk_79",
+        "chunk_80",
+        "chunk_95",
+        "chunk_76"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_12_1": {
+      "query": "TBTS là gì trong thanh toán cước viễn thông trả sau qua ViettelPay Pro? Thuật ngữ TBTS có nghĩa là gì khi thanh toán cước?",
+      "source_chunk": "chunk_12",
+      "retrieved": [
+        "chunk_12",
+        "chunk_52",
+        "chunk_15",
+        "chunk_11",
+        "chunk_19",
+        "chunk_10",
+        "chunk_8",
+        "chunk_81",
+        "chunk_20",
+        "chunk_5"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_12_2": {
+      "query": "TBTS là gì? Tìm hiểu về thuê bao trả sau Viettel? Thuê bao trả sau là gì?",
+      "source_chunk": "chunk_12",
+      "retrieved": [
+        "chunk_12",
+        "chunk_52",
+        "chunk_81",
+        "chunk_11",
+        "chunk_8",
+        "chunk_16",
+        "chunk_18",
+        "chunk_19",
+        "chunk_20",
+        "chunk_15"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_22_0": {
+      "query": "Làm thế nào để phòng tránh lỗi giao dịch nhầm trên ViettelPay Pro? Hoặc, các biện pháp để hạn chế việc giao dịch bị sai trên ứng dụng?",
+      "source_chunk": "chunk_22",
+      "retrieved": [
+        "chunk_77",
+        "chunk_92",
+        "chunk_75",
+        "chunk_65",
+        "chunk_79",
+        "chunk_89",
+        "chunk_93",
+        "chunk_90",
+        "chunk_80",
+        "chunk_69"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_22_1": {
+      "query": "Làm thế nào để sửa lại số tiền đã nhập sai khi thanh toán cước trên ViettelPay Pro? Có thể điều chỉnh giao dịch thanh toán cước bị sai không?",
+      "source_chunk": "chunk_22",
+      "retrieved": [
+        "chunk_77",
+        "chunk_42",
+        "chunk_86",
+        "chunk_87",
+        "chunk_41",
+        "chunk_85",
+        "chunk_75",
+        "chunk_81",
+        "chunk_80",
+        "chunk_89"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_22_2": {
+      "query": "Giao dịch nhầm trên ViettelPay Pro do những nguyên nhân nào? Hoặc, các nguyên nhân dẫn đến việc thực hiện giao dịch sai trên ứng dụng ViettelPay Pro là gì?",
+      "source_chunk": "chunk_22",
+      "retrieved": [
+        "chunk_75",
+        "chunk_77",
+        "chunk_90",
+        "chunk_22",
+        "chunk_93",
+        "chunk_80",
+        "chunk_79",
+        "chunk_89",
+        "chunk_69",
+        "chunk_92"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_26_0": {
+      "query": "Nhà mạng nào nạp thẻ 10.000đ dễ gặp lỗi giao dịch trên ViettelPay Pro? Hoặc, các nhà mạng nào thường xuyên gặp sự cố khi nạp thẻ mệnh giá 10.000đ?",
+      "source_chunk": "chunk_26",
+      "retrieved": [
+        "chunk_26",
+        "chunk_72",
+        "chunk_30",
+        "chunk_34",
+        "chunk_92",
+        "chunk_33",
+        "chunk_35",
+        "chunk_63",
+        "chunk_75",
+        "chunk_79"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_26_1": {
+      "query": "Mạng nào không hỗ trợ bán thẻ cào 10k trên ViettelPay Pro? Hoặc là, các nhà mạng nào không cho phép bán thẻ cào mệnh giá 10.000đ thông qua ứng dụng?",
+      "source_chunk": "chunk_26",
+      "retrieved": [
+        "chunk_26",
+        "chunk_34",
+        "chunk_33",
+        "chunk_32",
+        "chunk_30",
+        "chunk_28",
+        "chunk_37",
+        "chunk_29",
+        "chunk_27",
+        "chunk_35"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_26_2": {
+      "query": "ViettelPay Pro không bán thẻ cào 10k cho những nhà mạng nào? Hoặc là, trên ViettelPay Pro, có nhà mạng nào không hỗ trợ bán thẻ cào mệnh giá 10.000đ không?",
+      "source_chunk": "chunk_26",
+      "retrieved": [
+        "chunk_26",
+        "chunk_34",
+        "chunk_30",
+        "chunk_33",
+        "chunk_32",
+        "chunk_27",
+        "chunk_29",
+        "chunk_28",
+        "chunk_37",
+        "chunk_31"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_2_0": {
+      "query": "Tại sao cần thông tin khách hàng thụ hưởng khi thanh toán cước ViettelPay Pro? Hoặc, mục đích của việc xác định khách hàng thụ hưởng trong giao dịch thanh toán cước là gì?",
+      "source_chunk": "chunk_2",
+      "retrieved": [
+        "chunk_2",
+        "chunk_65",
+        "chunk_24",
+        "chunk_39",
+        "chunk_89",
+        "chunk_72",
+        "chunk_42",
+        "chunk_41",
+        "chunk_47",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_2_1": {
+      "query": "Khách hàng được nạp tiền điện thoại có phải là khách hàng thụ hưởng trong giao dịch nạp tiền điện thoại không?",
+      "source_chunk": "chunk_2",
+      "retrieved": [
+        "chunk_2",
+        "chunk_50",
+        "chunk_79",
+        "chunk_8",
+        "chunk_65",
+        "chunk_9",
+        "chunk_72",
+        "chunk_24",
+        "chunk_71",
+        "chunk_22"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_2_2": {
+      "query": "Mình thanh toán cước Viettel cho chính mình có được xem là khách hàng thụ hưởng không? Hay là mình có phải là người thụ hưởng khi tự thanh toán cước Viettel cho mình?",
+      "source_chunk": "chunk_2",
+      "retrieved": [
+        "chunk_2",
+        "chunk_79",
+        "chunk_24",
+        "chunk_19",
+        "chunk_15",
+        "chunk_65",
+        "chunk_50",
+        "chunk_85",
+        "chunk_89",
+        "chunk_72"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_13_0": {
+      "query": "Account dùng để thanh toán cước internet và truyền hình ViettelPay Pro đúng không? Hay tài khoản này chỉ áp dụng cho dịch vụ internet và truyền hình thôi?",
+      "source_chunk": "chunk_13",
+      "retrieved": [
+        "chunk_13",
+        "chunk_34",
+        "chunk_17",
+        "chunk_42",
+        "chunk_15",
+        "chunk_39",
+        "chunk_33",
+        "chunk_32",
+        "chunk_43",
+        "chunk_18"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_13_1": {
+      "query": "Account là gì trong thanh toán cước viễn thông ViettelPay Pro? Tài khoản (account) dùng để làm gì khi thanh toán cước?",
+      "source_chunk": "chunk_13",
+      "retrieved": [
+        "chunk_13",
+        "chunk_17",
+        "chunk_18",
+        "chunk_42",
+        "chunk_8",
+        "chunk_41",
+        "chunk_11",
+        "chunk_15",
+        "chunk_39",
+        "chunk_44"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_13_2": {
+      "query": "Account dùng để làm gì khi thanh toán cước internet trên ViettelPay Pro? Tài khoản cần thiết cho việc thanh toán cước internet là gì?",
+      "source_chunk": "chunk_13",
+      "retrieved": [
+        "chunk_13",
+        "chunk_17",
+        "chunk_41",
+        "chunk_18",
+        "chunk_42",
+        "chunk_39",
+        "chunk_34",
+        "chunk_43",
+        "chunk_7",
+        "chunk_11"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_33_0": {
+      "query": "Em cần xử lý thế nào khi giao dịch nạp thẻ 1 triệu bị lỗi và làm sao để nạp lại thành công cho khách hàng? Hoặc là, cách khắc phục sự cố khi nạp thẻ 1 triệu không thành công và hướng dẫn nạp thẻ lại cho khách?",
+      "source_chunk": "chunk_33",
+      "retrieved": [
+        "chunk_78",
+        "chunk_72",
+        "chunk_79",
+        "chunk_92",
+        "chunk_71",
+        "chunk_90",
+        "chunk_67",
+        "chunk_65",
+        "chunk_74",
+        "chunk_66"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_33_1": {
+      "query": "Mạng nào không hỗ trợ bán thẻ cào mệnh giá 1 triệu đồng trên ViettelPay Pro? Hoặc là, các nhà mạng nào không được phép bán thẻ cào 1.000.000đ?",
+      "source_chunk": "chunk_33",
+      "retrieved": [
+        "chunk_33",
+        "chunk_34",
+        "chunk_32",
+        "chunk_28",
+        "chunk_29",
+        "chunk_26",
+        "chunk_37",
+        "chunk_27",
+        "chunk_31",
+        "chunk_35"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_33_2": {
+      "query": "Em có thể bán thẻ cào Mobifone mệnh giá 1 triệu đồng trên ViettelPay Pro không?",
+      "source_chunk": "chunk_33",
+      "retrieved": [
+        "chunk_33",
+        "chunk_32",
+        "chunk_26",
+        "chunk_30",
+        "chunk_27",
+        "chunk_34",
+        "chunk_37",
+        "chunk_31",
+        "chunk_29",
+        "chunk_28"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_57_0": {
+      "query": "Giao dịch bị treo do lỗi W02 thì làm sao để biết giao dịch đó thành công hay thất bại và có ảnh hưởng đến tiền trong tài khoản không? Hoặc: Làm thế nào để kiểm tra trạng thái giao dịch khi gặp lỗi W02 và giao dịch có bị trừ tiền không?",
+      "source_chunk": "chunk_57",
+      "retrieved": [
+        "chunk_71",
+        "chunk_72",
+        "chunk_73",
+        "chunk_57",
+        "chunk_78",
+        "chunk_65",
+        "chunk_89",
+        "chunk_77",
+        "chunk_95",
+        "chunk_85"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.25,
+      "source_rank": 4
+    },
+    "conv_chunk_57_1": {
+      "query": "Làm thế nào để tránh gặp lỗi 32 khi thực hiện giao dịch trên ViettelPay Pro? Có những biện pháp nào để khắc phục lỗi 32 trong quá trình giao dịch?",
+      "source_chunk": "chunk_57",
+      "retrieved": [
+        "chunk_71",
+        "chunk_72",
+        "chunk_73",
+        "chunk_96",
+        "chunk_65",
+        "chunk_97",
+        "chunk_81",
+        "chunk_88",
+        "chunk_84",
+        "chunk_90"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_57_2": {
+      "query": "Mình phải xử lý thế nào khi gặp các mã lỗi W04, 605, 650, 99 trên ViettelPay Pro? Cần hướng dẫn chi tiết để khắc phục các lỗi này.",
+      "source_chunk": "chunk_57",
+      "retrieved": [
+        "chunk_71",
+        "chunk_73",
+        "chunk_72",
+        "chunk_78",
+        "chunk_57",
+        "chunk_82",
+        "chunk_65",
+        "chunk_79",
+        "chunk_84",
+        "chunk_96"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.2,
+      "source_rank": 5
+    },
+    "conv_chunk_62_0": {
+      "query": "Làm thế nào để kiểm tra trước số điện thoại có khả năng báo lỗi 472 khi thanh toán cước không? Hoặc có cách nào để biết trước số điện thoại nào có thể gặp lỗi 472 khi nạp cước không?",
+      "source_chunk": "chunk_62",
+      "retrieved": [
+        "chunk_77",
+        "chunk_62",
+        "chunk_79",
+        "chunk_40",
+        "chunk_95",
+        "chunk_35",
+        "chunk_84",
+        "chunk_43",
+        "chunk_80",
+        "chunk_89"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_62_1": {
+      "query": "Khách hàng báo lỗi 472 khi thanh toán, có cách nào để thanh toán ngay cho khách hàng không? Hoặc làm thế nào để xử lý lỗi 472 để khách hàng có thể thanh toán thành công?",
+      "source_chunk": "chunk_62",
+      "retrieved": [
+        "chunk_77",
+        "chunk_62",
+        "chunk_76",
+        "chunk_72",
+        "chunk_65",
+        "chunk_81",
+        "chunk_79",
+        "chunk_84",
+        "chunk_89",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_62_2": {
+      "query": "Lỗi 472 có ảnh hưởng đến việc thanh toán cước trả sau ViettelPay Pro không? Lỗi này có liên quan gì đến việc thanh toán cước trả sau?",
+      "source_chunk": "chunk_62",
+      "retrieved": [
+        "chunk_77",
+        "chunk_62",
+        "chunk_76",
+        "chunk_82",
+        "chunk_81",
+        "chunk_64",
+        "chunk_79",
+        "chunk_80",
+        "chunk_96",
+        "chunk_89"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_63_0": {
+      "query": "Khách hàng không thanh toán được tiền điện do lỗi 473, có cách nào để khắc phục lỗi này và cho phép khách hàng thanh toán thành công không? Hoặc làm thế nào để xử lý khi gặp lỗi 473 khi thanh toán tiền điện trên ViettelPay Pro?",
+      "source_chunk": "chunk_63",
+      "retrieved": [
+        "chunk_76",
+        "chunk_63",
+        "chunk_81",
+        "chunk_80",
+        "chunk_82",
+        "chunk_84",
+        "chunk_72",
+        "chunk_77",
+        "chunk_65",
+        "chunk_79"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_63_1": {
+      "query": "Khách hàng chưa đăng ký EZPAY thì có thanh toán được không khi gặp lỗi 473? EZPAY có yêu cầu đăng ký trước khi thanh toán không?",
+      "source_chunk": "chunk_63",
+      "retrieved": [
+        "chunk_76",
+        "chunk_63",
+        "chunk_77",
+        "chunk_79",
+        "chunk_80",
+        "chunk_62",
+        "chunk_92",
+        "chunk_72",
+        "chunk_74",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_63_2": {
+      "query": "Lỗi 473 khi thanh toán cho VinaPhone có thường xuyên xảy ra không? Hoặc, lỗi 473 khi giao dịch với VinaPhone có hay gặp không?",
+      "source_chunk": "chunk_63",
+      "retrieved": [
+        "chunk_76",
+        "chunk_63",
+        "chunk_72",
+        "chunk_62",
+        "chunk_60",
+        "chunk_64",
+        "chunk_61",
+        "chunk_56",
+        "chunk_68",
+        "chunk_79"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_10_0": {
+      "query": "'Thuê bao' là gì và liên quan đến việc thanh toán cước trên ViettelPay Pro?",
+      "source_chunk": "chunk_10",
+      "retrieved": [
+        "chunk_10",
+        "chunk_12",
+        "chunk_16",
+        "chunk_15",
+        "chunk_13",
+        "chunk_17",
+        "chunk_11",
+        "chunk_80",
+        "chunk_77",
+        "chunk_19"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_10_1": {
+      "query": "Thuê bao khác gì với số tài khoản ngân hàng? Sự khác biệt giữa thuê bao và tài khoản ngân hàng là gì?",
+      "source_chunk": "chunk_10",
+      "retrieved": [
+        "chunk_10",
+        "chunk_17",
+        "chunk_18",
+        "chunk_78",
+        "chunk_11",
+        "chunk_13",
+        "chunk_12",
+        "chunk_65",
+        "chunk_44",
+        "chunk_50"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_10_2": {
+      "query": "Số điện thoại bàn có được xem là thuê bao khi thực hiện giao dịch trên ViettelPay Pro không? Hay là thuê bao di động và thuê bao cố định khác nhau như thế nào?",
+      "source_chunk": "chunk_10",
+      "retrieved": [
+        "chunk_10",
+        "chunk_40",
+        "chunk_43",
+        "chunk_16",
+        "chunk_21",
+        "chunk_13",
+        "chunk_34",
+        "chunk_11",
+        "chunk_8",
+        "chunk_77"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_56_0": {
+      "query": "Làm thế nào để tránh gặp lỗi 604 khi thực hiện giao dịch trên ViettelPay Pro trong tương lai? Hoặc, có cách nào để hạn chế lỗi 604 khi giao dịch không thành công trên ứng dụng ViettelPay Pro không?",
+      "source_chunk": "chunk_56",
+      "retrieved": [
+        "chunk_65",
+        "chunk_71",
+        "chunk_56",
+        "chunk_90",
+        "chunk_88",
+        "chunk_95",
+        "chunk_96",
+        "chunk_80",
+        "chunk_92",
+        "chunk_89"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_56_1": {
+      "query": "Tra cứu thông tin giao dịch lỗi 604 trong ứng dụng ở mục nào? Hoặc: Tôi muốn xem lại thông tin giao dịch lỗi 604 trong ViettelPay Pro thì tìm ở đâu?",
+      "source_chunk": "chunk_56",
+      "retrieved": [
+        "chunk_56",
+        "chunk_65",
+        "chunk_90",
+        "chunk_48",
+        "chunk_71",
+        "chunk_58",
+        "chunk_73",
+        "chunk_46",
+        "chunk_88",
+        "chunk_95"
+      ],
+      "hit_rates": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 1.0,
+      "source_rank": 1
+    },
+    "conv_chunk_56_2": {
+      "query": "Tiền bị trừ do lỗi 604 bao lâu sẽ được hoàn lại vào tài khoản ViettelPay Pro? Hoàn tiền khi gặp sự cố giao dịch như thế nào?",
+      "source_chunk": "chunk_56",
+      "retrieved": [
+        "chunk_72",
+        "chunk_71",
+        "chunk_77",
+        "chunk_78",
+        "chunk_56",
+        "chunk_95",
+        "chunk_82",
+        "chunk_74",
+        "chunk_79",
+        "chunk_65"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.2,
+      "source_rank": 5
+    },
+    "conv_chunk_60_0": {
+      "query": "Hạn mức giao dịch tối thiểu là bao nhiêu khi thanh toán và có quy định cụ thể nào không? Giao dịch bị lỗi JK1 có liên quan đến hạn mức không?",
+      "source_chunk": "chunk_60",
+      "retrieved": [
+        "chunk_88",
+        "chunk_60",
+        "chunk_51",
+        "chunk_61",
+        "chunk_54",
+        "chunk_87",
+        "chunk_50",
+        "chunk_0",
+        "chunk_64",
+        "chunk_49"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_60_1": {
+      "query": "Làm thế nào để khắc phục lỗi JK1 trên ViettelPay Pro? Hoặc, cách xử lý khi gặp lỗi JK1 để giao dịch thành công?",
+      "source_chunk": "chunk_60",
+      "retrieved": [
+        "chunk_88",
+        "chunk_60",
+        "chunk_89",
+        "chunk_77",
+        "chunk_72",
+        "chunk_95",
+        "chunk_92",
+        "chunk_90",
+        "chunk_78",
+        "chunk_75"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_60_2": {
+      "query": "Thanh toán tối thiểu bao nhiêu tiền để giao dịch thành công khi gặp lỗi JK1? Mức tiền nạp tối thiểu là bao nhiêu?",
+      "source_chunk": "chunk_60",
+      "retrieved": [
+        "chunk_88",
+        "chunk_60",
+        "chunk_55",
+        "chunk_74",
+        "chunk_89",
+        "chunk_95",
+        "chunk_92",
+        "chunk_79",
+        "chunk_65",
+        "chunk_72"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.5,
+      "source_rank": 2
+    },
+    "conv_chunk_58_0": {
+      "query": "Lỗi 606 khi giao dịch ViettelPay Pro có ảnh hưởng đến số dư tài khoản đại lý không? Giao dịch báo lỗi 606 có bị trừ tiền trong tài khoản không?",
+      "source_chunk": "chunk_58",
+      "retrieved": [
+        "chunk_67",
+        "chunk_68",
+        "chunk_66",
+        "chunk_70",
+        "chunk_69",
+        "chunk_72",
+        "chunk_82",
+        "chunk_88",
+        "chunk_79",
+        "chunk_71"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    },
+    "conv_chunk_58_1": {
+      "query": "Khi nào thì lỗi 606 của ViettelPay Pro sẽ được khắc phục? Bao lâu thì hết lỗi 606?",
+      "source_chunk": "chunk_58",
+      "retrieved": [
+        "chunk_67",
+        "chunk_69",
+        "chunk_68",
+        "chunk_66",
+        "chunk_70",
+        "chunk_71",
+        "chunk_58",
+        "chunk_79",
+        "chunk_84",
+        "chunk_96"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 1
+      },
+      "rr": 0.14285714285714285,
+      "source_rank": 7
+    },
+    "conv_chunk_58_2": {
+      "query": "Lỗi 606 có thường xuyên xảy ra khi khách hàng thanh toán không thành công không? Nguyên nhân và cách khắc phục lỗi 606 là gì?",
+      "source_chunk": "chunk_58",
+      "retrieved": [
+        "chunk_68",
+        "chunk_70",
+        "chunk_69",
+        "chunk_67",
+        "chunk_66",
+        "chunk_58",
+        "chunk_72",
+        "chunk_84",
+        "chunk_71",
+        "chunk_96"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 1
+      },
+      "rr": 0.16666666666666666,
+      "source_rank": 6
+    },
+    "conv_chunk_59_0": {
+      "query": "Lỗi 974 có nghiêm trọng không và có ảnh hưởng đến tài khoản ViettelPay Pro của tôi không?",
+      "source_chunk": "chunk_59",
+      "retrieved": [
+        "chunk_75",
+        "chunk_74",
+        "chunk_59",
+        "chunk_90",
+        "chunk_65",
+        "chunk_95",
+        "chunk_89",
+        "chunk_71",
+        "chunk_93",
+        "chunk_78"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_59_1": {
+      "query": "Lỗi 974 trên ViettelPay Pro là gì và cách khắc phục ra sao? Tôi có thể xem thông tin chi tiết về lỗi này ở đâu?",
+      "source_chunk": "chunk_59",
+      "retrieved": [
+        "chunk_74",
+        "chunk_75",
+        "chunk_59",
+        "chunk_96",
+        "chunk_90",
+        "chunk_88",
+        "chunk_84",
+        "chunk_81",
+        "chunk_79",
+        "chunk_95"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_59_2": {
+      "query": "Giao dịch nào có thể gặp lỗi 974? Hay lỗi 974 có thể xảy ra với những loại giao dịch nào?",
+      "source_chunk": "chunk_59",
+      "retrieved": [
+        "chunk_75",
+        "chunk_74",
+        "chunk_59",
+        "chunk_49",
+        "chunk_64",
+        "chunk_57",
+        "chunk_88",
+        "chunk_65",
+        "chunk_90",
+        "chunk_72"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 1
+      },
+      "rr": 0.3333333333333333,
+      "source_rank": 3
+    },
+    "conv_chunk_55_0": {
+      "query": "Giao dịch báo thành công (mã 00) nhưng tiền không trừ trong tài khoản ViettelPay Pro, vậy giao dịch đã thành công chưa?",
+      "source_chunk": "chunk_55",
+      "retrieved": [
+        "chunk_89",
+        "chunk_91",
+        "chunk_93",
+        "chunk_95",
+        "chunk_97",
+        "chunk_90",
+        "chunk_92",
+        "chunk_96",
+        "chunk_55",
+        "chunk_94"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 1
+      },
+      "rr": 0.1111111111111111,
+      "source_rank": 9
+    },
+    "conv_chunk_55_1": {
+      "query": "Giao dịch báo mã 00 có nghĩa là đã thành công và không cần kiểm tra lại đúng không ạ? Hoặc, giao dịch báo mã 00 có cần xử lý gì thêm không?",
+      "source_chunk": "chunk_55",
+      "retrieved": [
+        "chunk_89",
+        "chunk_95",
+        "chunk_92",
+        "chunk_97",
+        "chunk_94",
+        "chunk_55",
+        "chunk_91",
+        "chunk_93",
+        "chunk_90",
+        "chunk_96"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 1
+      },
+      "rr": 0.16666666666666666,
+      "source_rank": 6
+    },
+    "conv_chunk_55_2": {
+      "query": "Giao dịch báo thành công nhưng thực tế không thành công thì phải xử lý như thế nào? Hoặc, cần làm gì khi gặp sự cố giao dịch thành công trên hệ thống nhưng khách hàng không nhận được tiền/dịch vụ?",
+      "source_chunk": "chunk_55",
+      "retrieved": [
+        "chunk_78",
+        "chunk_72",
+        "chunk_73",
+        "chunk_89",
+        "chunk_71",
+        "chunk_65",
+        "chunk_95",
+        "chunk_77",
+        "chunk_90",
+        "chunk_75"
+      ],
+      "hit_rates": {
+        "1": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "rr": 0.0,
+      "source_rank": null
+    }
+  },
+  "failed_queries": [],
+  "summary": {
+    "total_queries": 293,
+    "evaluated_queries": 293,
+    "failed_queries": 0,
+    "success_rate": 100.0,
+    "k_values": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "evaluation_type": "mrr_hit_rates_only",
+    "evaluation_timestamp": 1749907117.1435714
+  },
+  "conversation_type_analysis": {
+    "error_resolution": {
+      "hit_rates": {
+        "1": 0.52,
+        "3": 0.72,
+        "5": 0.76,
+        "10": 0.81
+      },
+      "mrr": 0.6265674603174605,
+      "total_conversations": 100
+    },
+    "procedure_guide": {
+      "hit_rates": {
+        "1": 0.6020408163265306,
+        "3": 0.8469387755102041,
+        "5": 0.9183673469387755,
+        "10": 0.9285714285714286
+      },
+      "mrr": 0.7248299319727891,
+      "total_conversations": 98
+    },
+    "policy_info": {
+      "hit_rates": {
+        "1": 0.5578947368421052,
+        "3": 0.8105263157894737,
+        "5": 0.9157894736842105,
+        "10": 0.9578947368421052
+      },
+      "mrr": 0.7042690058479534,
+      "total_conversations": 95
+    }
+  },
+  "turn_length_analysis": {
+    "3_turns": {
+      "hit_rates": {
+        "1": 0.631578947368421,
+        "3": 0.8771929824561403,
+        "5": 0.9415204678362573,
+        "10": 0.9590643274853801
+      },
+      "mrr": 0.7572612085769981,
+      "total_conversations": 171
+    },
+    "2_turns": {
+      "hit_rates": {
+        "1": 0.45901639344262296,
+        "3": 0.6721311475409836,
+        "5": 0.7540983606557377,
+        "10": 0.8114754098360656
+      },
+      "mrr": 0.5828194119177725,
+      "total_conversations": 122
+    }
+  },
+  "multi_turn_metadata": {
+    "evaluation_type": "multi_turn_conversation",
+    "conversation_types": [
+      "error_resolution",
+      "procedure_guide",
+      "policy_info"
+    ],
+    "total_conversation_types": 3
+  }
+}

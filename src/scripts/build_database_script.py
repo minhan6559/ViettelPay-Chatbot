@@ -66,26 +66,26 @@ def ingest_documents(args):
     if not validate_documents_folder(args.documents_folder):
         sys.exit(1)
 
-    # Build knowledge base with OpenAI API key support
+    # Get OpenAI API key for contextual enhancement
     openai_api_key = os.getenv("OPENAI_API_KEY")
     if openai_api_key:
         print("[INFO] Using OpenAI API key for contextual enhancement")
     else:
         print("[WARNING] No OpenAI API key found. Contextual enhancement disabled.")
 
-    kb = ViettelKnowledgeBase(
-        embedding_model=args.embedding_model, openai_api_key=openai_api_key
-    )
+    # Initialize knowledge base (without OpenAI API key)
+    kb = ViettelKnowledgeBase(embedding_model=args.embedding_model)
 
     try:
         # Create persist directory from chroma_dir
         persist_dir = os.path.dirname(args.chroma_dir) or "./knowledge_base"
 
-        # Build knowledge base using the new API
+        # Build knowledge base using the new API (pass OpenAI API key here)
         kb.build_knowledge_base(
             documents_folder=args.documents_folder,
             persist_dir=persist_dir,
             reset=args.reset,
+            openai_api_key=openai_api_key,
         )
 
         # Show final statistics
