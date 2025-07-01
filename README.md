@@ -7,6 +7,8 @@ python_version: 3.11
 
 A Vietnamese intelligent chatbot system built for ViettelPay customer support using Retrieval-Augmented Generation (RAG) with contextual enhancement and ensemble retrieval.
 
+This is a mini project for Viettel Digital Talent 2025 with the mentors from Viettel Digital Services.
+
 ## 🚀 Features
 
 - **Interactive Web Interface**: Full Streamlit-based Vietnamese chat interface with conversation management
