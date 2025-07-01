@@ -9,6 +9,9 @@ A Vietnamese intelligent chatbot system built for ViettelPay customer support us
 
 This is a mini project for Viettel Digital Talent 2025 with the mentors from Viettel Digital Services.
 
+## Demo
+Try the live demo on Hugging Face Spaces: [ViettelPay Chatbot Demo](https://huggingface.co/spaces/minhan6559/viettelpay-chatbot)
+
 ## 🚀 Features
 
 - **Interactive Web Interface**: Full Streamlit-based Vietnamese chat interface with conversation management
@@ -62,6 +65,9 @@ python src/scripts/build_database.py
 ```
 
 ## 🚀 Quick Start
+
+### Demo
+Try the live demo on Hugging Face Spaces: [ViettelPay Chatbot Demo](https://huggingface.co/spaces/minhan6559/viettelpay-chatbot)
 
 ### Running the Streamlit Web Interface
 ```bash
