@@ -245,8 +245,8 @@ class ViettelKnowledgeBase:
         # Build config based on top_k parameter
         config = {
             "configurable": {
-                "bm25_k": top_k * 5,
-                "chroma_search_kwargs": {"k": top_k * 5},
+                "bm25_k": top_k * 10,
+                "chroma_search_kwargs": {"k": top_k * 10},
             }
         }
 
